@@ -15,9 +15,9 @@ module.exports = {
                 {
                     label: "产品",
                     items: [
-                        { label: "OTP （ 无密码 轻认证 ）", to: "/otp" },
-                        { label: "SSO （ 统一账号 单点登录 ）", to: "/sso" },
-                        { label: "IAM （ 用户管理 权限控制 ）", to: "/iam" },
+                        { label: "OTP （无密码、轻认证）", to: "/otp" },
+                        { label: "SSO （统一账号、单点登录）", to: "/sso" },
+                        { label: "IAM （用户管理、权限控制）", to: "/iam" },
                     ],
                 },
                 {

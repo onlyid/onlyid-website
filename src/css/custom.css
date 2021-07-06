@@ -9,7 +9,8 @@
     --ifm-color-primary-lightest: #707ecd;
     --ifm-code-font-size: 95%;
     --ifm-navbar-item-padding-horizontal: 0.95rem;
-    --ifm-navbar-height: 3.25rem;
+    --ifm-navbar-height: 3.4rem;
+    --ifm-menu-link-padding-vertical: 0.5rem;
 }
 
 .docusaurus-highlight-code-line {
