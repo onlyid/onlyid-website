@@ -91,18 +91,10 @@ module.exports = {
             theme: codeTheme,
         },
     },
-    presets: [
-        [
-            "@docusaurus/preset-classic",
-            {
-                docs: {
-                    sidebarPath: require.resolve("./sidebars.js"),
-                },
-                blog: {},
-                theme: {
-                    customCss: require.resolve("./src/css/custom.css"),
-                },
-            },
-        ],
+    plugins: [
+        "@docusaurus/plugin-content-blog",
+        "@docusaurus/plugin-content-pages",
+        ["@docusaurus/plugin-content-docs", { sidebarPath: require.resolve("./sidebars.js") }],
     ],
+    themes: [["@docusaurus/theme-classic", { customCss: require.resolve("./index.css") }]],
 };
