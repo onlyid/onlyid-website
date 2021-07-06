@@ -11,19 +11,36 @@ module.exports = {
                 src: "img/logo.svg",
             },
             items: [
-                { to: "/why-onlyid", label: "为什么选择唯ID" },
+                { to: "/advantage", label: "优势" },
+                {
+                    label: "产品",
+                    items: [
+                        { label: "OTP （ 无密码 轻认证 ）", to: "/otp" },
+                        { label: "SSO （ 统一账号 单点登录 ）", to: "/sso" },
+                        { label: "IAM （ 用户管理 权限控制 ）", to: "/iam" },
+                    ],
+                },
                 {
                     type: "doc",
                     docId: "intro",
-                    label: "开发文档",
+                    label: "文档",
                 },
-                { to: "/blog", label: "开发者博客" },
+                { to: "/demo", label: "体验" },
+                { to: "/pricing", label: "价格" },
+                { to: "/blog", label: "博客" },
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/onlyid",
                     label: "GitHub",
+                },
+                {
+                    href: "https://www.onlyid.net/console",
+                    label: "控制台",
                     position: "right",
                 },
             ],
+        },
+        colorMode: {
+            disableSwitch: true,
         },
         footer: {
             style: "dark",
