@@ -8,9 +8,11 @@
     --ifm-color-primary-lighter: #5566c4;
     --ifm-color-primary-lightest: #707ecd;
     --ifm-code-font-size: 95%;
-    --ifm-navbar-item-padding-horizontal: 0.95rem;
-    --ifm-navbar-height: 3.4rem;
-    --ifm-menu-link-padding-vertical: 0.5rem;
+    --ifm-navbar-item-padding-horizontal: 0.85rem;
+    --ifm-navbar-height: 3.5rem;
+    --ifm-menu-link-padding-vertical: 0.475rem;
+    --ifm-color-gray-900: #24272b;
+    --ifm-menu-color: var(--ifm-color-emphasis-800);
 }
 
 .docusaurus-highlight-code-line {
@@ -21,5 +23,33 @@
 }
 
 .dropdown__link {
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9375rem;
+}
+
+.productTip {
+    color: #7f7f7f;
+    pointer-events: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown__link.productTip {
+    font-size: 0.8125rem;
+}
+
+.dropdown__link.productTip:hover {
+    background-color: transparent;
+}
+
+.dropdown__link.productName {
+    padding-left: 1rem;
+}
+
+.menu__link.productTip {
+    font-size: 0.875rem;
+}
+
+.menu__link.productName {
+    padding-left: 1.5rem;
 }
