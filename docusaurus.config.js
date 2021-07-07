@@ -23,23 +23,12 @@ module.exports = {
                         { label: "IAM", to: "/iam", className: "productName" },
                     ],
                 },
-                {
-                    type: "doc",
-                    docId: "intro",
-                    label: "文档",
-                },
+                { type: "doc", docId: "intro", label: "文档" },
                 { to: "/demo", label: "体验" },
                 { to: "/pricing", label: "价格" },
                 { to: "/blog", label: "博客" },
-                {
-                    href: "https://github.com/onlyid",
-                    label: "GitHub",
-                },
-                {
-                    href: "https://www.onlyid.net/console",
-                    label: "控制台",
-                    position: "right",
-                },
+                { href: "https://github.com/onlyid", label: "GitHub" },
+                { href: "https://www.onlyid.net/console", label: "控制台", position: "right" },
             ],
         },
         colorMode: {
@@ -95,7 +84,7 @@ module.exports = {
         },
     },
     plugins: [
-        "@docusaurus/plugin-content-blog",
+        ["@docusaurus/plugin-content-blog", { showReadingTime: true }],
         "@docusaurus/plugin-content-pages",
         ["@docusaurus/plugin-content-docs", { sidebarPath: require.resolve("./sidebars.js") }],
     ],
