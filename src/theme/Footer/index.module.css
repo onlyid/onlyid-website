@@ -1,0 +1,79 @@
+.root {
+    background-color: #4b5056;
+}
+
+.container {
+    padding: 2rem 1rem 1.5rem;
+    color: white;
+    font-size: 0.9375rem;
+}
+
+.container a {
+    color: inherit;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address {
+    font-size: 0.875rem;
+    margin-top: 0.8rem;
+}
+
+ul.contact li + li {
+    margin-top: 0.35rem;
+}
+
+ul.contact li :global .material-icons {
+    font-size: 1rem;
+    vertical-align: -20%;
+    margin-right: 0.4rem;
+    cursor: default;
+}
+
+.qq {
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
+    display: inline-block;
+    width: 1rem;
+    cursor: default;
+}
+
+ul.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.links a {
+    font-size: 0.875rem;
+}
+
+.copyright,
+.beian {
+    font-size: 0.875rem;
+    margin: 0.45rem 0 0;
+}
+
+.popper1 {
+    pointer-events: none;
+}
+
+.popper1 img {
+    width: 13.5rem;
+    height: 13.5rem;
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .root {
+        min-width: 1140px;
+    }
+
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+}
