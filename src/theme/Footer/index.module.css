@@ -6,6 +6,19 @@
     padding: 2rem 1rem 1.5rem;
     color: white;
     font-size: 0.9375rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.col.contact {
+    flex-basis: 250px;
 }
 
 .container a {
@@ -67,13 +80,16 @@ ul.links a {
     display: block;
 }
 
-@media (min-width: 600px) {
-    .root {
-        min-width: 1140px;
+@media (max-width: 996px) {
+    .col {
+        flex-basis: 100%;
     }
 
-    .container {
-        width: 1140px;
-        margin: 0 auto;
+    .contact.col {
+        flex-basis: 100%;
+    }
+
+    .col + .col {
+        margin-top: 1rem;
     }
 }
