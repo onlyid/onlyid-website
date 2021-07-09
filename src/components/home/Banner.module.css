@@ -5,11 +5,22 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+}
+
+.title :global .material-icons {
+    font-size: 1.4rem;
+    vertical-align: text-top;
+    cursor: default;
 }
 
 .subtitle {
     font-size: 1.4rem;
+}
+
+.popper1 p {
+    padding: 1rem;
+    margin-bottom: 0;
 }
 
 @media (max-width: 996px) {
