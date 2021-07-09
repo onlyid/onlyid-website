@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import styles from "./index.module.css";
-import { Hidden, Popper, Paper } from "@material-ui/core";
+import { Popper, Paper } from "@material-ui/core";
 import classNames from "classnames";
 import weChat155 from "@site/static/img/wechat-155.jpeg";
 import Link from "@docusaurus/Link";
@@ -35,16 +35,14 @@ export default class extends PureComponent {
                         <li>
                             <span className="material-icons">phone</span>
                             电话 / 微信
-                            <Hidden xsDown>
-                                <span
-                                    className="material-icons"
-                                    style={{ margin: 0 }}
-                                    onMouseEnter={this.showWeChat}
-                                    onMouseLeave={this.closeWeChat}
-                                >
-                                    qr_code
-                                </span>
-                            </Hidden>
+                            <span
+                                className="material-icons hide-sm"
+                                style={{ margin: 0 }}
+                                onMouseEnter={this.showWeChat}
+                                onMouseLeave={this.closeWeChat}
+                            >
+                                qr_code
+                            </span>
                             ：15521312099
                         </li>
                         <li>
