@@ -16,12 +16,12 @@
 
 :root {
     --ifm-color-primary: #3f51b5;
-    --ifm-color-primary-dark: #3949a3;
-    --ifm-color-primary-darker: #36459a;
-    --ifm-color-primary-darkest: #36459a;
-    --ifm-color-primary-light: #4c5ec1;
-    --ifm-color-primary-lighter: #5566c4;
-    --ifm-color-primary-lightest: #707ecd;
+    --ifm-color-primary-dark: #3949ab;
+    --ifm-color-primary-darker: #303f9f;
+    --ifm-color-primary-darkest: #283593;
+    --ifm-color-primary-light: #5c6bc0;
+    --ifm-color-primary-lighter: #7986cb;
+    --ifm-color-primary-lightest: #9fa8da;
     --ifm-code-font-size: 95%;
     --ifm-navbar-item-padding-horizontal: 0.85rem;
     --ifm-navbar-height: 3.5rem;

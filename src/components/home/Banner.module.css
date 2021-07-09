@@ -1,0 +1,19 @@
+.root {
+    background-image: url("../../../static/img/banner-bg.svg");
+    background-position: 0 5%;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 996px) {
+    .root {
+        padding: 3rem 1rem;
+    }
+}
