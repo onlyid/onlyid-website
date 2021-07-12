@@ -53,7 +53,7 @@ export default class extends PureComponent {
                     className={styles.popper1}
                 >
                     <Paper>
-                        <p>区分于另一类面向企业内部系统，实现员工身份管理的IDaaS方案</p>
+                        <p>开放给公众注册、使用的网站和APP</p>
                     </Paper>
                 </Popper>
             </div>
