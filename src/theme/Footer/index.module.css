@@ -6,7 +6,7 @@
     padding: 2rem 1rem 1.5rem;
     color: white;
     font-size: 0.9375rem;
-    max-width: 1200px;
+    max-width: var(--ifm-container-width);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -91,5 +91,11 @@ ul.links a {
 
     .col + .col {
         margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: var(--ifm-container-width-xl);
     }
 }
