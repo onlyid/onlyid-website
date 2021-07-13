@@ -71,7 +71,8 @@ export default class extends PureComponent {
                             </li>
                         </ul>
                         <p className={styles.copyright}>
-                            &copy; 2017-{new Date().getFullYear()} 爱达斯科技 IDaaS Tech
+                            &copy; 2017-{new Date().getFullYear()} &nbsp; 爱达斯科技 &nbsp; IDaaS
+                            Tech
                         </p>
                         <p className={styles.beian}>
                             <a
