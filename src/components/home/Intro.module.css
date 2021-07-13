@@ -1,0 +1,56 @@
+.root {
+    background-image: url("../../../static/img/intro-bg.svg");
+    background-size: 110rem;
+    background-repeat: repeat-x;
+    padding: 2rem 0;
+}
+
+.root :global .row {
+    align-items: center;
+}
+
+.root :global .col {
+    display: flex;
+    justify-content: center;
+}
+
+.p1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.ul1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.ul1 li + li {
+    margin-top: 0.5rem;
+}
+
+.ul1 li :global .MuiSvgIcon-root {
+    vertical-align: -10%;
+    margin-right: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.p2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.p3 {
+    font-size: 1.8rem;
+    color: #3f51b5;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.img1 {
+    vertical-align: middle;
+    max-width: 35rem;
+    width: 100%;
+}
