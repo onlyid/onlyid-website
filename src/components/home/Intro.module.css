@@ -5,15 +5,6 @@
     padding: 2rem 0;
 }
 
-.root :global .row {
-    align-items: center;
-}
-
-.root :global .col {
-    display: flex;
-    justify-content: center;
-}
-
 .p1 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -53,4 +44,17 @@
     vertical-align: middle;
     max-width: 35rem;
     width: 100%;
+}
+
+@media (max-width: 996px) {
+    .root :global .col {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 997px) {
+    .root :global .row {
+        align-items: center;
+    }
 }
