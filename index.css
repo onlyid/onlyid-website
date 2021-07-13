@@ -28,6 +28,7 @@
     --ifm-menu-link-padding-vertical: 0.475rem;
     --ifm-color-gray-900: #24272b;
     --ifm-menu-color: var(--ifm-color-emphasis-800);
+    --ifm-container-width-xl: 1140px;
 }
 
 .docusaurus-highlight-code-line {

@@ -93,9 +93,3 @@ ul.links a {
         margin-top: 1rem;
     }
 }
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: var(--ifm-container-width-xl);
-    }
-}
