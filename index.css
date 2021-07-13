@@ -43,33 +43,6 @@
     font-size: 0.9375rem;
 }
 
-.productTip {
-    color: #7f7f7f;
-    pointer-events: none;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.dropdown__link.productTip {
-    font-size: 0.8125rem;
-}
-
-.dropdown__link.productTip:hover {
-    background-color: transparent;
-}
-
-.dropdown__link.productName {
-    padding-left: 1rem;
-}
-
-.menu__link.productTip {
-    font-size: 0.875rem;
-}
-
-.menu__link.productName {
-    padding-left: 1.5rem;
-}
-
 @media (max-width: 996px) {
     .hide-sm {
         display: none !important;

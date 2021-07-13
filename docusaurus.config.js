@@ -15,12 +15,9 @@ module.exports = {
                 {
                     label: "产品",
                     items: [
-                        { label: "无密码、轻认证", className: "productTip" },
-                        { label: "OTP", to: "/otp", className: "productName" },
-                        { label: "统一账号、单点登录", className: "productTip" },
-                        { label: "SSO", to: "/sso", className: "productName" },
-                        { label: "用户管理、权限控制", className: "productTip" },
-                        { label: "IAM", to: "/iam", className: "productName" },
+                        { label: "无密码、轻认证", to: "/otp" },
+                        { label: "统一账号、单点登录", to: "/sso" },
+                        { label: "用户管理、权限控制", to: "/iam" },
                     ],
                 },
                 { type: "doc", docId: "intro", label: "文档" },
