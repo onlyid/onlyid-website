@@ -1,47 +1,34 @@
 import React, { PureComponent } from "react";
 import classNames from "classnames";
 import styles from "./Banner.module.css";
-import { Paper, Popper } from "@material-ui/core";
+import { Tooltip } from "@material-ui/core";
 
 export default class extends PureComponent {
-    state = {
-        anchorEl: null,
-        tip: null,
-    };
-
-    showTip = (e, tip) => {
-        this.setState({ anchorEl: e.currentTarget, tip });
-    };
-
-    closeTip = () => {
-        this.setState({ anchorEl: null });
-    };
-
     render() {
-        const { anchorEl, tip } = this.state;
-
         return (
             <div className={classNames("hero", styles.root)}>
                 <div>
                     <h1 className={styles.title}>
                         唯ID是面向 公众应用
-                        <span
-                            className="material-icons"
-                            onMouseEnter={(e) => this.showTip(e, "区别于企业内部信息系统")}
-                            onMouseLeave={this.closeTip}
+                        <Tooltip
+                            title="区别于企业内部信息系统"
+                            placement="top"
+                            enterTouchDelay={0}
+                            leaveTouchDelay={5000}
+                            classes={{ tooltip: styles.tooltip1 }}
                         >
-                            help
-                        </span>{" "}
+                            <span className="material-icons">help</span>
+                        </Tooltip>{" "}
                         的 IDaaS
-                        <span
-                            className="material-icons"
-                            onMouseEnter={(e) =>
-                                this.showTip(e, "Identity as a Service，基于云端的身份管理")
-                            }
-                            onMouseLeave={this.closeTip}
+                        <Tooltip
+                            title="Identity as a Service，基于云端的身份管理"
+                            placement="top"
+                            enterTouchDelay={0}
+                            leaveTouchDelay={5000}
+                            classes={{ tooltip: styles.tooltip1 }}
                         >
-                            help
-                        </span>{" "}
+                            <span className="material-icons">help</span>
+                        </Tooltip>{" "}
                         解决方案，
                     </h1>
                     <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事。</p>
@@ -55,17 +42,6 @@ export default class extends PureComponent {
                         </a>
                     </div>
                 </div>
-
-                <Popper
-                    open={!!anchorEl}
-                    anchorEl={anchorEl}
-                    placement="top"
-                    className={styles.popper1}
-                >
-                    <Paper>
-                        <p>{tip}</p>
-                    </Paper>
-                </Popper>
             </div>
         );
     }

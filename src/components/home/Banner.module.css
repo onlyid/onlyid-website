@@ -1,7 +1,8 @@
 .root {
-    background-image: url("../../../static/img/banner-bg.svg");
-    background-position: 0 5%;
+    background-image: url("../../../static/img/banner-bg.jpg");
+    background-size: cover;
     justify-content: center;
+    color: white;
 }
 
 .title {
@@ -18,9 +19,9 @@
     font-size: 24px;
 }
 
-.popper1 p {
-    padding: 1rem;
-    margin-bottom: 0;
+.tooltip1 {
+    font-size: 16px;
+    max-width: none;
 }
 
 @media (max-width: 996px) {
