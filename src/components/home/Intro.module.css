@@ -36,8 +36,7 @@
 
 .img1 {
     vertical-align: middle;
-    max-width: 550px;
-    width: 100%;
+    width: 400px;
 }
 
 @media (min-width: 997px) {
