@@ -10,9 +10,7 @@ export default function () {
                 <div className="row">
                     <div className="col col--7 padding--md">
                         <div>
-                            <p className={styles.p1}>
-                                你的应用需要用户注册、登录、管理等功能，但...
-                            </p>
+                            <p className={styles.p1}>你的应用需要用户登录和用户管理功能，但...</p>
                             <ul className={styles.ul1}>
                                 <li>
                                     <SentimentVeryDissatisfied />
@@ -23,8 +21,9 @@ export default function () {
                                     用户不情愿在你的应用注册，因为又要记忆多一个账号密码。
                                 </li>
                             </ul>
-                            <p className={styles.p2}>用唯ID解耦认证和业务，</p>
-                            <p className={styles.p3}>企业省时省力又省钱，更加提升用户满意度。</p>
+                            <p className={styles.p2}>
+                                使用唯ID，<span>企业省时省力又省钱，更加提升用户满意度。</span>
+                            </p>
                         </div>
                     </div>
                     <div className="col col--5 padding--md">
