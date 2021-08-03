@@ -14,6 +14,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* reset docs start */
 :root {
     --ifm-color-primary: #3f51b5;
     --ifm-color-primary-dark: #3949ab;
@@ -41,6 +42,12 @@
 .dropdown__link {
     padding: 0.35rem 0.6rem;
     font-size: 0.9375rem;
+}
+/* reset docs end */
+
+.main-title {
+    font-size: 28px;
+    text-align: center;
 }
 
 @media (max-width: 996px) {
