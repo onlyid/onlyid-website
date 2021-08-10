@@ -3,6 +3,7 @@ import Layout from "@theme/Layout";
 import Banner from "../components/home/Banner";
 import Intro from "../components/home/Intro";
 import Product from "../components/home/Product";
+import Pricing from "../components/home/Pricing";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <Banner />
             <Intro />
             <Product />
+            <Pricing />
         </Layout>
     );
 }
