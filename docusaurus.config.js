@@ -21,7 +21,6 @@ module.exports = {
                     ],
                 },
                 { type: "doc", docId: "intro", label: "文档" },
-                { to: "/demo", label: "体验" },
                 { to: "/pricing", label: "价格" },
                 { to: "/blog", label: "博客" },
                 { href: "https://github.com/onlyid", label: "GitHub" },
