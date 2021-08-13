@@ -11,7 +11,6 @@ module.exports = {
                 src: "img/logo.svg",
             },
             items: [
-                { to: "/advantage", label: "优势" },
                 {
                     label: "产品",
                     items: [
