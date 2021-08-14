@@ -1,13 +1,15 @@
 .root {
     background-image: url("../../../static/img/banner-bg.jpg");
     background-size: cover;
+    display: flex;
     justify-content: center;
     color: white;
+    padding: 80px 1rem;
 }
 
 .title {
     font-size: 45px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .title :global .material-icons {
@@ -18,7 +20,7 @@
 
 .subtitle {
     font-size: 24px;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 
 .tooltip1 {
@@ -28,6 +30,6 @@
 
 @media (max-width: 996px) {
     .root {
-        padding: 3rem 1rem;
+        padding: 64px 1rem;
     }
 }

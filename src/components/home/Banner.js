@@ -1,12 +1,11 @@
 import React, { PureComponent } from "react";
-import classNames from "classnames";
 import styles from "./Banner.module.css";
 import { Tooltip } from "@material-ui/core";
 
 export default class extends PureComponent {
     render() {
         return (
-            <div className={classNames("hero", styles.root)}>
+            <div className={styles.root}>
                 <div>
                     <h1 className={styles.title}>
                         唯ID是面向 公众应用

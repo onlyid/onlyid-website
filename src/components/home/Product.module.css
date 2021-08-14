@@ -49,12 +49,12 @@ a.item {
 
 @media (max-width: 996px) {
     .root {
-        padding: 40px 0;
+        padding: 56px 0;
     }
 }
 
 @media (min-width: 997px) {
     .root {
-        padding: 56px 0;
+        padding: 64px 0;
     }
 }
