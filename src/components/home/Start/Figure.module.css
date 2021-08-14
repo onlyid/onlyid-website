@@ -1,0 +1,42 @@
+.root {
+    padding: 1rem;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 14px;
+    background-color: var(--ifm-pre-background);
+    width: 470px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.root p {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.comment {
+    color: #7f7f7f;
+}
+
+.url {
+    margin-top: 10px;
+}
+
+.url > span {
+    color: navy;
+}
+
+.method > span {
+    color: #660e7a;
+}
+
+.params {
+    margin-top: 10px;
+}
+
+.params p {
+    margin-left: 1em;
+}
+
+.params p > span {
+    color: #026b07;
+}

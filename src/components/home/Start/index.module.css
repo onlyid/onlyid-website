@@ -1,0 +1,54 @@
+.root {
+    padding: 30px 0;
+}
+
+.dl1 {
+    margin: 0;
+}
+
+.dl1 h2 {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dl1 dd {
+    margin-left: 0;
+    font-size: 18px;
+}
+
+.dl1 :global .material-icons {
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 25px !important;
+    vertical-align: -15%;
+}
+
+.code {
+    color: #2299dd;
+}
+
+.category {
+    color: #4caf50;
+}
+
+.ul1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul1 svg {
+    vertical-align: middle;
+}
+
+@media (min-width: 997px) {
+    .root :global .row {
+        align-items: center;
+    }
+}
