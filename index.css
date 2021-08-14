@@ -49,6 +49,7 @@
     font-size: 30px;
     text-align: center;
     margin-top: 4px;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 996px) {
