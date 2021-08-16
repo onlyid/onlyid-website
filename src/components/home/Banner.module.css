@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding: 80px 1rem;
 }
 
 .title {
@@ -28,8 +27,14 @@
     max-width: none;
 }
 
+@media (min-width: 997px) {
+    .root {
+        padding: 76px 1rem;
+    }
+}
+
 @media (max-width: 996px) {
     .root {
-        padding: 64px 1rem;
+        padding: 60px 1rem;
     }
 }
