@@ -40,7 +40,7 @@ export default function () {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col padding-top--md padding-horiz--md padding-bottom--sm">
+                    <div className="col padding-top--md padding-horiz--md">
                         <ul className={styles.ul1}>
                             <li>
                                 <Java style={{ height: 42 }} />
