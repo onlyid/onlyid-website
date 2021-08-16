@@ -12,6 +12,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
+                <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
                     <div className="col col--7 padding--md">
                         <Figure />
@@ -19,21 +20,21 @@ export default function () {
                     <div className="col padding--md">
                         <dl className={styles.dl1}>
                             <dt>
-                                <h2>
+                                <h3>
                                     <span className={classNames("material-icons", styles.code)}>
                                         code
                                     </span>
                                     上手简单
-                                </h2>
+                                </h3>
                             </dt>
                             <dd>5个精心提炼的API，构成唯ID 80%的产品功能。</dd>
                             <dt style={{ marginTop: 32 }}>
-                                <h2>
+                                <h3>
                                     <span className={classNames("material-icons", styles.category)}>
                                         category
                                     </span>
                                     技术中立
-                                </h2>
+                                </h3>
                             </dt>
                             <dd>中立的API设计，不强制使用特定技术（如JWT）。</dd>
                         </dl>
