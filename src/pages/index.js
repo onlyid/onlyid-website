@@ -5,6 +5,7 @@ import Intro from "../components/home/Intro";
 import Product from "../components/home/Product";
 import Start from "../components/home/Start";
 import Pro from "../components/home/Pro";
+import Value from "../components/home/Value";
 import Pricing from "../components/home/Pricing";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
             <Product />
             <Start />
             <Pro />
+            <Value />
             <Pricing />
         </Layout>
     );

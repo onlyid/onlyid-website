@@ -45,7 +45,6 @@ export default function () {
                             </div>
                         </div>
                     </div>
-                    <div className="col col--1 hide-sm" />
                     <div className="col padding--md">
                         <div className={styles.item}>
                             <img src={support} alt="support" />
