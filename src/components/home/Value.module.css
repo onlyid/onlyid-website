@@ -5,21 +5,20 @@
 .item {
     background-repeat: no-repeat;
     background-color: #fafafa;
+    background-size: 50%;
     border: 1px solid #e8e8e8;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 35px 20px 35px 35px;
     height: 100%;
 }
 
 .neutral {
     background-image: url("../../../static/img/value-bg-1.svg");
-    background-size: 50%;
     background-position: 120%;
 }
 
 .open {
     background-image: url("../../../static/img/value-bg-2.svg");
-    background-size: 50%;
     background-position: right;
 }
 
@@ -53,10 +52,6 @@
 .item ol {
     margin: 0;
     padding-left: 1em;
-}
-
-.item li {
-    margin-left: 0;
     font-size: 18px;
 }
 
@@ -69,12 +64,6 @@
     color: var(--ifm-color-gray-800);
     vertical-align: -10%;
     cursor: default;
-}
-
-.tip {
-    font-size: 15px;
-    color: #7f7f7f;
-    margin-bottom: 0;
 }
 
 .tooltip1 {
