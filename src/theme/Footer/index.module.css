@@ -1,16 +1,17 @@
 .root {
     background-color: #4b5056;
+    color: white;
 }
 
 .root.fancy {
     background-image: url("../../../static/img/footer-bg.jpg");
     background-size: cover;
     background-position: center center;
+    color: #eee;
 }
 
 .container {
     padding: 32px 1rem 24px;
-    color: white;
     font-size: 0.9375rem;
     max-width: var(--ifm-container-width);
     margin: 0 auto;

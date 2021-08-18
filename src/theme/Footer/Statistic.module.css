@@ -1,6 +1,5 @@
 .root {
     padding: 30px 0 0;
-    color: white;
 }
 
 .root :global .col {
