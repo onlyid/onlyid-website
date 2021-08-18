@@ -9,7 +9,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className="main-title">坚持两个原则</h2>
+                <h2 className="main-title">坚持两大原则</h2>
                 <div className="row">
                     <div className="col padding--md">
                         <div className={classNames(styles.item, styles.neutral)}>
