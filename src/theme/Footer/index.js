@@ -4,8 +4,10 @@ import { Popper, Paper } from "@material-ui/core";
 import classNames from "classnames";
 import weChat155 from "@site/static/img/wechat-155.jpeg";
 import Link from "@docusaurus/Link";
+import { withRouter } from "@docusaurus/router";
+import Statistic from "./Statistic";
 
-export default class extends PureComponent {
+class Footer extends PureComponent {
     state = {
         anchorEl: null,
     };
@@ -20,9 +22,15 @@ export default class extends PureComponent {
 
     render() {
         const { anchorEl } = this.state;
+        const { location } = this.props;
 
         return (
-            <footer className={styles.root}>
+            <footer
+                className={classNames(styles.root, {
+                    [styles.fancy]: location.pathname === "/home/",
+                })}
+            >
+                {location.pathname === "/home/" && <Statistic />}
                 <div className={styles.container}>
                     <ul className={styles.col}>
                         <li>佛山市爱达斯科技有限公司</li>
@@ -100,3 +108,5 @@ export default class extends PureComponent {
         );
     }
 }
+
+export default withRouter(Footer);
