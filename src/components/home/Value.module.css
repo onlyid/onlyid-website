@@ -4,6 +4,7 @@
 
 .item {
     background-repeat: no-repeat;
+    background-color: #fcfcfc;
     background-size: 50%;
     border: 1px solid #e8e8e8;
     border-radius: 25px;
