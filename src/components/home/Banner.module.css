@@ -8,7 +8,7 @@
 
 .title {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .title :global .material-icons {
@@ -19,7 +19,7 @@
 
 .subtitle {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .tooltip1 {
@@ -27,14 +27,14 @@
     max-width: none;
 }
 
-@media (min-width: 997px) {
+@media (max-width: 996px) {
     .root {
-        padding: 76px 1rem;
+        padding: 70px 1rem;
     }
 }
 
-@media (max-width: 996px) {
+@media (min-width: 997px) {
     .root {
-        padding: 60px 1rem;
+        padding: 85px 1rem;
     }
 }
