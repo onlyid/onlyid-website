@@ -14,9 +14,9 @@ module.exports = {
                 {
                     label: "产品",
                     items: [
-                        { label: "无密码、轻认证", to: "/otp" },
-                        { label: "统一账号、单点登录", to: "/sso" },
-                        { label: "用户管理、权限控制", to: "/uam" },
+                        { label: "无密码 轻认证", to: "/otp" },
+                        { label: "统一账号 单点登录", to: "/sso" },
+                        { label: "用户管理 权限控制", to: "/uam" },
                     ],
                 },
                 { type: "doc", docId: "intro", label: "文档" },
