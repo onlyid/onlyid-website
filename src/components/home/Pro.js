@@ -10,7 +10,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className="main-title">专业、安全、稳定</h2>
+                <h2 className="main-title">专业 &nbsp; 安全 &nbsp; 稳定</h2>
                 <div className={classNames("row", styles.row1)}>
                     <div className="col col--2 padding--md">
                         <img src={pa} alt="pa" />
