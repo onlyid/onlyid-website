@@ -39,7 +39,6 @@ export default function () {
                                         placement="top"
                                         enterTouchDelay={0}
                                         leaveTouchDelay={5000}
-                                        classes={{ tooltip: styles.tooltip1 }}
                                     >
                                         <span className="material-icons">help</span>
                                     </Tooltip>

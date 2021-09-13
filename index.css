@@ -45,6 +45,12 @@
 }
 /* reset docs end */
 
+/* reset mui start */
+.MuiTooltip-tooltip {
+    font-size: 16px;
+}
+/* reset mui end */
+
 .main-title {
     font-size: 32px;
     text-align: center;
