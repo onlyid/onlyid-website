@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Section0.module.css";
+import styles from "./Banner.module.css";
 import otp from "@site/static/img/otp.jpg";
 import Link from "@docusaurus/Link";
 import { Tooltip } from "@material-ui/core";
