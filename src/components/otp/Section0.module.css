@@ -1,0 +1,66 @@
+.root {
+    padding: 64px 0;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.title :global .material-icons {
+    font-size: 1.4rem;
+    vertical-align: text-top;
+    cursor: default;
+    color: var(--ifm-color-gray-800);
+}
+
+.tooltip1 {
+    font-size: 16px;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+.buttonBox a {
+    font-size: 16px;
+}
+
+.img1 {
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media (max-width: 996px) {
+    .title {
+        margin-bottom: 18px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .img1 {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 997px) {
+    .root :global .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .root :global .col {
+        --col-width: calc(59 / 120 * 100%);
+        flex: 0 0 var(--col-width);
+        max-width: var(--col-width);
+    }
+
+    .title {
+        margin-bottom: 28px;
+    }
+
+    .subtitle {
+        margin-bottom: 30px;
+    }
+}
