@@ -5,9 +5,13 @@
 .img1 {
     vertical-align: middle;
     width: 100%;
-    max-width: 400px;
     background-color: rgba(15, 18, 71, 0.95);
     border-radius: 15px;
+    opacity: 95%;
+}
+
+.p1 {
+    font-size: 20px;
 }
 
 .title {
@@ -36,6 +40,14 @@
 }
 
 @media (max-width: 996px) {
+    .img1 {
+        max-width: 400px;
+    }
+
+    .p1 {
+        margin-bottom: 22px;
+    }
+
     .box1 {
         margin-top: 25px;
     }
@@ -46,7 +58,11 @@
         align-items: center;
     }
 
+    .p1 {
+        margin-bottom: 40px;
+    }
+
     .box1 {
-        margin-top: 70px;
+        margin-top: 45px;
     }
 }

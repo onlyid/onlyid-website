@@ -13,6 +13,7 @@ export default function () {
                         <img src={otpIntro} alt="otpIntro" className={styles.img1} />
                     </div>
                     <div className="col col--6 col--offset-1 padding--md">
+                        <p className={styles.p1}>如今验证码广泛使用在应用的登录/认证场景，因为：</p>
                         <div>
                             <h3 className={styles.title}>
                                 <span className={classNames("material-icons", styles.satisfied)}>
