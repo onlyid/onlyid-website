@@ -1,5 +1,5 @@
 .root {
-    background-image: url("../../../static/img/otp-banner-bg.jpeg");
+    background-image: url("../../../static/img/otp-banner-bg.png");
     background-size: cover;
     background-position: center center;
     color: white;
@@ -31,6 +31,7 @@
     vertical-align: middle;
     width: 100%;
     border-radius: 15px;
+    opacity: 95%;
 }
 
 @media (max-width: 996px) {
