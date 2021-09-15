@@ -1,10 +1,6 @@
-.img1 {
-    vertical-align: middle;
-    width: 100%;
-    border: 1px solid #eee;
-    background-color: #fcfdfe;
-    border-radius: 15px;
-    padding: 0 30px;
+.root {
+    padding: 64px 0;
+    background-color: #fafafa;
 }
 
 .p1 {
@@ -21,26 +17,30 @@
     margin-bottom: 0;
 }
 
-.satisfied,
-.security {
+.infinity,
+.savings {
     margin-right: 25px;
     font-size: 36px !important;
     vertical-align: -22%;
 }
 
-.satisfied {
-    color: #f08c10;
+.infinity {
+    color: #3f51b5;
 }
 
-.security {
-    color: #4caf50;
+.savings {
+    color: #f5ce15;
+}
+
+.img1 {
+    vertical-align: middle;
+    width: 100%;
+    background-image: url("../../../static/img/otp-banner-bg.png");
+    background-size: cover;
+    border-radius: 15px;
 }
 
 @media (max-width: 996px) {
-    .root {
-        padding: 64px 0;
-    }
-
     .img1 {
         max-width: 400px;
     }
@@ -55,10 +55,6 @@
 }
 
 @media (min-width: 997px) {
-    .root {
-        padding: 64px 0 56px;
-    }
-
     .root :global .row {
         align-items: center;
     }
