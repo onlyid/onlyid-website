@@ -11,7 +11,7 @@ export default function () {
                 <div className="row">
                     <div className="col col--7 padding--md">
                         <p className={styles.p1}>
-                            相比友商同类产品，唯ID提供订阅服务，不按发送条数计费。
+                            相比友商同类产品，唯ID提供包年服务，不按发送条数计费。
                         </p>
                         <div>
                             <h3 className={styles.title}>
