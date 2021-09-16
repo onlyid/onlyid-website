@@ -23,7 +23,7 @@
     font-size: 16px;
 }
 
-.buttonBox :global .button--outline {
+.buttonBox :global .button--secondary {
     opacity: 90%;
 }
 

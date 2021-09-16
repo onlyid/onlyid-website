@@ -37,7 +37,7 @@ export default function () {
                                 开始使用
                             </a>
                             <Link
-                                className="button button--secondary button--lg button--outline"
+                                className="button button--secondary button--lg"
                                 to="/docs/otp"
                                 style={{ marginLeft: 30 }}
                             >
