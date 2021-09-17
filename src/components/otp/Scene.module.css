@@ -11,6 +11,7 @@
 .img1 {
     border-radius: 50%;
     width: 280px;
+    opacity: 95%;
 }
 
 .item :global .material-icons {
