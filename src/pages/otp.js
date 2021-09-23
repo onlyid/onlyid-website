@@ -4,6 +4,7 @@ import Banner from "../components/otp/Banner";
 import Intro from "../components/otp/Intro";
 import Unlimited from "../components/otp/Unlimited";
 import Scene from "../components/otp/Scene";
+import Case from "../components/otp/Case";
 
 export default function () {
     return (
@@ -12,6 +13,7 @@ export default function () {
             <Intro />
             <Unlimited />
             <Scene />
+            <Case />
         </Layout>
     );
 }
