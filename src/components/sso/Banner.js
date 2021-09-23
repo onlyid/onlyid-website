@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Banner.module.css";
-import otp from "@site/static/img/otp-banner.jpg";
+import ssoBanner from "@site/static/img/sso-banner.png";
 import Link from "@docusaurus/Link";
 import { Tooltip } from "@material-ui/core";
 
@@ -11,11 +11,11 @@ export default function () {
                 <div className="row">
                     <div className="col padding--md">
                         <h1 className={styles.title}>
-                            无密码 &nbsp;轻认证
+                            统一账号 &nbsp;单点登录
                             <span className="hide-sm">
-                                （OTP
+                                （SSO
                                 <Tooltip
-                                    title="One Time Password，一次性密码"
+                                    title="Single Sign On，单点登录"
                                     placement="top"
                                     enterTouchDelay={0}
                                     leaveTouchDelay={5000}
@@ -26,7 +26,7 @@ export default function () {
                             </span>
                         </h1>
                         <p className={styles.subtitle}>
-                            用短信/邮件验证码替代传统密码，即使新用户也可以快捷访问你的应用。
+                            接入统一认证中心，跨应用共享账号，在别处注册的用户可以直接登录你的应用。
                         </p>
                         <div className={styles.buttonBox}>
                             <a
@@ -38,7 +38,7 @@ export default function () {
                             </a>
                             <Link
                                 className="button button--secondary button--lg"
-                                to="/docs/otp"
+                                to="/docs/sso"
                                 style={{ marginLeft: 30 }}
                             >
                                 查看文档
@@ -46,7 +46,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="col padding--md">
-                        <img src={otp} alt="otp" className={styles.img1} />
+                        <img src={ssoBanner} alt="ssoBanner" className={styles.img1} />
                     </div>
                 </div>
             </div>
