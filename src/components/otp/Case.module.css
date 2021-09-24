@@ -36,7 +36,6 @@
     border-radius: 15px;
     width: 100%;
     border: 1px solid #e8e8e8;
-    opacity: 95%;
     vertical-align: middle;
 }
 
@@ -44,7 +43,6 @@
     border: 1px solid #e8e8e8;
     border-radius: 15px;
     padding: 20px 20px 20px 25px;
-    background-color: #fefefe;
 }
 
 .ul1 {
