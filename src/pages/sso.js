@@ -4,7 +4,7 @@ import Banner from "../components/sso/Banner";
 
 export default function () {
     return (
-        <Layout title="无密码 轻认证">
+        <Layout title="统一账号 单点登录">
             <Banner />
         </Layout>
     );

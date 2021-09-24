@@ -20,7 +20,7 @@ export default class extends PureComponent {
         return (
             <section className={styles.root}>
                 <div className="container">
-                    <h2 className="main-title">体验案例</h2>
+                    <h2 className="main-title">体验案例：彼位</h2>
                     <div className="row" style={{ position: "relative" }}>
                         <div className={classNames("col col--3 padding--md", styles.leftCol)}>
                             <div>
