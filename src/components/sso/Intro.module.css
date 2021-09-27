@@ -1,5 +1,4 @@
 .root {
-    padding: 64px 0;
     background-color: #fafafa;
 }
 
@@ -37,6 +36,10 @@
 }
 
 @media (max-width: 996px) {
+    .root {
+        padding: 64px 0;
+    }
+
     .img1 {
         max-width: 400px;
     }
@@ -47,8 +50,26 @@
 }
 
 @media (min-width: 997px) {
+    .root {
+        padding: 64px 0 56px;
+    }
+
     .root :global .row {
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .root :global .col {
+        flex: 0 0 var(--col-width);
+        max-width: var(--col-width);
+    }
+
+    .left {
+        --col-width: calc(52 / 120 * 100%);
+    }
+
+    .right {
+        --col-width: calc(58 / 120 * 100%);
     }
 
     .right > div + div {

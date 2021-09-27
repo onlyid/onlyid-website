@@ -9,12 +9,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">密码，一个就好</h2>
                 <div className="row">
-                    <div className="col col--5 padding--md">
+                    <div className={classNames("col padding--md", styles.left)}>
                         <img src={intro} alt="intro" className={styles.img1} />
                     </div>
-                    <div
-                        className={classNames("col col--6 col--offset-1 padding--md", styles.right)}
-                    >
+                    <div className={classNames("col padding--md", styles.right)}>
                         <div>
                             <h3 className={styles.title}>
                                 <span className={classNames("material-icons", styles.password)}>
