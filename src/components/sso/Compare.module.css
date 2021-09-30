@@ -1,0 +1,93 @@
+.origin {
+    font-size: 23px;
+}
+
+.origin span {
+    color: #3f51b5;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.detail {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.neutral {
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+    vertical-align: -22%;
+}
+
+.dashboard {
+    margin-right: 25px;
+    font-size: 36px !important;
+    vertical-align: -22%;
+    color: #2299dd;
+}
+
+.privacy {
+    margin-right: 25px;
+    vertical-align: -5%;
+}
+
+.img1 {
+    vertical-align: middle;
+    opacity: 95%;
+    width: 100%;
+}
+
+@media (max-width: 996px) {
+    .root {
+        padding: 64px 0;
+    }
+
+    .left > div + div {
+        margin-top: 25px;
+    }
+
+    .origin {
+        margin-bottom: 25px;
+    }
+
+    .img1 {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 997px) {
+    .root {
+        padding: 64px 0 56px;
+    }
+
+    .root :global .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .root :global .col {
+        flex: 0 0 var(--col-width);
+        max-width: var(--col-width);
+    }
+
+    .left {
+        --col-width: calc(58 / 120 * 100%);
+    }
+
+    .right {
+        --col-width: calc(56 / 120 * 100%);
+    }
+
+    .left > div + div {
+        margin-top: 45px;
+    }
+
+    .origin {
+        margin-bottom: 40px;
+    }
+}
