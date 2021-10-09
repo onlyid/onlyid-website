@@ -38,7 +38,11 @@
 
 @media (max-width: 996px) {
     .root {
-        padding: 64px 0;
+        padding: 64px 0 80px;
+    }
+
+    .right {
+        margin-top: 38px;
     }
 
     .img1 {
@@ -46,13 +50,13 @@
     }
 
     .right > div + div {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 }
 
 @media (min-width: 997px) {
     .root {
-        padding: 64px 0 56px;
+        padding: 64px 0 72px;
     }
 
     .root :global .row {
