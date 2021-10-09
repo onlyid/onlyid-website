@@ -9,7 +9,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">订阅式包年服务</h2>
                 <div className="row">
-                    <div className="col col--7 padding--md">
+                    <div className="col col--7">
                         <p className={styles.p1}>
                             相比友商同类产品，唯ID提供包年服务，不按发送条数计费。
                         </p>
@@ -36,7 +36,7 @@ export default function () {
                             </p>
                         </div>
                     </div>
-                    <div className="col col--5 padding--md">
+                    <div className="col col--5">
                         <img src={otpUnlimited} alt="otpUnlimited" className={styles.img1} />
                     </div>
                 </div>
