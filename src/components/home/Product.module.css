@@ -51,6 +51,6 @@ a.item {
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 38px;
+        margin-top: 42px;
     }
 }
