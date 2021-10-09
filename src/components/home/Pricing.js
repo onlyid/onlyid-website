@@ -14,28 +14,26 @@ export default function () {
                         <img src={price} alt="price" className={styles.img1} />
                     </div>
                     <div className="col col--7">
-                        <dl className={styles.dl1}>
-                            <dt>
-                                <h3>
-                                    <span className={classNames("iconfont", styles.money)}>
-                                        &#xe650;
-                                    </span>
-                                    费用固定
-                                </h3>
-                            </dt>
-                            <dd>唯ID只有两档套餐，年费分别是200元和2000元，无任何其他收费。</dd>
-                            <dt style={{ marginTop: 32 }}>
-                                <h3>
-                                    <span className={classNames("material-icons", styles.infinity)}>
-                                        all_inclusive
-                                    </span>
-                                    无限使用
-                                </h3>
-                            </dt>
-                            <dd>
+                        <div className={styles.item}>
+                            <h3>
+                                <span className={classNames("iconfont", styles.money)}>
+                                    &#xe650;
+                                </span>
+                                费用固定
+                            </h3>
+                            <p>唯ID只有两档套餐，年费分别是200元和2000元，无任何其他收费。</p>
+                        </div>
+                        <div className={styles.item}>
+                            <h3>
+                                <span className={classNames("material-icons", styles.infinity)}>
+                                    all_inclusive
+                                </span>
+                                无限使用
+                            </h3>
+                            <p>
                                 两档套餐仅月活用户数不同，其他全部一样，均享受无限的登录/认证次数。
-                            </dd>
-                        </dl>
+                            </p>
+                        </div>
                         <Link
                             className={classNames("button button--secondary", styles.button1)}
                             to="/pricing"
