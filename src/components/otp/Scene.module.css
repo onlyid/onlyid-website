@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0;
+    padding: 64px 0 80px;
 }
 
 .imgCol {
@@ -48,13 +48,17 @@
 
 @media (max-width: 996px) {
     .item + .item {
-        margin-top: 25px;
+        margin-top: 30px;
+    }
+
+    .imgCol {
+        margin: 35px 0;
     }
 }
 
 @media (min-width: 997px) {
     .root :global .main-title {
-        margin-bottom: 38px;
+        margin-bottom: 54px;
     }
 
     .item + .item {

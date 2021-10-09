@@ -9,7 +9,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">应用场景灵活多样</h2>
                 <div className="row">
-                    <div className="col col--4 padding--md">
+                    <div className="col col--4">
                         <div className={styles.item}>
                             <h3 className={styles.title}>
                                 <span className={classNames("material-icons", styles.password)}>
@@ -33,10 +33,10 @@ export default function () {
                             </p>
                         </div>
                     </div>
-                    <div className={classNames("col col--4 padding--md", styles.imgCol)}>
+                    <div className={classNames("col col--4", styles.imgCol)}>
                         <img src={otpScene} alt="otpScene" className={styles.img1} />
                     </div>
-                    <div className="col col--4 padding--md">
+                    <div className="col col--4">
                         <div className={styles.item}>
                             <h3 className={styles.title}>
                                 <span className={classNames("material-icons", styles.portrait2)}>
