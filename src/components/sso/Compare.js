@@ -11,7 +11,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">SSO不是微信登录</h2>
                 <div className="row">
-                    <div className={classNames("col padding--md", styles.left)}>
+                    <div className={classNames("col", styles.left)}>
                         <p className={styles.origin}>
                             SSO的设计初衷是<span>替代应用的自有登录。</span>
                         </p>
@@ -45,7 +45,7 @@ export default function () {
                             </p>
                         </div>
                     </div>
-                    <div className={classNames("col padding--md", styles.right)}>
+                    <div className={classNames("col", styles.right)}>
                         <img src={img1} alt="compare" className={styles.img1} />
                     </div>
                 </div>

@@ -1,3 +1,7 @@
+.root {
+    padding: 64px 0 72px;
+}
+
 .origin {
     font-size: 23px;
 }
@@ -43,16 +47,16 @@
 }
 
 @media (max-width: 996px) {
-    .root {
-        padding: 64px 0;
+    .root :global .col + .col {
+        margin-top: 38px;
     }
 
     .left > div + div {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .origin {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     .img1 {
@@ -61,10 +65,6 @@
 }
 
 @media (min-width: 997px) {
-    .root {
-        padding: 64px 0 56px;
-    }
-
     .root :global .row {
         align-items: center;
         justify-content: space-between;
