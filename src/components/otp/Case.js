@@ -22,7 +22,7 @@ export default class extends PureComponent {
                 <div className="container">
                     <h2 className="main-title">体验案例：彼位</h2>
                     <div className="row" style={{ position: "relative" }}>
-                        <div className={classNames("col col--3 padding--md", styles.leftCol)}>
+                        <div className={classNames("col col--3", styles.leftCol)}>
                             <div>
                                 <div className={styles.appBox}>
                                     <img src={caseIcon} alt="caseIcon" />
@@ -34,10 +34,10 @@ export default class extends PureComponent {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col col--4 col--offset-1 padding--md">
+                        <div className="col col--4 col--offset-1">
                             <img src={screenshot} alt={screenshot} className={styles.img1} />
                         </div>
-                        <div className="col col--3 col--offset-1 padding--md">
+                        <div className="col col--3 col--offset-1">
                             <div className={styles.right}>
                                 <ul className={styles.ul1}>
                                     <li>

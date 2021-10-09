@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0;
+    padding: 64px 0 80px;
     background-color: #fafafa;
 }
 
@@ -83,7 +83,7 @@
     font-size: 14px;
     color: var(--ifm-color-gray-600);
     cursor: pointer;
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .dialogContent {
@@ -98,6 +98,14 @@
 }
 
 @media (max-width: 996px) {
+    .root :global .col:nth-child(2) {
+        margin-top: 38px;
+    }
+
+    .root :global .col:nth-child(3) {
+        margin-top: 42px;
+    }
+
     .leftCol {
         display: flex;
         justify-content: center;
