@@ -1,5 +1,6 @@
 .p1 {
     font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .ul1 {
@@ -10,7 +11,7 @@
 }
 
 .ul1 li + li {
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 .ul1 li :global .MuiSvgIcon-root {
@@ -21,7 +22,7 @@
 
 .p2 {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
