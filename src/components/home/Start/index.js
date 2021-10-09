@@ -18,29 +18,27 @@ export default function () {
                         <Figure />
                     </div>
                     <div className="col">
-                        <dl className={styles.dl1}>
-                            <dt>
-                                <h3>
-                                    <span className={classNames("material-icons", styles.code)}>
-                                        code
-                                    </span>
-                                    上手简单
-                                </h3>
-                            </dt>
-                            <dd>5个精心提炼的API，构成唯ID 80%的产品功能。</dd>
-                            <dt style={{ marginTop: 32 }}>
-                                <h3>
-                                    <span className={classNames("material-icons", styles.category)}>
-                                        category
-                                    </span>
-                                    技术中立
-                                </h3>
-                            </dt>
-                            <dd>中立的API设计，不强制使用特定技术（如JWT）。</dd>
-                        </dl>
+                        <div className={styles.item}>
+                            <h3>
+                                <span className={classNames("material-icons", styles.code)}>
+                                    code
+                                </span>
+                                上手简单
+                            </h3>
+                            <p>5个精心提炼的API，构成唯ID 80%的产品功能。</p>
+                        </div>
+                        <div className={styles.item}>
+                            <h3>
+                                <span className={classNames("material-icons", styles.category)}>
+                                    category
+                                </span>
+                                技术中立
+                            </h3>
+                            <p>中立的API设计，不强制使用特定技术（如JWT）。</p>
+                        </div>
                     </div>
                 </div>
-                <div className="row" style={{ marginTop: 35 }}>
+                <div className="row" style={{ marginTop: 40 }}>
                     <div className="col">
                         <ul className={styles.ul1}>
                             <li>
