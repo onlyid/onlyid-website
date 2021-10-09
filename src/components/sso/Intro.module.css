@@ -1,5 +1,6 @@
 .root {
     background-color: #fafafa;
+    padding: 64px 0 72px;
 }
 
 .img1 {
@@ -37,10 +38,6 @@
 }
 
 @media (max-width: 996px) {
-    .root {
-        padding: 64px 0 80px;
-    }
-
     .right {
         margin-top: 38px;
     }
@@ -55,10 +52,6 @@
 }
 
 @media (min-width: 997px) {
-    .root {
-        padding: 64px 0 72px;
-    }
-
     .root :global .row {
         align-items: center;
         justify-content: space-between;
