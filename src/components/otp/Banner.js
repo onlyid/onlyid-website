@@ -9,7 +9,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <div className="row">
-                    <div className="col padding--md">
+                    <div className="col">
                         <h1 className={styles.title}>
                             无密码 &nbsp;轻认证
                             <span className="hide-sm">
@@ -45,7 +45,7 @@ export default function () {
                             </Link>
                         </div>
                     </div>
-                    <div className="col padding--md">
+                    <div className="col">
                         <img src={otp} alt="otp" className={styles.img1} />
                     </div>
                 </div>
