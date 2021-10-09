@@ -1,6 +1,10 @@
 .root {
     background-color: #fafafa;
-    padding: 64px 0;
+    padding: 64px 0 80px;
+}
+
+.row1 + .row1 {
+    margin-top: 32px;
 }
 
 .row1 img {
@@ -12,6 +16,10 @@
 .row1 p {
     margin-bottom: 0;
     font-size: 23px;
+}
+
+.row2 {
+    margin-top: 48px;
 }
 
 .item {
@@ -37,6 +45,18 @@
 @media (max-width: 996px) {
     .row1 :global .col {
         text-align: center;
+    }
+
+    .col1 {
+        margin-top: 25px;
+    }
+
+    .col2 {
+        margin-top: 22px;
+    }
+
+    .row2 :global .col + .col {
+        margin-top: 35px;
     }
 }
 

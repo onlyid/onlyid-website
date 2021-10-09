@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0;
+    padding: 64px 0 72px;
 }
 
 .dl1 {
@@ -45,6 +45,12 @@
 
 .ul1 svg {
     vertical-align: middle;
+}
+
+@media (max-width: 996px) {
+    .root :global .col + .col {
+        margin-top: 35px;
+    }
 }
 
 @media (min-width: 997px) {

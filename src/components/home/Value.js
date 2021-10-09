@@ -11,7 +11,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">坚持两大原则</h2>
                 <div className="row">
-                    <div className="col padding--md">
+                    <div className="col">
                         <div className={classNames(styles.item, styles.neutral)}>
                             <div className={styles.iconBg}>
                                 <Neutral />
@@ -23,7 +23,7 @@ export default function () {
                             </ol>
                         </div>
                     </div>
-                    <div className="col padding--md">
+                    <div className="col">
                         <div className={classNames(styles.item, styles.open)}>
                             <div className={styles.iconBg}>
                                 <OAuth />

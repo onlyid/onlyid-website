@@ -1,6 +1,6 @@
 .root {
     background-image: url("../../../static/img/product-bg.svg");
-    padding: 64px 0;
+    padding: 64px 0 80px;
 }
 
 a.item {
@@ -47,4 +47,10 @@ a.item {
 .item p {
     color: var(--ifm-color-gray-900);
     margin-bottom: 4px;
+}
+
+@media (max-width: 996px) {
+    .root :global .col + .col {
+        margin-top: 38px;
+    }
 }

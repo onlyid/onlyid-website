@@ -38,7 +38,11 @@
 
 @media (max-width: 996px) {
     .root {
-        padding: 64px 0;
+        padding: 80px 0;
+    }
+
+    .root :global .col + .col {
+        margin-top: 35px;
     }
 }
 
@@ -48,6 +52,6 @@
     }
 
     .root {
-        padding: 25px 0;
+        padding: 42px 0;
     }
 }

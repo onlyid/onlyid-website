@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0;
+    padding: 64px 0 80px;
 }
 
 .item {
@@ -64,6 +64,12 @@
     color: var(--ifm-color-gray-800);
     vertical-align: -10%;
     cursor: default;
+}
+
+@media (max-width: 996px) {
+    .root :global .col + .col {
+        margin-top: 38px;
+    }
 }
 
 @media (min-width: 997px) {

@@ -14,10 +14,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
-                    <div className="col col--7 padding--md">
+                    <div className="col col--7">
                         <Figure />
                     </div>
-                    <div className="col padding--md">
+                    <div className="col">
                         <dl className={styles.dl1}>
                             <dt>
                                 <h3>
@@ -40,8 +40,8 @@ export default function () {
                         </dl>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col padding-top--md padding-horiz--md padding-bottom--sm">
+                <div className="row" style={{ marginTop: 35 }}>
+                    <div className="col">
                         <ul className={styles.ul1}>
                             <li>
                                 <Java style={{ height: 42 }} />

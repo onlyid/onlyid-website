@@ -12,10 +12,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">专业 &nbsp; 安全 &nbsp; 稳定</h2>
                 <div className={classNames("row", styles.row1)}>
-                    <div className="col col--2 padding--md">
+                    <div className="col col--2">
                         <img src={pa} alt="pa" />
                     </div>
-                    <div className="col padding--md">
+                    <div className={classNames("col", styles.col1)}>
                         <p>
                             前平安集团智慧城市统一用户平台 PAI（Ping An
                             Identity）总负责人创立并领导唯ID。
@@ -23,17 +23,17 @@ export default function () {
                     </div>
                 </div>
                 <div className={classNames("row", styles.row1)}>
-                    <div className="col col--2 padding--md">
+                    <div className="col col--2">
                         <img src={cmb} alt="cmb" />
                     </div>
-                    <div className="col padding--md">
+                    <div className={classNames("col", styles.col2)}>
                         <p>
                             前招商银行风控反欺诈专家，打造支付级别安全风控系统，为每一次登录保驾护航。
                         </p>
                     </div>
                 </div>
-                <div className="row padding-top--md">
-                    <div className="col padding--md">
+                <div className={classNames("row", styles.row2)}>
+                    <div className="col">
                         <div className={styles.item}>
                             <img src={arch} alt="arch" />
                             <div>
@@ -45,7 +45,7 @@ export default function () {
                             </div>
                         </div>
                     </div>
-                    <div className="col padding--md">
+                    <div className="col">
                         <div className={styles.item}>
                             <img src={support} alt="support" />
                             <div>

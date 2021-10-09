@@ -10,10 +10,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">全行业最低价格</h2>
                 <div className="row">
-                    <div className="col col--5 padding--md">
+                    <div className="col col--5">
                         <img src={price} alt="price" className={styles.img1} />
                     </div>
-                    <div className="col col--7 padding--md">
+                    <div className="col col--7">
                         <dl className={styles.dl1}>
                             <dt>
                                 <h3>

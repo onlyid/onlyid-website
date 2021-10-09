@@ -8,7 +8,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <div className="row">
-                    <div className="col col--7 padding--md">
+                    <div className="col col--7">
                         <div>
                             <p className={styles.p1}>你的应用需要用户登录和用户管理功能，但...</p>
                             <ul className={styles.ul1}>
@@ -26,7 +26,7 @@ export default function () {
                             </p>
                         </div>
                     </div>
-                    <div className="col col--5 padding--md">
+                    <div className="col col--5">
                         <img src={intro} alt="intro" className={styles.img1} />
                     </div>
                 </div>
