@@ -18,10 +18,6 @@
     font-size: 23px;
 }
 
-.row2 {
-    margin-top: 48px;
-}
-
 .item {
     display: flex;
     align-items: center;
@@ -58,10 +54,18 @@
     .row2 :global .col + .col {
         margin-top: 35px;
     }
+
+    .row2 {
+        margin-top: 45px;
+    }
 }
 
 @media (min-width: 997px) {
     .root :global .row {
         align-items: center;
+    }
+
+    .row2 {
+        margin-top: 48px;
     }
 }
