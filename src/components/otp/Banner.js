@@ -12,7 +12,7 @@ export default function () {
                     <div className="col">
                         <h1 className={styles.title}>
                             无密码 &nbsp;轻认证
-                            <span className="hide-sm">
+                            <span style={{ whiteSpace: "nowrap" }}>
                                 （OTP
                                 <Tooltip
                                     title="One Time Password，一次性密码"

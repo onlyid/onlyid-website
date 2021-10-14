@@ -12,7 +12,7 @@ export default function () {
                     <div className="col">
                         <h1 className={styles.title}>
                             统一账号 &nbsp;单点登录
-                            <span className="hide-sm">
+                            <span style={{ whiteSpace: "nowrap" }}>
                                 （SSO
                                 <Tooltip
                                     title="Single Sign On，单点登录"
