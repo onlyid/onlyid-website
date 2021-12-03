@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import styles from "./index.module.css";
 import { Popper, Paper } from "@material-ui/core";
 import classNames from "classnames";
-import weChat155 from "@site/static/img/wechat-155.jpeg";
+import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
 import Link from "@docusaurus/Link";
 import { withRouter } from "@docusaurus/router";
 import Statistic from "./Statistic";

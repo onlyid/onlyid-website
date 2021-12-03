@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Value.module.css";
-import Neutral from "@site/static/img/neutral.svg";
-import OAuth from "@site/static/img/oauth.svg";
+import Neutral from "@site/static/img/home-neutral.svg";
+import OAuth from "@site/static/img/home-oauth.svg";
 import classNames from "classnames";
 import { Tooltip } from "@material-ui/core";
 

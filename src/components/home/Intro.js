@@ -1,5 +1,5 @@
 import React from "react";
-import intro from "@site/static/img/intro.png";
+import intro from "@site/static/img/home-intro.png";
 import styles from "./Intro.module.css";
 import { SentimentVeryDissatisfied } from "@material-ui/icons";
 

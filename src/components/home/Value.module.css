@@ -13,12 +13,12 @@
 }
 
 .neutral {
-    background-image: url("../../../static/img/value-bg-1.svg");
+    background-image: url("../../../static/img/home-value-bg1.svg");
     background-position: 120%;
 }
 
 .open {
-    background-image: url("../../../static/img/value-bg-2.svg");
+    background-image: url("../../../static/img/home-value-bg2.svg");
     background-position: right;
 }
 

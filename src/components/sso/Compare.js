@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Compare.module.css";
 import img1 from "@site/static/img/sso-compare.png";
 import classNames from "classnames";
-import Neutral from "@site/static/img/neutral.svg";
-import Privacy from "@site/static/img/privacy.svg";
+import Neutral from "@site/static/img/home-neutral.svg";
+import Privacy from "@site/static/img/sso-privacy.svg";
 
 export default function () {
     return (

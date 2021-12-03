@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Pricing.module.css";
-import price from "@site/static/img/price.png";
+import price from "@site/static/img/home-price.png";
 import classNames from "classnames";
 import Link from "@docusaurus/Link";
 

@@ -2,11 +2,11 @@ import React from "react";
 import Figure from "./Figure";
 import styles from "./index.module.css";
 import classNames from "classnames";
-import Java from "@site/static/img/java.svg";
-import Php from "@site/static/img/php.svg";
-import Python from "@site/static/img/python.svg";
-import Js from "@site/static/img/js.svg";
-import Net from "@site/static/img/net.svg";
+import Java from "@site/static/img/home-java.svg";
+import Php from "@site/static/img/home-php.svg";
+import Python from "@site/static/img/home-python.svg";
+import Js from "@site/static/img/home-js.svg";
+import Net from "@site/static/img/home-net.svg";
 
 export default function () {
     return (
