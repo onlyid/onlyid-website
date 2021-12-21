@@ -3,6 +3,7 @@ import Layout from "@theme/Layout";
 import Banner from "../components/sso/Banner";
 import Intro from "../components/sso/Intro";
 import Compare from "../components/sso/Compare";
+import Migrate from "../components/sso/Migrate";
 
 export default function () {
     return (
@@ -10,6 +11,7 @@ export default function () {
             <Banner />
             <Intro />
             <Compare />
+            <Migrate />
         </Layout>
     );
 }
