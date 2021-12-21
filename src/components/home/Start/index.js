@@ -14,10 +14,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
-                    <div className="col col--7">
+                    <div className="col col--6">
                         <Figure />
                     </div>
-                    <div className="col">
+                    <div className="col col--5 col--offset-1">
                         <div className={styles.item}>
                             <h3>
                                 <span className={classNames("material-icons", styles.code)}>

@@ -58,6 +58,11 @@
         align-items: center;
     }
 
+    .root :global .col--6 {
+        display: flex;
+        justify-content: center;
+    }
+
     .item + .item {
         margin-top: 45px;
     }
