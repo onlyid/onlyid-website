@@ -23,7 +23,6 @@
 .img1 {
     vertical-align: middle;
     width: 100%;
-    max-width: 320px;
 }
 
 .title {
@@ -47,10 +46,13 @@
     background-color: #f08c10;
 }
 
+.second {
+    background-color: #2299dd;
+}
+
 .guideBox {
-    display: flex;
     padding: 15px 20px;
-    font-size: 17px;
+    font-size: 16px;
     border: 1px solid #e8e8e8;
     background-color: #fcfcfc;
     border-radius: 5px;
@@ -59,11 +61,21 @@
 .guideBox :global .material-icons {
     margin-top: 1px;
     color: #4caf50;
+    margin-right: 12px;
 }
 
 .guideBox p {
-    margin-left: 12px;
     margin-bottom: 0;
+}
+
+.guideBox ol {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.guideBox li + li {
+    margin-top: 5px;
 }
 
 @media (max-width: 996px) {
@@ -72,5 +84,23 @@
 @media (min-width: 997px) {
     .root :global .row {
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .root :global .row + .row {
+        margin-top: 45px;
+    }
+
+    .root :global .col {
+        flex: 0 0 var(--col-width);
+        max-width: var(--col-width);
+    }
+
+    .left {
+        --col-width: calc(35 / 120 * 100%);
+    }
+
+    .right {
+        --col-width: calc(75 / 120 * 100%);
     }
 }
