@@ -1,5 +1,5 @@
-.root {
-    padding: 64px 0 80px;
+.root :global .row + .row {
+    margin-top: 45px;
 }
 
 .p1 {
@@ -25,12 +25,23 @@
     width: 100%;
 }
 
-.title {
-    font-size: 20px;
-    margin-bottom: 30px;
+.row2 .img1 {
+    opacity: 95%;
 }
 
-.step {
+.row3 .img1 {
+    border-radius: 5px;
+    border: 1px solid var(--ifm-color-gray-300);
+    padding: 30px;
+    opacity: 95%;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.num {
     border-radius: 50%;
     height: 36px;
     line-height: 36px;
@@ -42,11 +53,15 @@
     color: white;
 }
 
-.first {
+.row1 .num {
+    background-color: #409eff;
+}
+
+.row2 .num {
     background-color: #f08c10;
 }
 
-.second {
+.row3 .num {
     background-color: #2299dd;
 }
 
@@ -56,6 +71,11 @@
     border: 1px solid #e8e8e8;
     background-color: #fcfcfc;
     border-radius: 5px;
+}
+
+.row1 .guideBox,
+.row3 .guideBox {
+    display: flex;
 }
 
 .guideBox :global .material-icons {
@@ -79,16 +99,31 @@
 }
 
 @media (max-width: 996px) {
+    .root {
+        padding: 64px 0 80px;
+    }
+
+    .img1 {
+        max-width: 320px;
+    }
+
+    .root :global .col:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    .root :global .col:last-child {
+        margin-top: 25px;
+    }
 }
 
 @media (min-width: 997px) {
-    .root :global .row {
-        align-items: center;
-        justify-content: space-between;
+    .root {
+        padding: 64px 0 72px;
     }
 
-    .root :global .row + .row {
-        margin-top: 45px;
+    .root :global .row {
+        justify-content: space-between;
     }
 
     .root :global .col {
@@ -96,11 +131,16 @@
         max-width: var(--col-width);
     }
 
-    .left {
+    .root :global .col:first-child {
         --col-width: calc(35 / 120 * 100%);
     }
 
-    .right {
+    .root :global .col:last-child {
         --col-width: calc(75 / 120 * 100%);
+    }
+
+    .row1 .title,
+    .row3 .title {
+        margin-bottom: 30px;
     }
 }
