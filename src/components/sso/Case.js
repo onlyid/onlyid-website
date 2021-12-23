@@ -29,8 +29,9 @@ export default class extends PureComponent {
                                     <p>唯ID</p>
                                 </div>
                                 <ul className={styles.desc}>
-                                    <li>面向公众应用的IDaaS解决方案</li>
-                                    <li>帮助网站和APP做好用户登录和用户管理两件事</li>
+                                    <li>
+                                        唯ID控制台使用SSO实现用户登录功能（可以理解为控制台是接入SSO的一个普通应用）
+                                    </li>
                                 </ul>
                             </div>
                         </div>
