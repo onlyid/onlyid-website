@@ -28,11 +28,9 @@ export default class extends PureComponent {
                                     <img src={caseIcon} alt="caseIcon" />
                                     <p>唯ID</p>
                                 </div>
-                                <ul className={styles.desc}>
-                                    <li>
-                                        唯ID控制台使用SSO实现用户登录功能（可以理解为控制台是接入SSO的一个普通应用）
-                                    </li>
-                                </ul>
+                                <p className={styles.desc}>
+                                    唯ID控制台使用SSO实现用户登录功能（可以理解为控制台是接入SSO的一个普通应用）
+                                </p>
                             </div>
                         </div>
                         <div className="col col--4 col--offset-1">

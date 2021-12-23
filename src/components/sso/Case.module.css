@@ -26,11 +26,6 @@
     margin: 35px 0 0;
     padding-left: 1em;
     color: var(--ifm-color-gray-700);
-    list-style-type: circle;
-}
-
-.desc li + li {
-    margin-top: 5px;
 }
 
 .img1 {
