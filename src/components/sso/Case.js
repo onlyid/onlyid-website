@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
 import styles from "./Case.module.css";
-import caseIcon from "@site/static/img/otp-case-icon.png";
-import screenshot from "@site/static/img/otp-case-screenshot.jpg";
-import ShowOffDialog from "./ShowOffDialog";
+import caseIcon from "@site/static/img/sso-case-icon.png";
+import screenshot from "@site/static/img/sso-case-screenshot.png";
+import ShowOffDialog from "../otp/ShowOffDialog";
 import classNames from "classnames";
 
 export default class extends PureComponent {
@@ -20,17 +20,17 @@ export default class extends PureComponent {
         return (
             <section className={styles.root}>
                 <div className="container">
-                    <h2 className="main-title">体验案例：彼位</h2>
+                    <h2 className="main-title">体验案例：唯ID控制台</h2>
                     <div className="row" style={{ position: "relative" }}>
                         <div className={classNames("col col--3", styles.leftCol)}>
                             <div>
                                 <div className={styles.appBox}>
                                     <img src={caseIcon} alt="caseIcon" />
-                                    <p>彼位</p>
+                                    <p>唯ID</p>
                                 </div>
                                 <ul className={styles.desc}>
-                                    <li>实时位置轨迹查看</li>
-                                    <li>守护家人朋友</li>
+                                    <li>面向公众应用的IDaaS解决方案</li>
+                                    <li>帮助网站和APP做好用户登录和用户管理两件事</li>
                                 </ul>
                             </div>
                         </div>
@@ -41,10 +41,10 @@ export default class extends PureComponent {
                             <div className={styles.right}>
                                 <ul className={styles.ul1}>
                                     <li>
-                                        <span>开发者：</span>张佩雯
+                                        <span>开发者：</span>唯ID团队
                                     </li>
                                     <li>
-                                        <span>版权：</span>&copy; 2020 BiWEI Inc
+                                        <span>版权：</span>&copy; 2021 爱达斯科技
                                     </li>
                                 </ul>
                                 <div className={styles.divider}>
@@ -53,7 +53,7 @@ export default class extends PureComponent {
                                 <div>
                                     <p className={styles.tryTitle}>体验方式</p>
                                     <p className={styles.tryDetail}>
-                                        iPhone用户请到App Store搜索下载；Android版暂未上架
+                                        点击官网右上角控制台开始体验（注：未适配移动端）
                                     </p>
                                 </div>
                             </div>

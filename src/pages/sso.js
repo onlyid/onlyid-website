@@ -4,6 +4,7 @@ import Banner from "../components/sso/Banner";
 import Intro from "../components/sso/Intro";
 import Compare from "../components/sso/Compare";
 import Migrate from "../components/sso/Migrate";
+import Case from "../components/sso/Case";
 
 export default function () {
     return (
@@ -12,6 +13,7 @@ export default function () {
             <Intro />
             <Compare />
             <Migrate />
+            <Case />
         </Layout>
     );
 }
