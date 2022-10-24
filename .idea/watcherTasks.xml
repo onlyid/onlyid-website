@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <enabled-global>
-      <option value="Prettier md" />
-      <option value="Prettier js" />
-      <option value="Prettier css" />
+      <option value="Prettier CSS" />
+      <option value="Prettier JS" />
     </enabled-global>
   </component>
 </project>

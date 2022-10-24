@@ -36,7 +36,7 @@ module.exports = {
     plugins: [
         ["@docusaurus/plugin-content-blog", { showReadingTime: true }],
         "@docusaurus/plugin-content-pages",
-        ["@docusaurus/plugin-content-docs", { sidebarPath: require.resolve("./sidebars.js") }],
+        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js" }],
     ],
-    themes: [["@docusaurus/theme-classic", { customCss: require.resolve("./index.css") }]],
+    themes: [["@docusaurus/theme-classic", { customCss: "./index.css" }]],
 };
