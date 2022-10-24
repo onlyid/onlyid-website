@@ -4,7 +4,7 @@ import { Popper, Paper } from "@material-ui/core";
 import classNames from "classnames";
 import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
 import Link from "@docusaurus/Link";
-import { withRouter } from "@docusaurus/router";
+import { withRouter } from "react-router";
 import Statistic from "./Statistic";
 
 class Footer extends PureComponent {
