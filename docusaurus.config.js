@@ -8,7 +8,7 @@ module.exports = {
     themeConfig: {
         navbar: {
             logo: {
-                src: "img/logo.svg",
+                src: "img/logo.svg"
             },
             items: [
                 {
@@ -16,27 +16,27 @@ module.exports = {
                     items: [
                         { label: "无密码 轻认证", to: "/otp" },
                         { label: "统一账号 单点登录", to: "/sso" },
-                        { label: "用户管理 权限控制", to: "/uam" },
-                    ],
+                        { label: "用户管理 权限控制", to: "/uam" }
+                    ]
                 },
                 { type: "doc", docId: "intro", label: "文档" },
                 { to: "/pricing", label: "价格" },
                 { to: "/blog", label: "博客" },
                 { href: "https://github.com/onlyid", label: "GitHub" },
-                { href: "https://www.onlyid.net/console", label: "控制台", position: "right" },
-            ],
+                { href: "https://www.onlyid.net/console", label: "控制台", position: "right" }
+            ]
         },
         colorMode: {
-            disableSwitch: true,
+            disableSwitch: true
         },
         prism: {
-            theme: codeTheme,
-        },
+            theme: codeTheme
+        }
     },
     plugins: [
         ["@docusaurus/plugin-content-blog", { showReadingTime: true }],
         "@docusaurus/plugin-content-pages",
-        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js" }],
+        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js" }]
     ],
-    themes: [["@docusaurus/theme-classic", { customCss: "./index.css" }]],
+    themes: [["@docusaurus/theme-classic", { customCss: "./src/index.css" }]]
 };
