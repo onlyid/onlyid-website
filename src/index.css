@@ -27,21 +27,9 @@
     --ifm-navbar-item-padding-horizontal: 0.85rem;
     --ifm-navbar-height: 3.5rem;
     --ifm-menu-link-padding-vertical: 0.475rem;
-    --ifm-color-gray-900: #24272b;
+    --ifm-font-color-base: rgba(0, 0, 0, 0.87);
     --ifm-menu-color: var(--ifm-color-emphasis-800);
     --ifm-container-width-xl: 1140px;
-}
-
-.docusaurus-highlight-code-line {
-    background-color: rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 0 calc(-1 * var(--ifm-pre-padding));
-    padding: 0 var(--ifm-pre-padding);
-}
-
-.dropdown__link {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.9375rem;
 }
 /* reset docs end */
 
@@ -50,6 +38,21 @@
     font-size: 16px;
 }
 /* reset mui end */
+
+.nav-item-product + .dropdown__menu .dropdown__link {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9375rem;
+}
+
+.nav-item-product + .dropdown__menu [class^="material-icons"] {
+    vertical-align: -25%;
+    padding-right: 15px;
+}
+
+.nav-item-product + .menu__list [class^="material-icons"] {
+    font-size: 25px;
+    padding-right: 15px;
+}
 
 .main-title {
     font-size: 32px;

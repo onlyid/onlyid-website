@@ -14,10 +14,20 @@ module.exports = {
                 {
                     label: "产品",
                     items: [
-                        { label: "无密码 轻认证", to: "/otp" },
-                        { label: "统一账号 单点登录", to: "/sso" },
-                        { label: "用户管理 权限控制", to: "/uam" }
-                    ]
+                        {
+                            html: '<span class="material-icons-outlined">pin</span>无密码 轻认证',
+                            to: "/otp"
+                        },
+                        {
+                            html: '<span class="material-icons">portrait</span>统一账号 单点登录',
+                            to: "/sso"
+                        },
+                        {
+                            html: '<span class="material-icons-outlined">groups</span>用户管理 权限控制',
+                            to: "/uam"
+                        }
+                    ],
+                    className: "nav-item-product"
                 },
                 { type: "doc", docId: "intro", label: "文档" },
                 { to: "/pricing", label: "价格" },

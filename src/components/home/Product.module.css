@@ -38,14 +38,14 @@ a.item {
 }
 
 .item h3 {
-    color: var(--ifm-color-gray-900);
+    color: var(--ifm-font-color-base);
     margin-top: 18px;
     margin-bottom: 18px;
     font-size: 22px;
 }
 
 .item p {
-    color: var(--ifm-color-gray-900);
+    color: var(--ifm-font-color-base);
     margin-bottom: 4px;
 }
 
