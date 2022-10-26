@@ -32,8 +32,12 @@ module.exports = {
                 { type: "doc", docId: "intro", label: "文档" },
                 { to: "/pricing", label: "价格" },
                 { to: "/blog", label: "博客" },
-                { href: "https://github.com/onlyid", label: "GitHub" },
-                { href: "https://www.onlyid.net/console", label: "控制台", position: "right" }
+                {
+                    href: "https://github.com/onlyid",
+                    html: '<i class="iconfont">&#xe6f6;</i>',
+                    className: "nav-item-github"
+                },
+                { href: "https://www.onlyid.net/console", html: "控制台", position: "right" }
             ]
         },
         colorMode: {
