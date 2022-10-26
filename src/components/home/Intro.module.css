@@ -7,7 +7,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 17px;
+    font-size: 18px;
+    color: var(--ifm-color-gray-700);
 }
 
 .ul1 li + li {
@@ -15,9 +16,9 @@
 }
 
 .ul1 li :global .MuiSvgIcon-root {
-    vertical-align: -10%;
-    margin-right: 6px;
-    font-size: 20px;
+    vertical-align: -12%;
+    margin-right: 10px;
+    opacity: 90%;
 }
 
 .p2 {
