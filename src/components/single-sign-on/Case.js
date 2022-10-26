@@ -2,12 +2,12 @@ import React, { PureComponent } from "react";
 import styles from "./Case.module.css";
 import caseIcon from "@site/static/img/sso-case-icon.png";
 import screenshot from "@site/static/img/sso-case-screenshot.png";
-import ShowOffDialog from "../otp/ShowOffDialog";
+import ShowOffDialog from "../one-time-password/ShowOffDialog";
 import classNames from "classnames";
 
 export default class extends PureComponent {
     state = {
-        dialogOpen: false,
+        dialogOpen: false
     };
 
     toggleDialog = () => {

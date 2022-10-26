@@ -16,15 +16,15 @@ module.exports = {
                     items: [
                         {
                             html: '<span class="material-icons-outlined">pin</span>无密码 轻认证',
-                            to: "/otp"
+                            to: "/one-time-password"
                         },
                         {
                             html: '<span class="material-icons">portrait</span>统一账号 单点登录',
-                            to: "/sso"
+                            to: "/single-sign-on"
                         },
                         {
                             html: '<span class="material-icons-outlined">groups</span>用户管理 权限控制',
-                            to: "/uam"
+                            to: "/user-and-access-management"
                         }
                     ],
                     className: "nav-item-product"

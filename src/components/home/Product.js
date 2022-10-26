@@ -10,14 +10,14 @@ export default function () {
                 <h2 className="main-title">一站式身份服务</h2>
                 <div className="row">
                     <div className="col col--4">
-                        <Link className={styles.item} to="/otp">
+                        <Link className={styles.item} to="/one-time-password">
                             <span className={classNames("material-icons", styles.pin)}>pin</span>
                             <h3>无密码 &nbsp;轻认证</h3>
                             <p>用短信/邮件验证码替代传统密码，即使新用户也可以快捷访问你的应用。</p>
                         </Link>
                     </div>
                     <div className="col col--4">
-                        <Link className={styles.item} to="/sso">
+                        <Link className={styles.item} to="/single-sign-on">
                             <span className={classNames("material-icons", styles.portrait)}>
                                 portrait
                             </span>
@@ -28,7 +28,7 @@ export default function () {
                         </Link>
                     </div>
                     <div className="col col--4">
-                        <Link className={styles.item} to="/uam">
+                        <Link className={styles.item} to="/user-and-access-management">
                             <span className={classNames("material-icons", styles.groups)}>
                                 groups
                             </span>
