@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import styles from "./index.module.css";
-import { Popper, Paper } from "@material-ui/core";
+import { Popper, Paper, Grow } from "@material-ui/core";
 import classNames from "classnames";
 import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
 import Link from "@docusaurus/Link";
@@ -9,7 +9,7 @@ import Statistic from "./Statistic";
 
 class Footer extends PureComponent {
     state = {
-        anchorEl: null,
+        anchorEl: null
     };
 
     showWeChat = (e) => {
@@ -27,7 +27,7 @@ class Footer extends PureComponent {
         return (
             <footer
                 className={classNames(styles.root, {
-                    [styles.fancy]: location.pathname === "/home/",
+                    [styles.fancy]: location.pathname === "/home/"
                 })}
             >
                 {location.pathname === "/home/" && <Statistic />}
@@ -44,7 +44,7 @@ class Footer extends PureComponent {
                             <span className="material-icons">phone</span>
                             电话 / 微信
                             <span
-                                className="material-icons hide-sm"
+                                className="material-icons"
                                 style={{ margin: 0 }}
                                 onMouseEnter={this.showWeChat}
                                 onMouseLeave={this.closeWeChat}
@@ -99,10 +99,15 @@ class Footer extends PureComponent {
                     anchorEl={anchorEl}
                     placement="top"
                     className={styles.popper1}
+                    transition
                 >
-                    <Paper>
-                        <img src={weChat155} alt="weChat" />
-                    </Paper>
+                    {({ TransitionProps }) => (
+                        <Grow {...TransitionProps} timeout={200}>
+                            <Paper style={{ transformOrigin: "50% 100%" }}>
+                                <img src={weChat155} alt="weChat" />
+                            </Paper>
+                        </Grow>
+                    )}
                 </Popper>
             </footer>
         );

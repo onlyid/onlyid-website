@@ -34,7 +34,7 @@ module.exports = {
                 { to: "/blog", label: "博客" },
                 {
                     href: "https://github.com/onlyid",
-                    html: '<i class="iconfont">&#xe6f6;</i>',
+                    html: '<span class="iconfont">&#xe6f6;</span>',
                     className: "nav-item-github"
                 },
                 { href: "https://www.onlyid.net/console", html: "控制台", position: "right" }
@@ -48,7 +48,7 @@ module.exports = {
         }
     },
     plugins: [
-        ["@docusaurus/plugin-content-blog", { showReadingTime: true }],
+        "@docusaurus/plugin-content-blog",
         "@docusaurus/plugin-content-pages",
         ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js" }]
     ],
