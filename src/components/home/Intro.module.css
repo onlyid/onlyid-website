@@ -1,3 +1,11 @@
+.root :global .row {
+    align-items: center;
+}
+
+.root {
+    padding: 42px 0;
+}
+
 .p1 {
     font-size: 24px;
     margin-bottom: 25px;
@@ -8,7 +16,7 @@
     padding: 0;
     list-style: none;
     font-size: 18px;
-    color: var(--ifm-color-gray-700);
+    color: var(--ifm-color-gray-800);
 }
 
 .ul1 li + li {
@@ -16,9 +24,9 @@
 }
 
 .ul1 li :global .material-icons {
-    vertical-align: -15%;
+    vertical-align: -20%;
     margin-right: 10px;
-    opacity: 90%;
+    color: var(--ifm-color-gray-600);
 }
 
 .p2 {
@@ -34,8 +42,7 @@
 
 .img1 {
     vertical-align: middle;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
 }
 
 @media (max-width: 996px) {
@@ -45,15 +52,5 @@
 
     .root :global .col + .col {
         margin-top: 35px;
-    }
-}
-
-@media (min-width: 997px) {
-    .root :global .row {
-        align-items: center;
-    }
-
-    .root {
-        padding: 42px 0;
     }
 }
