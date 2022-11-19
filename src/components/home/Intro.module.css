@@ -15,8 +15,8 @@
     margin-top: 12px;
 }
 
-.ul1 li :global .MuiSvgIcon-root {
-    vertical-align: -12%;
+.ul1 li :global .material-icons {
+    vertical-align: -15%;
     margin-right: 10px;
     opacity: 90%;
 }
