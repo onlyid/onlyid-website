@@ -3,10 +3,10 @@ import Layout from "@theme/Layout";
 import Banner from "../components/home/Banner";
 import Intro from "../components/home/Intro";
 import Product from "../components/home/Product";
-import Start from "../components/home/Start";
+import Simple from "../components/home/Simple";
 import Pro from "../components/home/Pro";
 import Value from "../components/home/Value";
-import Pricing from "../components/home/Pricing";
+import Cheap from "../components/home/Cheap";
 
 export default function Home() {
     return (
@@ -14,10 +14,10 @@ export default function Home() {
             <Banner />
             <Intro />
             <Product />
-            <Start />
+            <Simple />
             <Pro />
+            <Cheap />
             <Value />
-            <Pricing />
         </Layout>
     );
 }

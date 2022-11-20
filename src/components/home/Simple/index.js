@@ -25,7 +25,7 @@ export default function () {
                                 </span>
                                 上手简单
                             </h3>
-                            <p>5个精心提炼的API，构成唯ID 80%的产品功能。</p>
+                            <p>通过5个精心提炼的API，快速调用OTP和SSO功能。</p>
                         </div>
                         <div className={styles.item}>
                             <h3>
@@ -38,25 +38,21 @@ export default function () {
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{ marginTop: 40 }}>
-                    <div className="col">
-                        <ul className={styles.ul1}>
-                            <li>
-                                <Java style={{ height: 42 }} />
-                            </li>
-                            <li>
-                                <Php style={{ height: 36 }} />
-                            </li>
-                            <li>
-                                <Python style={{ height: 38 }} />
-                            </li>
-                            <li>
-                                <Js style={{ height: 38 }} />
-                            </li>
-                            <li>
-                                <Net style={{ height: 42 }} />
-                            </li>
-                        </ul>
+                <div className={styles.box1}>
+                    <div>
+                        <Java style={{ height: 42 }} />
+                    </div>
+                    <div>
+                        <Php style={{ height: 36 }} />
+                    </div>
+                    <div>
+                        <Python style={{ height: 38 }} />
+                    </div>
+                    <div>
+                        <Js style={{ height: 38 }} />
+                    </div>
+                    <div>
+                        <Net style={{ height: 42 }} />
                     </div>
                 </div>
             </div>

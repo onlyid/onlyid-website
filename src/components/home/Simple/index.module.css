@@ -1,3 +1,7 @@
+.root {
+    padding: 64px 0 72px;
+}
+
 .item h3 {
     font-size: 24px;
     height: 40px;
@@ -26,24 +30,19 @@
     color: #4caf50;
 }
 
-.ul1 {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.box1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 45px;
 }
 
-.ul1 svg {
-    vertical-align: middle;
+.box1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 996px) {
-    .root {
-        padding: 64px 0 76px;
-    }
-
     .root :global .col + .col {
         margin-top: 38px;
     }
@@ -51,13 +50,14 @@
     .item + .item {
         margin-top: 30px;
     }
+
+    .box1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 35px;
+    }
 }
 
 @media (min-width: 997px) {
-    .root {
-        padding: 64px 0 72px;
-    }
-
     .root :global .row {
         align-items: center;
     }

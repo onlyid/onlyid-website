@@ -1,5 +1,5 @@
 .root {
-    background-image: url("../../../static/img/home-product-bg.svg");
+    background-image: url("/img/home-product-bg.svg");
     padding: 64px 0 80px;
 }
 
@@ -46,11 +46,11 @@ a.item {
 
 .item p {
     color: var(--ifm-color-gray-800);
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 42px;
+        margin-top: 48px;
     }
 }

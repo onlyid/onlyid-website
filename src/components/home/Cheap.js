@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Pricing.module.css";
+import styles from "./Cheap.module.css";
 import price from "@site/static/img/home-price.png";
 import classNames from "classnames";
 import Link from "@docusaurus/Link";
@@ -8,7 +8,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className="main-title">全行业最低价格</h2>
+                <h2 className="main-title">行业最低价格</h2>
                 <div className="row">
                     <div className="col col--5">
                         <img src={price} alt="price" className={styles.img1} />

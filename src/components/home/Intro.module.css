@@ -51,6 +51,6 @@
     }
 
     .root :global .col + .col {
-        margin-top: 35px;
+        margin-top: 38px;
     }
 }

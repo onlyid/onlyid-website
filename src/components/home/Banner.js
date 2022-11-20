@@ -4,7 +4,7 @@ import { Tooltip } from "@material-ui/core";
 
 export default function () {
     return (
-        <div className={styles.root}>
+        <section className={styles.root}>
             <div>
                 <h1 className={styles.title}>
                     唯ID是面向 公众应用
@@ -40,6 +40,6 @@ export default function () {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
