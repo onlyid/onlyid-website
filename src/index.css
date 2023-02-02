@@ -1,3 +1,4 @@
+/* iconfont start */
 @font-face {
     font-family: "iconfont"; /* Project id 545468 */
     src: url("//at.alicdn.com/t/font_545468_uxcwqgt1mw.woff2?t=1622972228087") format("woff2"),
@@ -13,6 +14,63 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff2)
+            format("woff2"),
+        url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Material Icons Outlined";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff2)
+            format("woff2"),
+        url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff)
+            format("woff");
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+}
+
+.material-icons-outlined {
+    font-family: "Material Icons Outlined";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+}
+/* iconfont end */
 
 /* reset docs start */
 :root {
