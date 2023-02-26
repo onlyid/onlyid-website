@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0 72px;
+    padding: 64px 0 80px;
 }
 
 .item h3 {
@@ -33,7 +33,7 @@
 .box1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 45px;
+    margin-top: 48px;
 }
 
 .box1 > div {
@@ -44,16 +44,16 @@
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 38px;
+        margin-top: 48px;
     }
 
     .item + .item {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .box1 {
         grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 35px;
+        grid-row-gap: 40px;
     }
 }
 

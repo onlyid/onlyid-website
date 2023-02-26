@@ -4,9 +4,9 @@
 }
 
 .item {
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-color: white;
-    background-size: 50%;
+    background-size: 40% auto;
     border: 1px solid #e8e8e8;
     border-radius: 25px;
     padding: 35px 20px 35px 35px;
@@ -15,12 +15,12 @@
 
 .neutral {
     background-image: url("../../../static/img/home-value-bg1.svg");
-    background-position: 120%;
+    background-position: right;
 }
 
 .open {
     background-image: url("../../../static/img/home-value-bg2.svg");
-    background-position: right;
+    background-position: right top;
 }
 
 .neutral .iconBg {
@@ -68,19 +68,21 @@
 }
 
 @media (max-width: 996px) {
-    .root :global .col + .col {
-        margin-top: 42px;
+    .root :global .col:nth-child(2) {
+        margin-top: 48px;
     }
 }
 
 @media (min-width: 997px) {
-    .root :global .row {
-        justify-content: space-between;
+    .root {
+        --col-padding: 2.5%;
     }
 
-    .root :global .col {
-        --col-width: calc(59 / 120 * 100%);
-        flex: 0 0 var(--col-width);
-        max-width: var(--col-width);
+    .root :global .col:nth-child(1) {
+        padding-right: var(--col-padding);
+    }
+
+    .root :global .col:nth-child(2) {
+        padding-left: var(--col-padding);
     }
 }

@@ -1,20 +1,27 @@
 .root {
     background-color: #fafafa;
-    padding: 64px 0 76px;
+    padding: 64px 0 80px;
 }
 
 .row1 + .row1 {
     margin-top: 32px;
 }
 
+.row1 :global .col--2 {
+    text-align: center;
+}
+
 .row1 img {
-    width: 200px;
     vertical-align: middle;
 }
 
 .row1 p {
     margin-bottom: 0;
     font-size: 23px;
+}
+
+.row2 {
+    margin-top: 48px;
 }
 
 .item {
@@ -39,10 +46,6 @@
 }
 
 @media (max-width: 996px) {
-    .row1 :global .col--2 {
-        text-align: center;
-    }
-
     .col1 {
         margin-top: 25px;
     }
@@ -51,12 +54,16 @@
         margin-top: 22px;
     }
 
-    .row2 :global .col + .col {
-        margin-top: 45px;
+    .pa {
+        width: 190px;
     }
 
-    .row2 {
-        margin-top: 45px;
+    .cmb {
+        width: 200px;
+    }
+
+    .row2 :global .col + .col {
+        margin-top: 48px;
     }
 }
 
@@ -65,7 +72,7 @@
         align-items: center;
     }
 
-    .row2 {
-        margin-top: 48px;
+    .pa {
+        width: 95%;
     }
 }

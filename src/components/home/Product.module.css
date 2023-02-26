@@ -46,6 +46,7 @@ a.item {
 
 .item h3 .name {
     font-family: var(--ifm-font-family-monospace);
+    margin-right: 10px;
 }
 
 .item p {

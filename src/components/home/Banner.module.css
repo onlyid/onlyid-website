@@ -4,14 +4,12 @@
     display: flex;
     justify-content: center;
     color: white;
-
-    padding: 85px 1rem;
+    padding: 100px 1rem;
 }
 
 .title {
     font-size: 45px;
-
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .title :global .material-icons {
@@ -22,24 +20,9 @@
 
 .subtitle {
     font-size: 24px;
-
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .tooltip1 {
     max-width: none;
-}
-
-@media (max-width: 996px) {
-    .root {
-        padding: 75px 1rem;
-    }
-
-    .title {
-        margin-bottom: 25px;
-    }
-
-    .subtitle {
-        margin-bottom: 30px;
-    }
 }

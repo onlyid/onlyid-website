@@ -1,5 +1,5 @@
 .root {
-    padding: 64px 0 76px;
+    padding: 64px 0 80px;
 }
 
 .img1 {
@@ -7,6 +7,10 @@
     width: 100%;
     max-width: 400px;
     opacity: 0.8;
+}
+
+.item + .item {
+    margin-top: 40px;
 }
 
 .item h3 {
@@ -41,32 +45,18 @@
 .button1 {
     font-weight: normal;
     font-size: 15px;
+
+    margin-top: 45px;
 }
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 38px;
-    }
-
-    .item + .item {
-        margin-top: 30px;
-    }
-
-    .button1 {
-        margin-top: 33px;
+        margin-top: 48px;
     }
 }
 
 @media (min-width: 997px) {
     .root :global .row {
         align-items: center;
-    }
-
-    .item + .item {
-        margin-top: 32px;
-    }
-
-    .button1 {
-        margin-top: 35px;
     }
 }

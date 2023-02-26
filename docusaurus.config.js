@@ -1,17 +1,21 @@
 const codeTheme = require("prism-react-renderer/themes/github");
 
 const otpHtml =
-    '<span class="material-icons-outlined">pin</span><span class="name">OTP</span>（无密码 轻认证）';
+    '<span class="material-icons-outlined">pin</span><span class="name">OTP</span>无密码 轻认证';
 const ssoHtml =
-    '<span class="material-icons">portrait</span><span class="name">SSO</span>（统一账号 单点登录）';
+    '<span class="material-icons">portrait</span><span class="name">SSO</span>统一账号 单点登录';
 const uamHtml =
-    '<span class="material-icons-outlined">groups</span><span class="name">UAM</span>（用户管理 权限控制）';
+    '<span class="material-icons-outlined">groups</span><span class="name">UAM</span>用户管理 权限控制';
 
 module.exports = {
     title: "唯ID",
     url: "https://www.onlyid.net",
     baseUrl: "/home/",
     favicon: "img/favicon.png",
+    i18n: {
+        defaultLocale: "zh",
+        locales: ["zh"]
+    },
     themeConfig: {
         navbar: {
             logo: {

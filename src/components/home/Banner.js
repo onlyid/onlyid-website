@@ -27,9 +27,9 @@ export default function () {
                     >
                         <span className="material-icons">help</span>
                     </Tooltip>{" "}
-                    解决方案，
+                    解决方案
                 </h1>
-                <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事。</p>
+                <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事</p>
                 <div>
                     <a
                         className="button button--primary button--lg"
