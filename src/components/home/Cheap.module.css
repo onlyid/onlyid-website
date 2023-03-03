@@ -2,6 +2,10 @@
     padding: 64px 0 80px;
 }
 
+.p1 {
+    font-size: 21px;
+}
+
 .img1 {
     vertical-align: middle;
     width: 100%;
@@ -43,13 +47,16 @@
 }
 
 .button1 {
-    font-weight: normal;
-    font-size: 15px;
-
+    --ifm-button-size-multiplier: 1.05;
     margin-top: 45px;
 }
 
 @media (max-width: 996px) {
+    .root :global .row {
+        /* 从语义上来说 这句话和下面两个特点是连在一起的 所以稍微减少margin */
+        margin-top: 45px;
+    }
+
     .root :global .col + .col {
         margin-top: 48px;
     }
@@ -58,5 +65,14 @@
 @media (min-width: 997px) {
     .root :global .row {
         align-items: center;
+    }
+
+    .root :global .col--7 {
+        margin-top: 18px;
+    }
+
+    .root :global .col--5 {
+        text-align: right;
+        margin-top: -20px;
     }
 }
