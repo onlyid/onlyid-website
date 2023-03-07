@@ -10,7 +10,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">行业最低价格</h2>
                 <p className={styles.p1}>
-                    唯ID专为小微企业/独立开发者打造，是行业内性价比最高的IDaaS解决方案。
+                    唯ID专为小微企业/独立开发者打造，是行业内性价比最高的IDaaS解决方案
                 </p>
                 <div className="row">
                     <div className="col col--7">
@@ -21,7 +21,7 @@ export default function () {
                                 </span>
                                 费用固定
                             </h3>
-                            <p>唯ID只有两档套餐，年费分别是200元和2000元，没有任何其他收费项目。</p>
+                            <p>唯ID只有两档套餐，年费分别是200元和2000元，没有任何其他收费项目</p>
                         </div>
                         <div className={styles.item}>
                             <h3>
@@ -30,9 +30,7 @@ export default function () {
                                 </span>
                                 无限使用
                             </h3>
-                            <p>
-                                两档套餐仅月活用户数不同，其他全部一样，均享受无限的登录/认证次数。
-                            </p>
+                            <p>两档套餐仅月活用户数不同，其他全部一样，均享受无限的登录/认证次数</p>
                         </div>
                         <Link
                             className={classNames("button button--primary", styles.button1)}

@@ -10,7 +10,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className="main-title">专业 &nbsp; 安全 &nbsp; 稳定</h2>
+                <h2 className="main-title">专业 &nbsp;安全 &nbsp;稳定</h2>
                 <div className={classNames("row", styles.row1)} style={{ marginTop: -2 }}>
                     <div className="col col--2">
                         <img src={pa} alt="pa" className={styles.pa} />
@@ -39,7 +39,7 @@ export default function () {
                                 <h3>分布式云架构</h3>
                                 <p>
                                     基于成熟的Java+Spring技术，可承载数千万用户规模，支持数万人并发使用，全年可用时间高达
-                                    99.9% 。
+                                    99.9%
                                 </p>
                             </div>
                         </div>
@@ -51,7 +51,7 @@ export default function () {
                                 <h3>全面技术支持</h3>
                                 <p>
                                     提供全方位技术支持，覆盖售前咨询、集成顾问、使用帮助等；生产级别问题
-                                    7×24 小时随时响应，全年无休。
+                                    7×24 小时随时响应，全年无休
                                 </p>
                             </div>
                         </div>
