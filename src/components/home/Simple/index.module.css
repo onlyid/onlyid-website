@@ -32,14 +32,9 @@
 
 .box1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 48px;
-}
-
-.box1 > div {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+    margin-top: 48px;
 }
 
 @media (max-width: 996px) {
@@ -62,12 +57,17 @@
         align-items: center;
     }
 
-    .root :global .col--6 {
+    .root :global .col:first-child {
         display: flex;
         justify-content: center;
+        padding-right: 5%;
     }
 
     .item + .item {
         margin-top: 45px;
+    }
+
+    .box1 {
+        grid-template-columns: repeat(5, 1fr);
     }
 }

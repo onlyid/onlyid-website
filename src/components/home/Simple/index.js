@@ -14,10 +14,10 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
-                    <div className="col col--6">
+                    <div className="col">
                         <Figure />
                     </div>
-                    <div className="col col--5 col--offset-1">
+                    <div className="col">
                         <div className={styles.item}>
                             <h3>
                                 <span className={classNames("material-icons", styles.code)}>
@@ -25,7 +25,7 @@ export default function () {
                                 </span>
                                 上手简单
                             </h3>
-                            <p>通过5个精心提炼的API，快速调用OTP和SSO功能。</p>
+                            <p>通过5个精心提炼的API，快速调用OTP和接入SSO功能。</p>
                         </div>
                         <div className={styles.item}>
                             <h3>
@@ -34,26 +34,16 @@ export default function () {
                                 </span>
                                 技术中立
                             </h3>
-                            <p>中立的API设计，不强制使用特定技术（如JWT）。</p>
+                            <p>中立的API设计，兼容所有技术栈，不强制使用特定技术。</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.box1}>
-                    <div>
-                        <Java style={{ height: 42 }} />
-                    </div>
-                    <div>
-                        <Php style={{ height: 36 }} />
-                    </div>
-                    <div>
-                        <Python style={{ height: 38 }} />
-                    </div>
-                    <div>
-                        <Js style={{ height: 38 }} />
-                    </div>
-                    <div>
-                        <Net style={{ height: 42 }} />
-                    </div>
+                    <Java style={{ height: 43 }} />
+                    <Php style={{ height: 36 }} />
+                    <Python style={{ height: 38 }} />
+                    <Js style={{ height: 38 }} />
+                    <Net style={{ height: 42 }} />
                 </div>
             </div>
         </section>
