@@ -60,7 +60,11 @@
     .root :global .col:first-child {
         display: flex;
         justify-content: center;
-        padding-right: 5%;
+    }
+
+    .root :global .col:nth-child(2) {
+        display: flex;
+        justify-content: right;
     }
 
     .item + .item {

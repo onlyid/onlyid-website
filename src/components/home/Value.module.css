@@ -93,7 +93,7 @@
 
 @media (min-width: 997px) {
     .root {
-        --col-padding: 3%;
+        --col-padding: 2%;
     }
 
     .p1 {
@@ -115,5 +115,11 @@
 
     .neutral li + li {
         margin-top: 15px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .root {
+        --col-padding: 3%;
     }
 }

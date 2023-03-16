@@ -18,23 +18,25 @@ export default function () {
                         <Figure />
                     </div>
                     <div className="col">
-                        <div className={styles.item}>
-                            <h3>
-                                <span className={classNames("material-icons", styles.code)}>
-                                    code
-                                </span>
-                                上手简单
-                            </h3>
-                            <p>通过5个精心提炼的API，快速调用OTP和接入SSO功能</p>
-                        </div>
-                        <div className={styles.item}>
-                            <h3>
-                                <span className={classNames("material-icons", styles.category)}>
-                                    category
-                                </span>
-                                技术中立
-                            </h3>
-                            <p>中立的API设计，兼容所有技术栈，不强制使用特定技术</p>
+                        <div>
+                            <div className={styles.item}>
+                                <h3>
+                                    <span className={classNames("material-icons", styles.code)}>
+                                        code
+                                    </span>
+                                    上手简单
+                                </h3>
+                                <p>通过5个精心提炼的API，快速调用OTP和接入SSO功能</p>
+                            </div>
+                            <div className={styles.item}>
+                                <h3>
+                                    <span className={classNames("material-icons", styles.category)}>
+                                        category
+                                    </span>
+                                    技术中立
+                                </h3>
+                                <p>中立的API设计，兼容所有技术栈，不强制使用特定技术</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 .p1 {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .ul1 {
@@ -12,7 +12,7 @@
 }
 
 .ul1 li + li {
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 .ul1 li :global .material-icons {
@@ -23,7 +23,7 @@
 
 .p2 {
     font-size: 24px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 0;
 }
 
@@ -53,6 +53,10 @@
     }
 
     .root {
-        padding: 45px 0;
+        padding: 50px 0;
+    }
+
+    .root :global .col--5 {
+        text-align: right;
     }
 }

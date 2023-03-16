@@ -11,7 +11,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <h2 className="main-title">专业 &nbsp;安全 &nbsp;稳定</h2>
-                <div className={classNames("row", styles.row1)} style={{ marginTop: -2 }}>
+                <div className={classNames("row", styles.row1)}>
                     <div className="col col--2">
                         <img src={pa} alt="pa" className={styles.pa} />
                     </div>
