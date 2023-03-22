@@ -1,35 +1,11 @@
-.root:not(.fancy) {
-    background-color: #4b5056;
+.root {
+    background-color: #303846;
     color: white;
 }
 
-.root.fancy {
-    background-image: url("../../../static/img/footer-bg.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: #eee;
-}
-
 .container {
-    padding: 32px 1rem 24px;
-    font-size: 0.9375rem;
-    max-width: var(--ifm-container-width);
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.root.fancy .container {
-    padding: 36px 1rem 28px;
-}
-
-.col {
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
-.col.contact {
-    flex-basis: 250px;
+    padding-top: 40px;
+    padding-bottom: 35px;
 }
 
 .container a {
@@ -42,20 +18,18 @@
     list-style: none;
 }
 
-.address {
-    font-size: 0.875rem;
-    margin-top: 0.8rem;
+ul.contact {
+    font-size: 0.9375rem;
 }
 
 ul.contact li + li {
-    margin-top: 0.35rem;
+    margin-top: 10px;
 }
 
 ul.contact li :global .material-icons {
     font-size: 1rem;
     vertical-align: -20%;
     margin-right: 0.4rem;
-    cursor: default;
 }
 
 .qq {
@@ -63,22 +37,34 @@ ul.contact li :global .material-icons {
     margin-right: 0.4rem;
     display: inline-block;
     width: 1rem;
-    cursor: default;
+}
+
+.company {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 11px;
 }
 
 ul.links {
     display: flex;
     justify-content: space-between;
-}
-
-ul.links a {
+    align-items: center;
     font-size: 0.875rem;
 }
 
-.copyright,
-.beian {
+li.divider {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 12px;
+}
+
+.copyright {
     font-size: 0.875rem;
-    margin: 0.45rem 0 0;
+    margin-top: 11px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .popper1 img {
@@ -88,15 +74,25 @@ ul.links a {
 }
 
 @media (max-width: 996px) {
-    .col {
-        flex-basis: 100%;
+    .company {
+        margin-top: 20px;
     }
 
-    .contact.col {
+    .company span {
         flex-basis: 100%;
     }
+}
 
-    .col + .col {
-        margin-top: 1rem;
+@media (min-width: 997px) {
+    .container :global .row {
+        justify-content: space-around;
+    }
+
+    .container :global .col:first-child {
+        flex: 0 0 280px;
+    }
+
+    .container :global .col:nth-child(2) {
+        flex: 0 0 500px;
     }
 }

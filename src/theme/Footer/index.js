@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import styles from "./index.module.css";
-import { Popper, Paper, Grow } from "@material-ui/core";
+import { Popper, Paper } from "@material-ui/core";
 import classNames from "classnames";
 import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
 import Link from "@docusaurus/Link";
@@ -22,75 +22,79 @@ class Footer extends PureComponent {
 
     render() {
         const { anchorEl } = this.state;
-        const { location } = this.props;
+        const {
+            location: { pathname }
+        } = this.props;
+
+        const showStat = !pathname.startsWith("/home/blog") && !pathname.startsWith("/home/docs");
 
         return (
-            <footer
-                className={classNames(styles.root, {
-                    [styles.fancy]: location.pathname === "/home/"
-                })}
-            >
-                {location.pathname === "/home/" && <Statistic />}
-                <div className={styles.container}>
-                    <ul className={styles.col}>
-                        <li>佛山市爱达斯科技有限公司</li>
-                        <li>Foshan IDaaS Technology Co., Ltd.</li>
-                        <li className={styles.address}>
-                            广东省佛山市禅城区张槎一路117号二座自编2号楼六层6655
-                        </li>
-                    </ul>
-                    <ul className={classNames(styles.contact, styles.col)}>
-                        <li>
-                            <span className="material-icons">phone</span>
-                            电话 / 微信
-                            <span
-                                className="material-icons"
-                                style={{ margin: 0 }}
-                                onMouseEnter={this.showWeChat}
-                                onMouseLeave={this.closeWeChat}
-                            >
-                                qr_code
-                            </span>
-                            ：15521312099
-                        </li>
-                        <li>
-                            <span className={classNames("iconfont", styles.qq)}>&#xe676;</span>
-                            QQ：452391310
-                        </li>
-                        <li>
-                            <span className="material-icons">mail</span>
-                            邮箱：
-                            <a href="mailto:help@onlyid.net">help@onlyid.net</a>
-                        </li>
-                    </ul>
-                    <div className={styles.col}>
-                        <ul className={styles.links}>
-                            <li>
-                                <Link to="/about">关于我们</Link>
-                            </li>
-                            <li>
-                                <Link to="/careers">加入我们</Link>
-                            </li>
-                            <li>
-                                <Link to="/terms">用户协议</Link>
-                            </li>
-                            <li>
-                                <Link to="/privacy">隐私政策</Link>
-                            </li>
-                        </ul>
-                        <p className={styles.copyright}>
-                            &copy; 2017-{new Date().getFullYear()} &nbsp; 爱达斯科技 &nbsp; IDaaS
-                            Tech
-                        </p>
-                        <p className={styles.beian}>
-                            <a
-                                href="https://beian.miit.gov.cn"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                粤ICP备16120960号
-                            </a>
-                        </p>
+            <footer className={styles.root}>
+                {showStat && <Statistic />}
+                <div className={classNames("container", styles.container)}>
+                    <div className="row">
+                        <div className="col">
+                            <ul className={styles.contact}>
+                                <li>
+                                    <span className="material-icons">phone</span>
+                                    电话 / 微信
+                                    <span
+                                        className="material-icons"
+                                        style={{ margin: 0 }}
+                                        onMouseEnter={this.showWeChat}
+                                        onMouseLeave={this.closeWeChat}
+                                    >
+                                        qr_code
+                                    </span>
+                                    ：15521312099
+                                </li>
+                                <li>
+                                    <span className={classNames("iconfont", styles.qq)}>
+                                        &#xe676;
+                                    </span>
+                                    QQ：452391310
+                                </li>
+                                <li>
+                                    <span className="material-icons">mail</span>
+                                    邮箱：
+                                    <a href="mailto:help@onlyid.net">help@onlyid.net</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <p className={styles.company}>
+                                <span>佛山市爱达斯科技有限公司</span>
+                                <span>Foshan IDaaS Tech. Co., Ltd.</span>
+                            </p>
+                            <ul className={styles.links}>
+                                <li>
+                                    <Link to="/about">关于我们</Link>
+                                </li>
+                                <li className={styles.divider} />
+                                <li>
+                                    <Link to="/careers">加入我们</Link>
+                                </li>
+                                <li className={styles.divider} />
+                                <li>
+                                    <Link to="/terms">用户协议</Link>
+                                </li>
+                                <li className={styles.divider} />
+                                <li>
+                                    <Link to="/privacy">隐私政策</Link>
+                                </li>
+                            </ul>
+                            <p className={styles.copyright}>
+                                <span>&copy; &nbsp;2017 ~ {new Date().getFullYear()}</span>
+                                <span>爱达斯科技</span>
+                                <a
+                                    href="https://beian.miit.gov.cn"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    粤ICP备16120960号
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -99,15 +103,10 @@ class Footer extends PureComponent {
                     anchorEl={anchorEl}
                     placement="top"
                     className={styles.popper1}
-                    transition
                 >
-                    {({ TransitionProps }) => (
-                        <Grow {...TransitionProps} timeout={200}>
-                            <Paper style={{ transformOrigin: "50% 100%" }}>
-                                <img src={weChat155} alt="weChat" />
-                            </Paper>
-                        </Grow>
-                    )}
+                    <Paper>
+                        <img src={weChat155} alt="weChat" />
+                    </Paper>
                 </Popper>
             </footer>
         );
