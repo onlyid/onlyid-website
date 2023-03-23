@@ -76,3 +76,9 @@
         margin-top: -20px;
     }
 }
+
+@media (min-width: 1140px) {
+    .img1 {
+        margin-right: -10px;
+    }
+}

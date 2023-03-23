@@ -22,7 +22,7 @@ export default function () {
                 <p>
                     "clientSecret": <span>"8d08fbbd89a547df8bda56eba12fac2e"</span>
                 </p>
-                <p style={{ marginLeft: 0 }}>{"}"}</p>
+                <p style={{ marginLeft: 0, marginBottom: 0 }}>}</p>
             </div>
         </div>
     );

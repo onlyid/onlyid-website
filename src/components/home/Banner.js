@@ -16,18 +16,8 @@ export default function () {
                         classes={{ tooltip: styles.tooltip1 }}
                     >
                         <span className="material-icons">help</span>
-                    </Tooltip>{" "}
-                    的 IDaaS
-                    <Tooltip
-                        title="Identity as a Service，基于云端的身份管理"
-                        placement="top"
-                        enterTouchDelay={0}
-                        leaveTouchDelay={5000}
-                        classes={{ tooltip: styles.tooltip1 }}
-                    >
-                        <span className="material-icons">help</span>
-                    </Tooltip>{" "}
-                    解决方案
+                    </Tooltip>
+                    的 IDaaS 解决方案
                 </h1>
                 <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事</p>
                 <div>

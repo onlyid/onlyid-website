@@ -134,5 +134,6 @@
 @media (max-width: 996px) {
     .main-title {
         margin-top: 5px;
+        margin-bottom: 55px;
     }
 }

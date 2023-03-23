@@ -82,8 +82,8 @@
         margin-bottom: 40px;
     }
 
-    .item {
-        padding-left: 25px;
+    .item ul {
+        padding-left: 0;
     }
 
     .root :global .col:nth-child(2) {
@@ -120,6 +120,6 @@
 
 @media (min-width: 1140px) {
     .root {
-        --col-padding: 3%;
+        --col-padding: 40px;
     }
 }

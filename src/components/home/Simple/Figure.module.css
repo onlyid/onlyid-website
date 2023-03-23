@@ -1,15 +1,15 @@
 .root {
-    padding: 1rem;
+    padding: 2rem;
     font-family: var(--ifm-font-family-monospace);
     font-size: 14px;
     background-color: var(--ifm-pre-background);
-    width: 470px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
     overflow: auto;
 }
 
 .root p {
-    margin-bottom: 0;
+    margin-bottom: 2px;
     white-space: nowrap;
 }
 
@@ -39,4 +39,10 @@
 
 .params p > span {
     color: #026b07;
+}
+
+@media (max-width: 996px) {
+    .root {
+        padding-left: 1rem;
+    }
 }
