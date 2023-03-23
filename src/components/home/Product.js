@@ -13,8 +13,7 @@ export default function () {
                         <Link className={styles.item} to="/one-time-password">
                             <span className={classNames("material-icons", styles.pin)}>pin</span>
                             <h3>
-                                <span className={styles.name}>OTP</span>
-                                无密码 轻认证
+                                无密码 轻认证<span>OTP</span>
                             </h3>
                             <p>用短信/邮件验证码替代传统密码，即使新用户也可以快捷访问你的应用</p>
                         </Link>
@@ -25,8 +24,7 @@ export default function () {
                                 portrait
                             </span>
                             <h3>
-                                <span className={styles.name}>SSO</span>
-                                统一账号 单点登录
+                                统一账号 单点登录<span>SSO</span>
                             </h3>
                             <p>
                                 接入统一认证中心，跨应用共享账号，在别处注册的用户可以直接登录你的应用
@@ -39,8 +37,7 @@ export default function () {
                                 groups
                             </span>
                             <h3>
-                                <span className={styles.name}>UAM</span>
-                                用户管理 权限控制
+                                用户管理 权限控制<span>UAM</span>
                             </h3>
                             <p>
                                 使用控制台和Open API简单快捷地管理用户，为不同的用户灵活分配访问权限
