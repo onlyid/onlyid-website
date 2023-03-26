@@ -30,7 +30,6 @@
 .img1 {
     vertical-align: middle;
     width: 530px;
-    border-radius: 25px;
     opacity: 95%;
 }
 
@@ -42,6 +41,10 @@
 
     .root :global .col + .col {
         margin-top: 60px;
+    }
+
+    .img1 {
+        border-radius: 20px;
     }
 }
 
@@ -61,5 +64,9 @@
 
     .box1 :global .material-icons {
         margin-top: -20px;
+    }
+
+    .img1 {
+        border-radius: 25px;
     }
 }
