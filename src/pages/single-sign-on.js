@@ -8,7 +8,7 @@ import Case from "../components/single-sign-on/Case";
 
 export default function () {
     return (
-        <Layout title="统一账号 单点登录">
+        <Layout title="统一账号 单点登录 SSO">
             <Banner />
             <Intro />
             <Compare />
