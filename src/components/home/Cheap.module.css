@@ -18,8 +18,7 @@
 
 .item h3 {
     font-size: 24px;
-    height: 40px;
-    line-height: 40px;
+    margin-bottom: 20px;
 }
 
 .item p {
@@ -29,20 +28,18 @@
 
 .money,
 .infinity {
-    border-radius: 50%;
-    border: 1px solid #e8e8e8;
-    padding: 5px;
-    margin-right: 20px;
-    font-size: 25px !important;
+    margin-right: 25px;
+    font-size: 35px;
 }
 
 .money {
     color: #f5ce15;
+    vertical-align: -10%;
 }
 
 .infinity {
     color: #3f51b5;
-    vertical-align: -15%;
+    vertical-align: -22%;
 }
 
 .button1 {
