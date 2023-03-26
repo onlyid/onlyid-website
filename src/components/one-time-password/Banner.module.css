@@ -1,82 +1,69 @@
 .root {
-    background-image: url("../../../static/img/otp-banner-bg.png");
+    background-image: url("/img/otp-banner-bg.png");
     background-size: cover;
-    background-position: center center;
     color: white;
 }
 
-.title {
+.box1 :global .material-icons {
+    font-size: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    color: #4caf50;
+}
+
+.box1 h1 {
     font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
-.title :global .material-icons {
-    font-size: 1.4rem;
-    vertical-align: text-top;
-    cursor: default;
+.box1 h1 span {
+    margin-left: 18px;
 }
 
-.subtitle {
-    font-size: 22px;
+.box1 p {
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
-.buttonBox a {
-    font-size: 16px;
-}
-
-.buttonBox :global .button--secondary {
-    opacity: 90%;
+.box1 :global .button {
+    --ifm-button-size-multiplier: 1.2;
 }
 
 .img1 {
     vertical-align: middle;
-    width: 100%;
-    border-radius: 15px;
+    width: 530px;
+    border-radius: 25px;
     opacity: 95%;
 }
 
 @media (max-width: 996px) {
     .root {
-        padding: 76px 0 80px;
+        padding: 72px 0 90px;
+        background-position: 25% center;
     }
 
     .root :global .col + .col {
-        margin-top: 42px;
-    }
-
-    .title {
-        margin-bottom: 25px;
-    }
-
-    .subtitle {
-        margin-bottom: 28px;
-    }
-
-    .img1 {
-        max-width: 400px;
+        margin-top: 60px;
     }
 }
 
 @media (min-width: 997px) {
     .root {
-        padding: 56px 0;
+        padding: 55px 0;
+        background-position: center center;
     }
 
     .root :global .row {
         align-items: center;
-        justify-content: space-between;
     }
 
-    .root :global .col {
-        --col-width: calc(59 / 120 * 100%);
-        flex: 0 0 var(--col-width);
-        max-width: var(--col-width);
+    .root :global .col:nth-child(2) {
+        text-align: right;
     }
 
-    .title {
-        margin-bottom: 32px;
-    }
-
-    .subtitle {
-        margin-bottom: 35px;
+    .box1 :global .material-icons {
+        margin-top: -20px;
     }
 }
