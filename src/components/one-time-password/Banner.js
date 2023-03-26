@@ -11,9 +11,7 @@ export default function () {
                 <div className="row">
                     <div className={classNames("col", styles.box1)}>
                         <span className="material-icons">pin</span>
-                        <h1>
-                            无密码 轻认证<span>OTP</span>
-                        </h1>
+                        <h1>无密码 轻认证 &nbsp;OTP</h1>
                         <p>用短信/邮件验证码替代传统密码，即使新用户也可以快捷访问你的应用</p>
                         <Link className="button button--primary" to="/docs/otp">
                             查看文档

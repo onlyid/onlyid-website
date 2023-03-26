@@ -44,10 +44,6 @@ a.item {
     font-size: 22px;
 }
 
-.item h3 span {
-    margin-left: 12px;
-}
-
 .item p {
     color: var(--ifm-color-gray-800);
     margin-bottom: 0;

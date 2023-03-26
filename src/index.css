@@ -111,7 +111,7 @@
 
 .nav-item-product + ul .name {
     font-family: var(--ifm-font-family-monospace);
-    margin-left: 9px;
+    margin-left: 6px;
 }
 
 .nav-item-product + .menu__list [class^="material-icons"] {
