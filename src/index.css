@@ -19,9 +19,9 @@
     font-family: "Material Icons";
     font-style: normal;
     font-weight: 400;
-    src: url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff2)
+    src: url(//cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff2)
             format("woff2"),
-        url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff)
+        url(//cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons.woff)
             format("woff");
 }
 
@@ -29,9 +29,9 @@
     font-family: "Material Icons Outlined";
     font-style: normal;
     font-weight: 400;
-    src: url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff2)
+    src: url(//cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff2)
             format("woff2"),
-        url(https://cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff)
+        url(//cdn.jsdelivr.net/npm/material-icons@1.13.1/iconfont/material-icons-outlined.woff)
             format("woff");
 }
 
@@ -82,7 +82,7 @@
     --ifm-color-primary-lighter: #7986cb;
     --ifm-color-primary-lightest: #9fa8da;
     --ifm-code-font-size: 95%;
-    --ifm-navbar-item-padding-horizontal: 0.85rem;
+    --ifm-navbar-item-padding-horizontal: 1rem;
     --ifm-navbar-height: 3.5rem;
     --ifm-menu-link-padding-vertical: 0.475rem;
     --ifm-font-color-base: rgba(0, 0, 0, 0.87);
@@ -106,18 +106,13 @@
 .nav-item-product + .dropdown__menu [class^="material-icons"] {
     vertical-align: -25%;
     padding-right: 15px;
-    color: var(--ifm-color-gray-800);
-}
-
-.nav-item-product + ul .name {
-    font-family: var(--ifm-font-family-monospace);
-    margin-left: 6px;
+    opacity: 0.95;
 }
 
 .nav-item-product + .menu__list [class^="material-icons"] {
     font-size: 25px;
     padding-right: 15px;
-    color: var(--ifm-color-gray-700);
+    opacity: 0.95;
 }
 
 .nav-item-github .iconfont {

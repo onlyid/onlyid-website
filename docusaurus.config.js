@@ -1,36 +1,33 @@
 const codeTheme = require("prism-react-renderer/themes/github");
 
-const otpHtml =
-    '<span class="material-icons-outlined">pin</span>无密码 轻认证<span class="name">OTP</span>';
-const ssoHtml =
-    '<span class="material-icons">portrait</span>统一账号 单点登录<span class="name">SSO</span>';
-const uamHtml =
-    '<span class="material-icons-outlined">groups</span>用户管理 权限控制<span class="name">UAM</span>';
+const productMenu = [
+    {
+        html: '<span class="material-icons-outlined">pin</span>无密码 轻认证 &nbsp;OTP',
+        to: "/one-time-password"
+    },
+    {
+        html: '<span class="material-icons">portrait</span>统一账号 单点登录 &nbsp;SSO',
+        to: "/single-sign-on"
+    },
+    {
+        html: '<span class="material-icons-outlined">groups</span>用户管理 权限控制 &nbsp;UAM',
+        to: "/user-and-access-management"
+    }
+];
 
 module.exports = {
     title: "唯ID",
     url: "https://www.onlyid.net",
     baseUrl: "/home/",
     favicon: "img/favicon.png",
-    i18n: {
-        defaultLocale: "zh",
-        locales: ["zh"]
-    },
+    i18n: { defaultLocale: "zh", locales: ["zh"] },
     themeConfig: {
         navbar: {
             logo: {
                 src: "img/logo.svg"
             },
             items: [
-                {
-                    label: "产品",
-                    items: [
-                        { html: otpHtml, to: "/one-time-password" },
-                        { html: ssoHtml, to: "/single-sign-on" },
-                        { html: uamHtml, to: "/user-and-access-management" }
-                    ],
-                    className: "nav-item-product"
-                },
+                { label: "产品", items: productMenu, className: "nav-item-product" },
                 { type: "doc", docId: "intro", label: "文档" },
                 { to: "/pricing", label: "价格" },
                 { to: "/blog", label: "博客" },
