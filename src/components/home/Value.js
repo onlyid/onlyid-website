@@ -43,7 +43,7 @@ export default function () {
                                         title="一些社交登录只返回平台相关ID，意在绑定应用不能自由迁出"
                                         placement="top"
                                         enterTouchDelay={0}
-                                        leaveTouchDelay={5000}
+                                        leaveTouchDelay={0}
                                     >
                                         <span className="material-icons">help_outline</span>
                                     </Tooltip>

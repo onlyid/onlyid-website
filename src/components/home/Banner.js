@@ -7,16 +7,19 @@ export default function () {
         <section className={styles.root}>
             <div>
                 <h1 className={styles.title}>
-                    唯ID是面向 公众应用
-                    <Tooltip
-                        title="区别于企业内部信息系统"
-                        placement="top"
-                        enterTouchDelay={0}
-                        leaveTouchDelay={5000}
-                        classes={{ tooltip: styles.tooltip1 }}
-                    >
-                        <span className="material-icons">help</span>
-                    </Tooltip>
+                    唯ID是面向{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>
+                        公众应用
+                        <Tooltip
+                            title="区别于企业内部信息系统"
+                            placement="top"
+                            enterTouchDelay={0}
+                            leaveTouchDelay={0}
+                            classes={{ tooltip: styles.tooltip1 }}
+                        >
+                            <span className="material-icons">help</span>
+                        </Tooltip>
+                    </span>
                     的 IDaaS 解决方案
                 </h1>
                 <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事</p>

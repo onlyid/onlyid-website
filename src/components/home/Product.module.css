@@ -1,13 +1,13 @@
 .root {
     background-image: url("/img/home-product-bg.svg");
-    padding: 68px 0 80px;
+    padding: 68px 0 85px;
 }
 
 a.item {
     background-color: white;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
-    padding: 28px;
+    padding: 28px 20px 28px 28px;
     height: 100%;
     display: block;
     text-decoration: none;
@@ -51,6 +51,6 @@ a.item {
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 48px;
+        margin-top: 50px;
     }
 }

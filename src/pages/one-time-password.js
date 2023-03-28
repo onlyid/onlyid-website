@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 import Banner from "../components/one-time-password/Banner";
 import Intro from "../components/one-time-password/Intro";
 import Unlimited from "../components/one-time-password/Unlimited";
-import Scene from "../components/one-time-password/Scene";
+import Usage from "../components/one-time-password/Usage";
 import Case from "../components/one-time-password/Case";
 
 export default function () {
@@ -12,7 +12,7 @@ export default function () {
             <Banner />
             <Intro />
             <Unlimited />
-            <Scene />
+            <Usage />
             <Case />
         </Layout>
     );

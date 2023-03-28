@@ -1,18 +1,10 @@
-.root {
-    padding: 64px 0 72px;
-}
-
 .img1 {
     vertical-align: middle;
-    width: 100%;
-    border: 1px solid #e8e8e8;
-    background-color: #fcfdfe;
-    border-radius: 15px;
-    padding: 0 30px;
+    width: 380px;
 }
 
 .p1 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .title {
@@ -28,12 +20,12 @@
 .satisfied,
 .security {
     margin-right: 25px;
-    font-size: 36px !important;
+    font-size: 35px;
     vertical-align: -22%;
 }
 
 .satisfied {
-    color: #f08c10;
+    color: #f7a918;
 }
 
 .security {
@@ -41,33 +33,52 @@
 }
 
 @media (max-width: 996px) {
-    .root :global .col + .col {
-        margin-top: 38px;
+    .root {
+        padding: 85px 0 80px;
     }
 
-    .img1 {
-        max-width: 400px;
+    .root :global .col + .col {
+        margin-top: 48px;
+    }
+
+    .root :global .col:first-child {
+        text-align: center;
     }
 
     .p1 {
-        margin-bottom: 30px;
+        margin-bottom: 38px;
     }
 
-    .box1 {
-        margin-top: 30px;
+    .item + .item {
+        margin-top: 38px;
     }
 }
 
 @media (min-width: 997px) {
+    .root {
+        padding: 64px 0;
+    }
+
     .root :global .row {
         align-items: center;
     }
 
-    .p1 {
-        margin-bottom: 45px;
+    .root :global .col:first-child {
+        margin-left: 20px;
     }
 
-    .box1 {
+    .root :global .col:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-right: 20px;
+    }
+
+    .p1 {
+        margin-bottom: 50px;
+    }
+
+    .item + .item {
         margin-top: 50px;
     }
 }

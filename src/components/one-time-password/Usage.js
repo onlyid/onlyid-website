@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Scene.module.css";
-import otpScene from "@site/static/img/otp-scene.jpg";
+import styles from "./Usage.module.css";
+import otpScene from "@site/static/img/otp-usage.jpg";
 import classNames from "classnames";
 
 export default function () {

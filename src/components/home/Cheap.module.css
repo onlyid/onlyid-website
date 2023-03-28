@@ -12,10 +12,6 @@
     opacity: 95%;
 }
 
-.item + .item {
-    margin-top: 40px;
-}
-
 .item h3 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -45,17 +41,20 @@
 .button1 {
     --ifm-button-size-multiplier: 1.05;
     margin-top: 45px;
-    margin-left: 46px;
+    margin-left: 50px;
 }
 
 @media (max-width: 996px) {
     .root :global .row {
-        /* 从语义上来说 这句话和下面两个特点是连在一起的 所以稍微减少margin */
-        margin-top: 45px;
+        margin-top: 40px;
     }
 
     .root :global .col + .col {
-        margin-top: 48px;
+        margin-top: 52px;
+    }
+
+    .item + .item {
+        margin-top: 35px;
     }
 }
 
@@ -71,6 +70,10 @@
     .root :global .col--5 {
         text-align: right;
         margin-top: -20px;
+    }
+
+    .item + .item {
+        margin-top: 40px;
     }
 }
 

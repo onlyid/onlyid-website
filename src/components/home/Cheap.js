@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Cheap.module.css";
-import price from "@site/static/img/home-price.png";
+import cheap from "@site/static/img/home-cheap.png";
 import classNames from "classnames";
 import Link from "@docusaurus/Link";
 
@@ -40,7 +40,7 @@ export default function () {
                         </Link>
                     </div>
                     <div className="col col--5">
-                        <img src={price} alt="price" className={styles.img1} />
+                        <img src={cheap} alt="cheap" className={styles.img1} />
                     </div>
                 </div>
             </div>

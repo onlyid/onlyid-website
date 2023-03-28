@@ -1,5 +1,5 @@
 .root {
-    padding: 68px 0 80px;
+    padding: 68px 0 85px;
     background-color: #fafafa;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .titleBox {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     display: flex;
     align-items: center;
 }
@@ -62,17 +62,17 @@
 .item ul {
     margin: 0;
     padding-left: 1em;
-    font-size: 18px;
+    font-size: 19px;
     list-style-type: circle;
 }
 
 .item li + li {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .item li :global .material-icons {
     font-size: 20px;
-    color: var(--ifm-color-gray-800);
+    opacity: 95%;
     vertical-align: -15%;
     cursor: default;
 }
@@ -82,12 +82,19 @@
         margin-bottom: 40px;
     }
 
-    .item ul {
-        padding-left: 0;
+    .root :global .col:nth-child(2) {
+        margin-top: 52px;
     }
 
-    .root :global .col:nth-child(2) {
-        margin-top: 48px;
+    .item {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .item ul {
+        padding-left: 0;
     }
 }
 
@@ -98,7 +105,6 @@
 
     .p1 {
         text-indent: 2em;
-        margin-bottom: 25px;
     }
 
     .root :global .col:nth-child(1) {
@@ -109,12 +115,12 @@
         padding-left: var(--col-padding);
     }
 
-    .neutral .titleBox {
-        margin-bottom: 40px;
+    .open .titleBox {
+        margin-bottom: 30px;
     }
 
-    .neutral li + li {
-        margin-top: 15px;
+    .open li + li {
+        margin-top: 12px;
     }
 }
 

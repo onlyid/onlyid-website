@@ -31,7 +31,6 @@
 
 .item img {
     width: 80px;
-    margin-right: 30px;
 }
 
 .item h3 {
@@ -64,6 +63,10 @@
     .row2 :global .col + .col {
         margin-top: 48px;
     }
+
+    .item img {
+        margin-right: 15px;
+    }
 }
 
 @media (min-width: 997px) {
@@ -75,17 +78,21 @@
         width: 95%;
     }
 
-    .row2 :global .col:first-child {
-        padding-right: 1.1rem;
-    }
-
-    .row2 :global .col:nth-child(2) {
-        padding-left: 1.1rem;
+    .item img {
+        margin-right: 30px;
     }
 }
 
 @media (min-width: 1140px) {
     .row1 :global .col:nth-child(2) {
         padding-left: 40px;
+    }
+
+    .row2 :global .col:first-child {
+        padding-right: 1.1rem;
+    }
+
+    .row2 :global .col:nth-child(2) {
+        padding-left: 1.1rem;
     }
 }
