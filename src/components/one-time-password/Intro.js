@@ -15,7 +15,7 @@ export default function () {
                         <p className={styles.p1}>如今验证码逐渐替代密码，广泛应用在登录/认证场景</p>
                         <div>
                             <div className={styles.item}>
-                                <h3 className={styles.title}>
+                                <h3>
                                     <span
                                         className={classNames("material-icons", styles.satisfied)}
                                     >
@@ -23,20 +23,16 @@ export default function () {
                                     </span>
                                     用户轻松
                                 </h3>
-                                <p className={styles.detail}>
-                                    在每次需要时生成，不像密码需要记忆，用户体验简单友好
-                                </p>
+                                <p>在每次需要时生成，不像密码需要记忆，用户体验简单友好</p>
                             </div>
                             <div className={styles.item}>
-                                <h3 className={styles.title}>
+                                <h3>
                                     <span className={classNames("material-icons", styles.security)}>
                                         security
                                     </span>
                                     更加安全
                                 </h3>
-                                <p className={styles.detail}>
-                                    动态的验证码仅一次性使用，杜绝密码长期不变的安全风险
-                                </p>
+                                <p>动态的验证码仅一次性使用，杜绝密码长期不变的安全风险</p>
                             </div>
                         </div>
                     </div>
