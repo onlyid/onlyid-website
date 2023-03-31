@@ -43,9 +43,6 @@
 
     .root :global .col:first-child {
         margin-top: 52px;
-    }
-
-    .root :global .col:first-child {
         text-align: center;
     }
 
@@ -83,7 +80,7 @@
     }
 
     .item + .item {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 }
 

@@ -41,11 +41,8 @@
         border-top: 1px solid #eee;
     }
 
-    .root :global .col + .col {
-        margin-top: 32px;
-    }
-
     .root :global .col:nth-child(2) {
+        margin-top: 30px;
         text-align: center;
     }
 
@@ -81,7 +78,7 @@
     }
 
     .item + .item {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 }
 
