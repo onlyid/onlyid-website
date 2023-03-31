@@ -37,7 +37,7 @@
     }
 
     .root :global .col + .col {
-        margin-top: 48px;
+        margin-top: 46px;
     }
 
     .p1 {

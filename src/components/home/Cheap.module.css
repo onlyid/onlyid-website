@@ -50,7 +50,7 @@
     }
 
     .root :global .col + .col {
-        margin-top: 52px;
+        margin-top: 56px;
     }
 
     .item + .item {

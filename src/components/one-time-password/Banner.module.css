@@ -85,3 +85,9 @@
         border-radius: 25px;
     }
 }
+
+@media (min-width: 1140px) {
+    .root .col1 {
+        margin-left: 1rem;
+    }
+}

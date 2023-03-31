@@ -68,12 +68,12 @@
     }
 
     .root :global .col:first-child {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .root :global .col:nth-child(2) {
         text-align: right;
-        margin-right: 20px;
+        margin-right: 1rem;
     }
 
     .p1 {
@@ -82,5 +82,15 @@
 
     .item + .item {
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .root :global .col:first-child {
+        margin-left: 2.5rem;
+    }
+
+    .root :global .col:nth-child(2) {
+        margin-right: 2.5rem;
     }
 }
