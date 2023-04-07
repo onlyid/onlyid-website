@@ -12,6 +12,7 @@
 }
 
 .title :global .material-icons {
+    font-size: 22px;
     vertical-align: text-top;
     cursor: default;
 }
@@ -26,25 +27,17 @@
 
 @media (max-width: 996px) {
     .title {
-        font-size: 40px;
-    }
-
-    .title :global .material-icons {
-        font-size: 20px;
+        font-size: 45px;
     }
 
     .subtitle {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 
 @media (min-width: 997px) {
     .title {
         font-size: 50px;
-    }
-
-    .title :global .material-icons {
-        font-size: 22px;
     }
 
     .subtitle {

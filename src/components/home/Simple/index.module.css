@@ -30,16 +30,16 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 @media (max-width: 996px) {
     .root :global .col + .col {
-        margin-top: 48px;
+        margin-top: 50px;
     }
 
     .item + .item {
-        margin-top: 36px;
+        margin-top: 38px;
     }
 
     .box1 {

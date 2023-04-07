@@ -10,21 +10,13 @@
 .item {
     background-repeat: repeat-y;
     background-color: white;
-    background-size: 40% auto;
+    background-size: 205px auto;
+    background-image: url("/img/home-value-bg.svg");
+    background-position: right top;
     border: 1px solid #e8e8e8;
     border-radius: 25px;
     padding: 35px 20px 35px 40px;
     height: 100%;
-}
-
-.neutral {
-    background-image: url("../../../static/img/home-value-bg1.svg");
-    background-position: right;
-}
-
-.open {
-    background-image: url("../../../static/img/home-value-bg2.svg");
-    background-position: right top;
 }
 
 .titleBox {
@@ -77,13 +69,19 @@
     cursor: default;
 }
 
+@media (max-width: 450px) {
+    .item {
+        background-position: right -40px top;
+    }
+}
+
 @media (max-width: 996px) {
     .p1 {
-        margin-bottom: 40px;
+        margin-bottom: 38px;
     }
 
     .root :global .col:nth-child(2) {
-        margin-top: 52px;
+        margin-top: 50px;
     }
 
     .item {
