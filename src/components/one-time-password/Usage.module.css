@@ -1,35 +1,48 @@
 .root {
-    padding: 68px 0 40px;
-    background-color: #fafafa;
+    padding: 68px 0 85px;
 }
 
 .item {
     background-color: white;
-    border: 1px solid #eee;
+    border: 1px solid #e8e8e8;
     border-radius: 20px;
-    padding: 30px;
+    padding: 30px 22px 30px 30px;
 }
 
 /* material-icons */
 .item span {
     font-size: 36px;
-    color: var(--ifm-color-primary);
     border-radius: 50%;
-    border: 2px solid #d0d3ec;
+    border-width: 2px;
+    border-style: solid;
     padding: 10px;
+}
+
+.pin {
+    color: #f08c10;
+    border-color: #fce9d5;
+}
+
+.sso {
+    color: #4caf50;
+    border-color: #def0dc;
+}
+
+.own {
+    color: #2299dd;
+    border-color: #d8eaf9;
 }
 
 .item h3 {
     font-size: 23px;
-    margin-top: 22px;
+    margin-top: 28px;
+    margin-bottom: 25px;
 }
 
 .item p {
     font-size: 17px;
-    margin-top: 22px;
     margin-bottom: 0;
     color: var(--ifm-color-gray-800);
-    text-align: justify;
 }
 
 @media (max-width: 996px) {

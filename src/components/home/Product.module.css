@@ -6,8 +6,7 @@
 a.item {
     background-color: white;
     border-radius: 5px;
-    padding: 28px;
-    text-align: justify;
+    padding: 30px 22px 30px 30px;
     height: 100%;
     display: block;
     text-decoration: none;
@@ -38,9 +37,9 @@ a.item {
 
 .item h3 {
     color: var(--ifm-font-color-base);
-    margin-top: 22px;
-    margin-bottom: 20px;
-    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    font-size: 22px;
     white-space: nowrap;
 }
 

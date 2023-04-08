@@ -15,7 +15,7 @@
     background-position: right top;
     border: 1px solid #eee;
     border-radius: 25px;
-    padding: 35px 30px 35px 35px;
+    padding: 35px 10px 35px 35px;
     height: 100%;
 }
 
@@ -80,7 +80,6 @@
 
     .item {
         background-position: right -40px top;
-        text-align: justify;
     }
 }
 

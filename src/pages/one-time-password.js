@@ -4,6 +4,7 @@ import Banner from "../components/one-time-password/Banner";
 import Intro from "../components/one-time-password/Intro";
 import Subscription from "../components/one-time-password/Subscription";
 import Usage from "../components/one-time-password/Usage";
+import Advantage from "../components/one-time-password/Advantage";
 import Case from "../components/one-time-password/Case";
 
 export default function () {
@@ -12,6 +13,7 @@ export default function () {
             <Banner />
             <Intro />
             <Subscription />
+            <Advantage />
             <Usage />
             <Case />
         </Layout>
