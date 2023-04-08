@@ -13,9 +13,9 @@
     background-size: 205px auto;
     background-image: url("/img/home-value-bg.svg");
     background-position: right top;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #eee;
     border-radius: 25px;
-    padding: 35px 20px 35px 40px;
+    padding: 35px 30px 35px 35px;
     height: 100%;
 }
 
@@ -69,12 +69,6 @@
     cursor: default;
 }
 
-@media (max-width: 450px) {
-    .item {
-        background-position: right -40px top;
-    }
-}
-
 @media (max-width: 996px) {
     .p1 {
         margin-bottom: 38px;
@@ -85,8 +79,7 @@
     }
 
     .item {
-        padding-left: 30px;
-        padding-right: 20px;
+        background-position: right -40px top;
         text-align: justify;
     }
 }
@@ -112,6 +105,10 @@
 
     .root :global .col:nth-child(2) {
         padding-left: var(--col-padding);
+    }
+
+    .open {
+        padding-bottom: 30px;
     }
 
     .open .titleBox {

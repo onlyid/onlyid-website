@@ -14,7 +14,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
-                    <div className="col">
+                    <div className="col col--6">
                         <Figure />
                     </div>
                     <div className="col">

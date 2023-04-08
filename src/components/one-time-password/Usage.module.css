@@ -5,6 +5,7 @@
 
 .item {
     background-color: white;
+    border: 1px solid #eee;
     border-radius: 20px;
     padding: 30px;
 }
@@ -20,7 +21,7 @@
 
 .item h3 {
     font-size: 23px;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .item p {

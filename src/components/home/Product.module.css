@@ -6,7 +6,6 @@
 a.item {
     background-color: white;
     border-radius: 5px;
-    border: 1px solid #e8e8e8;
     padding: 28px;
     text-align: justify;
     height: 100%;
@@ -15,7 +14,6 @@ a.item {
 }
 
 .item:hover {
-    border-color: transparent;
     box-shadow: 0 0 2px 1px rgba(63, 81, 181, 0.7);
 }
 
@@ -43,6 +41,7 @@ a.item {
     margin-top: 22px;
     margin-bottom: 20px;
     font-size: 23px;
+    white-space: nowrap;
 }
 
 .item p {

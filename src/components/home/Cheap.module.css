@@ -48,8 +48,9 @@
         margin-top: 38px;
     }
 
-    .root :global .col + .col {
+    .root :global .col:nth-child(2) {
         margin-top: 54px;
+        text-align: center;
     }
 
     .item + .item {
@@ -58,6 +59,10 @@
 
     .button1 {
         margin-top: 43px;
+    }
+
+    .img1 {
+        max-width: 90%;
     }
 }
 
@@ -79,8 +84,16 @@
         margin-top: 40px;
     }
 
+    .item p {
+        white-space: nowrap;
+    }
+
     .button1 {
         margin-top: 46px;
+    }
+
+    .img1 {
+        margin-right: -5px;
     }
 }
 
@@ -90,12 +103,6 @@
     }
 
     .root :global .col:first-child {
-        margin-left: 1rem;
-    }
-}
-
-@media (min-width: 1140px) {
-    .img1 {
-        margin-right: -5px;
+        padding-left: 2rem;
     }
 }

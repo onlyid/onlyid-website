@@ -13,7 +13,7 @@ export default function () {
                     唯ID专为小微企业/独立开发者打造，是行业内性价比最高的IDaaS解决方案
                 </p>
                 <div className="row">
-                    <div className="col">
+                    <div className="col col--7">
                         <div className={styles.item}>
                             <h3>
                                 <span className={classNames("iconfont", styles.money)}>

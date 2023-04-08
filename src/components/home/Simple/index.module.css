@@ -69,10 +69,10 @@
 
 @media (min-width: 1080px) {
     .root :global .col:first-child {
-        margin-left: 1rem;
+        padding-left: 2rem;
     }
 
     .root :global .col:nth-child(2) {
-        margin-right: 1rem;
+        padding-right: 2rem;
     }
 }

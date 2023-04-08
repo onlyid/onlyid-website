@@ -7,7 +7,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col col--7">
                         <p className={styles.p1}>你的应用需要用户登录和用户管理功能，但...</p>
                         <ul className={styles.ul1}>
                             <li>

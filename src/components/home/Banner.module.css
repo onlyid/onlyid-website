@@ -9,6 +9,7 @@
 
 .title {
     margin-bottom: 40px;
+    font-size: 50px;
 }
 
 .title :global .material-icons {
@@ -19,6 +20,7 @@
 
 .subtitle {
     margin-bottom: 45px;
+    font-size: 26px;
 }
 
 .tooltip1 {
@@ -32,15 +34,5 @@
 
     .subtitle {
         font-size: 24px;
-    }
-}
-
-@media (min-width: 997px) {
-    .title {
-        font-size: 50px;
-    }
-
-    .subtitle {
-        font-size: 26px;
     }
 }
