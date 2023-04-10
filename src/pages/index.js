@@ -6,7 +6,6 @@ import Product from "../components/home/Product";
 import Simple from "../components/home/Simple";
 import Pro from "../components/home/Pro";
 import Value from "../components/home/Value";
-import Cheap from "../components/home/Cheap";
 
 export default function Home() {
     return (
@@ -16,7 +15,6 @@ export default function Home() {
             <Product />
             <Simple />
             <Pro />
-            <Cheap />
             <Value />
         </Layout>
     );

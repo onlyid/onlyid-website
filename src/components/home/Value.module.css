@@ -1,6 +1,9 @@
 .root {
     padding: 68px 0 85px;
-    background-color: #fafafa;
+    background-image: linear-gradient(white, transparent 60%), url("/img/home-value-bg.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 200px;
 }
 
 .p1 {
@@ -8,15 +11,21 @@
 }
 
 .item {
-    background-repeat: repeat-y;
-    background-color: white;
-    background-size: 205px auto;
-    background-image: url("/img/home-value-bg.svg");
-    background-position: right top;
-    border: 1px solid #eee;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 25px;
     padding: 35px 10px 35px 35px;
     height: 100%;
+}
+
+.item.neutral {
+    background-color: white;
+    border-color: #e8e8e8;
+}
+
+.item.open {
+    background-color: #fafafa;
+    border-color: #eee;
 }
 
 .titleBox {
@@ -27,15 +36,16 @@
 
 .neutral .iconBox {
     padding: 20px;
+    background-color: #eee;
 }
 
 .open .iconBox {
     padding: 10px;
+    background-color: #e8e8e8;
 }
 
 .iconBox {
     border-radius: 50%;
-    background-color: #eee;
     width: 90px;
     height: 90px;
 }
@@ -71,7 +81,7 @@
 
 @media (max-width: 996px) {
     .p1 {
-        margin-bottom: 38px;
+        margin-bottom: 35px;
     }
 
     .root :global .col:nth-child(2) {
