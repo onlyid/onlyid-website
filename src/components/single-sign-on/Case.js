@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import styles from "./Case.module.css";
 import caseIcon from "@site/static/img/sso-case-icon.png";
 import screenshot from "@site/static/img/sso-case-screenshot.png";
-import ShowOffDialog from "../one-time-password/ShowOffDialog";
+import ShowOffDialog from "../one-time-password/CaseDialog";
 import classNames from "classnames";
 
 export default class extends PureComponent {

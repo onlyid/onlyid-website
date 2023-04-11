@@ -1,0 +1,18 @@
+.root p:first-child {
+    margin-top: 4px;
+}
+
+.root h4 {
+    margin-top: 28px;
+}
+
+.root ul {
+    list-style-type: circle;
+    padding-left: 1em;
+}
+
+@media (max-width: 996px) {
+    .root {
+        padding-right: 20px;
+    }
+}
