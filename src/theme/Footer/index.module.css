@@ -19,7 +19,7 @@
 }
 
 ul.contact {
-    font-size: 0.9375rem;
+    font-size: 15px;
 }
 
 ul.contact li + li {
@@ -29,14 +29,15 @@ ul.contact li + li {
 ul.contact li :global .material-icons {
     font-size: 1rem;
     vertical-align: -20%;
-    margin-right: 0.4rem;
+    margin-right: 7px;
 }
 
 .qq {
-    font-size: 0.85rem;
-    margin-right: 0.4rem;
+    font-size: 13px;
+    margin-right: 7px;
     display: inline-block;
     width: 1rem;
+    text-align: center;
 }
 
 .company {
@@ -51,7 +52,7 @@ ul.links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.875rem;
+    font-size: 14px;
 }
 
 li.divider {
@@ -60,7 +61,7 @@ li.divider {
 }
 
 .copyright {
-    font-size: 0.875rem;
+    font-size: 14px;
     margin-top: 11px;
     margin-bottom: 0;
     display: flex;

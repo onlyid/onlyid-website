@@ -1,52 +1,24 @@
 import React from "react";
 import styles from "./Banner.module.css";
-import ssoBanner from "@site/static/img/sso-banner.png";
+import img1 from "@site/static/img/sso-banner.png";
 import Link from "@docusaurus/Link";
-import { Tooltip } from "@material-ui/core";
+import cn from "classnames";
 
 export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
                 <div className="row">
-                    <div className="col">
-                        <h1 className={styles.title}>
-                            统一账号 &nbsp;单点登录
-                            <span style={{ whiteSpace: "nowrap" }}>
-                                （SSO
-                                <Tooltip
-                                    title="Single Sign On，单点登录"
-                                    placement="top"
-                                    enterTouchDelay={0}
-                                    leaveTouchDelay={5000}
-                                >
-                                    <span className="material-icons">help</span>
-                                </Tooltip>
-                                ）
-                            </span>
-                        </h1>
-                        <p className={styles.subtitle}>
-                            接入统一认证中心，跨应用共享账号，在别处注册的用户可以直接登录你的应用。
-                        </p>
-                        <div className={styles.buttonBox}>
-                            <a
-                                className="button button--primary button--lg"
-                                href="https://www.onlyid.net/console"
-                                target="_blank"
-                            >
-                                开始使用
-                            </a>
-                            <Link
-                                className="button button--secondary button--lg"
-                                to="/docs/sso"
-                                style={{ marginLeft: 30 }}
-                            >
-                                查看文档
-                            </Link>
-                        </div>
+                    <div className={cn("col", styles.col1)}>
+                        <span className="material-icons">portrait</span>
+                        <h1>单点登录 SSO</h1>
+                        <p>接入统一认证中心，跨应用共享账号，在别处注册的用户直接登录你的应用</p>
+                        <Link className="button button--primary" to="/docs/single-sign-on">
+                            查看文档
+                        </Link>
                     </div>
                     <div className="col">
-                        <img src={ssoBanner} alt="ssoBanner" className={styles.img1} />
+                        <img src={img1} alt="sso" className={styles.img1} />
                     </div>
                 </div>
             </div>

@@ -2,16 +2,16 @@ const codeTheme = require("prism-react-renderer/themes/github");
 
 const productMenu = [
     {
-        html: '<span class="material-icons-outlined">pin</span>无密码 轻认证 &nbsp;OTP',
+        html: '<span class="material-icons-outlined">pin</span>轻认证 OTP',
         to: "/one-time-password"
     },
     {
-        html: '<span class="material-icons">portrait</span>统一账号 单点登录 &nbsp;SSO',
+        html: '<span class="material-icons">portrait</span>单点登录 SSO',
         to: "/single-sign-on"
     },
     {
-        html: '<span class="material-icons-outlined">groups</span>用户管理 权限控制 &nbsp;UAM',
-        to: "/user-and-access-management"
+        html: '<span class="material-icons-outlined">groups</span>用户管理 UM',
+        to: "/user-management"
     }
 ];
 

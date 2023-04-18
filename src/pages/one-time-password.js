@@ -9,7 +9,7 @@ import Case from "../components/one-time-password/Case";
 
 export default function () {
     return (
-        <Layout title="无密码 轻认证 OTP">
+        <Layout title="轻认证 OTP">
             <Banner />
             <Intro />
             <Subscription />
