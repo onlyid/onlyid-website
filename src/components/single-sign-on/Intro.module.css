@@ -1,75 +1,83 @@
 .root {
-    padding: 64px 0 72px;
+    background-color: #fafafa;
 }
 
-.img1 {
-    vertical-align: middle;
-    width: 100%;
-    opacity: 95%;
+.p1 {
+    font-size: 22px;
 }
 
-.title {
-    font-size: 24px;
-    margin-bottom: 20px;
+.sideBox {
+    display: flex;
+    align-items: center;
 }
 
-.detail {
-    font-size: 18px;
+.sideBox h4 {
+    margin-bottom: 0;
+    padding-right: 12px;
+    color: #7f7f7f;
+    font-size: 17px;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.16);
+    flex-grow: 1;
+}
+
+.item :global .material-icons {
+    font-size: 28px;
+    vertical-align: -20%;
+    padding-right: 15px;
+}
+
+.item h3 {
+    font-size: 22px;
+}
+
+.item p {
+    color: var(--ifm-color-gray-800);
+    font-size: 17px;
     margin-bottom: 0;
 }
 
-.root :global .material-icons {
-    margin-right: 25px;
-    font-size: 36px !important;
-    vertical-align: -22%;
-}
-
-.password {
-    color: #f08c10;
-}
-
-.account {
-    color: #3f51b5;
-}
-
-.fingerprint {
-    color: #4caf50;
-}
-
 @media (max-width: 996px) {
-    .right {
+    .root {
+        padding: 80px 0;
+    }
+
+    .p1 {
+        margin-bottom: 46px;
+    }
+
+    .root :global .col:last-child {
+        margin-top: 48px;
+    }
+
+    .item {
         margin-top: 38px;
-    }
-
-    .img1 {
-        max-width: 400px;
-    }
-
-    .right > div + div {
-        margin-top: 30px;
     }
 }
 
 @media (min-width: 997px) {
-    .root :global .row {
-        align-items: center;
-        justify-content: space-between;
+    .root {
+        padding: 72px 0 80px;
     }
 
-    .root :global .col {
-        flex: 0 0 var(--col-width);
-        max-width: var(--col-width);
+    .p1 {
+        text-align: center;
+        margin-bottom: 52px;
     }
 
-    .left {
-        --col-width: calc(52 / 120 * 100%);
+    .root :global .col:first-child {
+        display: flex;
     }
 
-    .right {
-        --col-width: calc(58 / 120 * 100%);
+    .root :global .col:last-child {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .right > div + div {
-        margin-top: 45px;
+    .item {
+        margin-top: 42px;
     }
 }

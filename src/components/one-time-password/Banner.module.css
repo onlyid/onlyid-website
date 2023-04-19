@@ -7,7 +7,7 @@
 .col1 :global .material-icons {
     font-size: 45px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     color: #4caf50;
 }
@@ -27,7 +27,7 @@
 .img1 {
     vertical-align: middle;
     width: 530px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 996px) {
