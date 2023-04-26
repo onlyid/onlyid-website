@@ -1,9 +1,8 @@
 .root {
-    padding: 2rem 2rem 1.7rem 2rem;
+    padding: 2rem 1rem 1.8rem 2rem;
     font-family: var(--ifm-font-family-monospace);
     font-size: 14px;
     background-color: var(--ifm-pre-background);
-    width: 500px;
     max-width: 100%;
     overflow: auto;
     border-radius: 15px;
@@ -45,6 +44,6 @@
 @media (max-width: 500px) {
     .root {
         font-size: 13px;
-        padding-left: 1.5rem;
+        padding: 1.8rem 0 1.6rem 1.5rem;
     }
 }

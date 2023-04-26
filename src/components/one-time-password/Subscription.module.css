@@ -1,3 +1,7 @@
+.root :global .col:last-child {
+    text-align: center;
+}
+
 .p1 {
     font-size: 22px;
 }
@@ -41,9 +45,8 @@
         border-top: 1px solid #eee;
     }
 
-    .root :global .col:nth-child(2) {
+    .root :global .col:last-child {
         margin-top: 32px;
-        text-align: center;
     }
 
     .p1 {
@@ -69,12 +72,11 @@
     }
 
     .root :global .col:first-child {
-        padding-left: 2rem;
+        margin-left: 12px;
     }
 
-    .root :global .col:nth-child(2) {
-        text-align: right;
-        padding-right: 2rem;
+    .root :global .col:last-child {
+        margin-right: 12px;
     }
 
     .p1 {
@@ -86,12 +88,12 @@
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1080px) {
     .root :global .col:first-child {
-        padding-left: 3.5rem;
+        margin-left: 1.5rem;
     }
 
-    .root :global .col:nth-child(2) {
-        padding-right: 3.5rem;
+    .root :global .col:last-child {
+        margin-right: 1.5rem;
     }
 }

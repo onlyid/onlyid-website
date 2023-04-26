@@ -1,7 +1,6 @@
 import React from "react";
 import Figure from "./Figure";
 import styles from "./index.module.css";
-import classNames from "classnames";
 import Java from "@site/static/img/home-java.svg";
 import Php from "@site/static/img/home-php.svg";
 import Python from "@site/static/img/home-python.svg";
@@ -18,10 +17,11 @@ export default function () {
                         <Figure />
                     </div>
                     <div className="col">
+                        <p className={styles.p1}>在打造唯ID的时候，我们始终坚持开发者优先原则️</p>
                         <div>
                             <div className={styles.item}>
                                 <h3>
-                                    <span className={classNames("material-icons", styles.code)}>
+                                    <span className="material-icons" style={{ color: "#2299dd" }}>
                                         code
                                     </span>
                                     上手简单
@@ -30,8 +30,8 @@ export default function () {
                             </div>
                             <div className={styles.item}>
                                 <h3>
-                                    <span className={classNames("material-icons", styles.category)}>
-                                        category
+                                    <span className="material-icons" style={{ color: "#4caf50" }}>
+                                        data_object
                                     </span>
                                     技术中立
                                 </h3>

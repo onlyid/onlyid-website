@@ -1,5 +1,9 @@
 .root {
-    padding: 68px 0 80px;
+    padding: 68px 0 76px;
+}
+
+.p1 {
+    font-size: 21px;
 }
 
 .item h3 {
@@ -18,14 +22,6 @@
     vertical-align: -22%;
 }
 
-.code {
-    color: #2299dd;
-}
-
-.category {
-    color: #4caf50;
-}
-
 .box1 {
     display: grid;
     align-items: center;
@@ -36,6 +32,10 @@
 @media (max-width: 996px) {
     .root :global .col + .col {
         margin-top: 50px;
+    }
+
+    .p1 {
+        margin-bottom: 38px;
     }
 
     .item + .item {
@@ -53,13 +53,22 @@
         align-items: center;
     }
 
-    .root :global .col:nth-child(2) {
+    .root :global .col:first-child {
         display: flex;
-        justify-content: right;
+    }
+
+    .root :global .col:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .p1 {
+        margin-bottom: 42px;
     }
 
     .item + .item {
-        margin-top: 58px;
+        margin-top: 42px;
     }
 
     .box1 {
@@ -69,10 +78,10 @@
 
 @media (min-width: 1080px) {
     .root :global .col:first-child {
-        padding-left: 2rem;
+        margin-left: 1rem;
     }
 
-    .root :global .col:nth-child(2) {
-        padding-right: 2rem;
+    .root :global .col:last-child {
+        margin-right: 1rem;
     }
 }

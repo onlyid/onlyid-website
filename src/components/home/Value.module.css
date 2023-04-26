@@ -26,12 +26,17 @@
 .item.open {
     background-color: #fafafa;
     border-color: #eee;
+    padding-bottom: 30px;
 }
 
 .titleBox {
     margin-bottom: 35px;
     display: flex;
     align-items: center;
+}
+
+.open .titleBox {
+    margin-bottom: 30px;
 }
 
 .neutral .iconBox {
@@ -70,6 +75,10 @@
 
 .item li + li {
     margin-top: 15px;
+}
+
+.item.open li + li {
+    margin-top: 12px;
 }
 
 .item li :global .material-icons {
@@ -114,18 +123,6 @@
 
     .root :global .col:nth-child(2) {
         padding-left: var(--col-padding);
-    }
-
-    .open {
-        padding-bottom: 30px;
-    }
-
-    .open .titleBox {
-        margin-bottom: 30px;
-    }
-
-    .open li + li {
-        margin-top: 12px;
     }
 }
 

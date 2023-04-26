@@ -8,7 +8,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <div className="row">
-                    <div className="col col--7">
+                    <div className="col">
                         <p className={styles.p1}>
                             对比友商竞品，唯ID提供包年订阅服务，更实惠更省心
                         </p>
@@ -31,7 +31,7 @@ export default function () {
                             <p>升级唯ID专业版（年费2000元），就可以发送无限量的验证码</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col col--5">
                         <img src={img1} alt="subscription" className={styles.img1} />
                     </div>
                 </div>

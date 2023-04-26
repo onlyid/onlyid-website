@@ -20,7 +20,7 @@
 
 .divider {
     height: 1px;
-    background-color: rgba(128, 128, 128, 0.16);
+    background-color: rgba(0, 0, 0, 0.1);
     flex-grow: 1;
 }
 
