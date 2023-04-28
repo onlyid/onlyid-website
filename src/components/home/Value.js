@@ -3,7 +3,6 @@ import styles from "./Value.module.css";
 import Neutral from "@site/static/img/home-neutral.svg";
 import OAuth from "@site/static/img/home-oauth.svg";
 import classNames from "classnames";
-import { Tooltip } from "@material-ui/core";
 
 export default function () {
     return (
@@ -37,17 +36,6 @@ export default function () {
                             <ul>
                                 <li>代码开源在GitHub，透明公开，接受公众监管</li>
                                 <li>拥抱开放标准，如单点登录采用OAuth授权协议</li>
-                                <li>
-                                    单点登录返回真实用户标识（手机号/邮箱）
-                                    <Tooltip
-                                        title="一些社交登录只返回平台相关ID，意在绑定应用不能自由迁出"
-                                        placement="top"
-                                        enterTouchDelay={0}
-                                        leaveTouchDelay={0}
-                                    >
-                                        <span className="material-icons">help_outline</span>
-                                    </Tooltip>
-                                </li>
                             </ul>
                         </div>
                     </div>

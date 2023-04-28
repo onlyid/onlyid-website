@@ -14,7 +14,7 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 25px;
-    padding: 35px 10px 35px 35px;
+    padding: 35px 10px 40px 35px;
     height: 100%;
 }
 
@@ -33,10 +33,6 @@
     margin-bottom: 35px;
     display: flex;
     align-items: center;
-}
-
-.open .titleBox {
-    margin-bottom: 30px;
 }
 
 .neutral .iconBox {
@@ -77,28 +73,13 @@
     margin-top: 15px;
 }
 
-.item.open li + li {
-    margin-top: 12px;
-}
-
-.item li :global .material-icons {
-    font-size: 20px;
-    opacity: 95%;
-    vertical-align: -15%;
-    cursor: default;
-}
-
 @media (max-width: 996px) {
     .p1 {
         margin-bottom: 35px;
     }
 
-    .root :global .col:nth-child(2) {
+    .root :global .col:last-child {
         margin-top: 50px;
-    }
-
-    .item {
-        background-position: right -40px top;
     }
 }
 
@@ -117,11 +98,11 @@
         text-indent: 2em;
     }
 
-    .root :global .col:nth-child(1) {
+    .root :global .col:first-child {
         padding-right: var(--col-padding);
     }
 
-    .root :global .col:nth-child(2) {
+    .root :global .col:last-child {
         padding-left: var(--col-padding);
     }
 }
