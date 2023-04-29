@@ -1,0 +1,94 @@
+.root {
+    padding: 68px 0 85px;
+    background-color: #fafafa;
+}
+
+.gridBox {
+    display: grid;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 36px 22px 35px 30px;
+}
+
+.item h3 {
+    font-size: 22px;
+    margin-bottom: 26px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.item h3 :global .material-icons {
+    font-size: 39px;
+    margin-right: 20px;
+    vertical-align: -26%;
+}
+
+.item h3 .neutral {
+    color: #d9413c;
+    font-size: 40px;
+    vertical-align: -28%;
+}
+
+.item h3 .github {
+    font-size: 32px;
+    margin-left: 5px;
+    margin-right: 22px;
+    vertical-align: -8%;
+    opacity: 0.85;
+}
+
+.item h3 .user {
+    color: #3f51b5;
+    font-size: 40px;
+    opacity: 98%;
+    vertical-align: -28%;
+}
+
+.item h3 .oauth {
+    width: 37px;
+    margin-left: 3px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    opacity: 0.75;
+    vertical-align: -25%;
+}
+
+.item p {
+    font-size: 17px;
+    margin-bottom: 0;
+    color: var(--ifm-color-gray-800);
+}
+
+/* tooltip 问号 */
+.item p :global .material-icons {
+    font-size: 19px;
+    opacity: 95%;
+    vertical-align: -15%;
+    cursor: default;
+}
+
+@media (max-width: 996px) {
+    .gridBox {
+        grid-template-columns: 1fr;
+        grid-row-gap: 42px;
+    }
+}
+
+@media (min-width: 997px) {
+    .gridBox {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 32px;
+        grid-row-gap: 36px;
+    }
+}
+
+@media (min-width: 1090px) {
+    .gridBox {
+        grid-column-gap: 36px;
+    }
+}

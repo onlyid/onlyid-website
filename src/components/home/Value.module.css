@@ -83,9 +83,10 @@
     }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1030px) {
     .item ul {
         padding-left: 0;
+        list-style-type: none;
     }
 }
 

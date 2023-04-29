@@ -2,7 +2,8 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Banner from "../components/single-sign-on/Banner";
 import Intro from "../components/single-sign-on/Intro";
-import Compare from "../components/single-sign-on/Compare";
+import One from "../components/single-sign-on/One";
+import Advantage from "../components/single-sign-on/Advantage";
 import Case from "../components/single-sign-on/Case";
 
 export default function () {
@@ -10,7 +11,8 @@ export default function () {
         <Layout title="单点登录 SSO">
             <Banner />
             <Intro />
-            <Compare />
+            <One />
+            <Advantage />
             <Case />
         </Layout>
     );
