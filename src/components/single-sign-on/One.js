@@ -14,11 +14,11 @@ export default function () {
                 <div className="row">
                     <div className={cn("col col--5", styles.col1)}>
                         <div className={styles.imgBox1}>
-                            <img src={img1} alt="intro" />
+                            <img src={img1} alt="one1" />
                             <p>不建议</p>
                         </div>
                         <div className={styles.imgBox2}>
-                            <img src={img2} alt="intro" />
+                            <img src={img2} alt="one2" />
                             <p>
                                 <span className="material-icons">check</span> 推荐
                             </p>

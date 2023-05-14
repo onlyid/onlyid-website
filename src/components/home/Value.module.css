@@ -14,7 +14,7 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 25px;
-    padding: 35px 10px 40px 35px;
+    padding: 35px 25px 40px 35px;
     height: 100%;
 }
 
@@ -75,11 +75,11 @@
 
 @media (max-width: 996px) {
     .p1 {
-        margin-bottom: 35px;
+        margin-bottom: 38px;
     }
 
     .root :global .col:last-child {
-        margin-top: 50px;
+        margin-top: 52px;
     }
 }
 

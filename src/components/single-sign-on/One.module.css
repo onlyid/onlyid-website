@@ -11,6 +11,7 @@
 .col1 {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .imgBox1 {
@@ -70,10 +71,6 @@
         padding-bottom: 80px;
     }
 
-    .col1 {
-        justify-content: center;
-    }
-
     .col2 {
         margin-top: 42px;
     }
@@ -101,12 +98,12 @@
     }
 
     .col1 {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
 
     .col2 {
         margin-top: -20px;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         display: flex;
         justify-content: flex-end;
     }
@@ -124,12 +121,12 @@
     }
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 1050px) {
     .col1 {
-        margin-left: 3rem;
+        margin-left: 2.5rem;
     }
 
     .col2 {
-        margin-right: 1.5rem;
+        margin-right: 1rem;
     }
 }

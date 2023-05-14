@@ -15,4 +15,9 @@
     .root {
         padding-right: 20px;
     }
+
+    .root ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
 }

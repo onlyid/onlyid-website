@@ -4,34 +4,34 @@ import pa from "@site/static/img/home-pingan.jpeg";
 import cmb from "@site/static/img/home-cmb.jpeg";
 import support from "@site/static/img/home-support.png";
 import arch from "@site/static/img/home-arch.png";
-import classNames from "classnames";
+import cn from "classnames";
 
 export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
                 <h2 className="main-title">专业 &nbsp;安全 &nbsp;稳定</h2>
-                <div className={classNames("row", styles.row1)}>
+                <div className={cn("row", styles.row1)}>
                     <div className="col col--2">
                         <img src={pa} alt="pa" className={styles.pa} />
                     </div>
-                    <div className={classNames("col", styles.col1)}>
+                    <div className={cn("col", styles.paCol)}>
                         <p>
                             前平安集团智慧城市统一用户平台负责人，创立唯ID并长期担任总负责人指引前进方向
                         </p>
                     </div>
                 </div>
-                <div className={classNames("row", styles.row1)}>
+                <div className={cn("row", styles.row1)}>
                     <div className="col col--2">
                         <img src={cmb} alt="cmb" className={styles.cmb} />
                     </div>
-                    <div className={classNames("col", styles.col2)}>
+                    <div className={cn("col", styles.cmbCol)}>
                         <p>
                             前招商银行高级风控工程师，打造支付级别安全风控系统，为用户每一次登录保驾护航
                         </p>
                     </div>
                 </div>
-                <div className={classNames("row", styles.row2)}>
+                <div className={cn("row", styles.row2)}>
                     <div className="col">
                         <div className={styles.item}>
                             <img src={arch} alt="arch" />
