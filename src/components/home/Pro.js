@@ -11,21 +11,21 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <h2 className="main-title">专业 &nbsp;安全 &nbsp;稳定</h2>
-                <div className={cn("row", styles.row1)}>
+                <div className={cn("row", styles.row1, styles.rowPa)}>
                     <div className="col col--2">
-                        <img src={pa} alt="pa" className={styles.pa} />
+                        <img src={pa} alt="pa" />
                     </div>
-                    <div className={cn("col", styles.paCol)}>
+                    <div className="col">
                         <p>
                             前平安集团智慧城市统一用户平台负责人，创立唯ID并长期担任总负责人指引前进方向
                         </p>
                     </div>
                 </div>
-                <div className={cn("row", styles.row1)}>
+                <div className={cn("row", styles.row1, styles.rowCmb)}>
                     <div className="col col--2">
-                        <img src={cmb} alt="cmb" className={styles.cmb} />
+                        <img src={cmb} alt="cmb" />
                     </div>
-                    <div className={cn("col", styles.cmbCol)}>
+                    <div className="col">
                         <p>
                             前招商银行高级风控工程师，打造支付级别安全风控系统，为用户每一次登录保驾护航
                         </p>

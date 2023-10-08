@@ -41,7 +41,7 @@
     color: #026b07;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 996px) {
     .root {
         font-size: 13px;
         padding: 1.8rem 0 1.6rem 1.5rem;

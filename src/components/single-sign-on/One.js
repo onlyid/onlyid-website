@@ -8,7 +8,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className={styles.title}>
+                <h2 className="main-title" style={{ fontSize: 30 }}>
                     SSO可以取代<span style={{ whiteSpace: "nowrap" }}>自有+社交登录</span>
                 </h2>
                 <div className="row">
@@ -49,7 +49,7 @@ export default function () {
                                     <span className="material-icons" style={{ color: "#2299dd" }}>
                                         category
                                     </span>
-                                    一个APP
+                                    唯ID APP
                                 </h3>
                                 <p>APP支持扫码登录，还有修改用户资料、管理登录设备等功能</p>
                             </div>

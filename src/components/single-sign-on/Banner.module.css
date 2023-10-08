@@ -13,7 +13,12 @@
 }
 
 .col1 h1 {
+    margin-top: 25px;
     margin-bottom: 30px;
+}
+
+.col1 p {
+    margin-bottom: 40px;
 }
 
 .col1 :global .button {
@@ -33,18 +38,16 @@
         background-position: 25% center;
     }
 
-    .root :global .col + .col {
+    .root :global .col:last-child {
         margin-top: 55px;
     }
 
     .col1 h1 {
-        margin-top: 30px;
         font-size: 38px;
     }
 
     .col1 p {
         font-size: 19px;
-        margin-bottom: 45px;
     }
 
     .img1 {
@@ -71,13 +74,11 @@
     }
 
     .col1 h1 {
-        margin-top: 25px;
         font-size: 45px;
     }
 
     .col1 p {
         font-size: 22px;
-        margin-bottom: 40px;
     }
 
     .img1 {

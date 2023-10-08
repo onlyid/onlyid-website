@@ -44,7 +44,7 @@ export default class extends PureComponent {
                                         版权：<span>&copy; 2020 BiWei Inc</span>
                                     </p>
                                 </div>
-                                <p className={styles.p1}>体验方式：</p>
+                                <p className={styles.p1}>体验方式</p>
                                 <div className={styles.box3}>
                                     <p>iPhone用户请到App Store搜索下载</p>
                                     <p>Android平台暂未上架</p>
@@ -54,7 +54,7 @@ export default class extends PureComponent {
                     </div>
 
                     <span className={styles.button} onClick={this.toggleDialog}>
-                        展示你的应用
+                        展示我的应用
                     </span>
                 </div>
 

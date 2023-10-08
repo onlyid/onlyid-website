@@ -33,7 +33,7 @@
 
 .img1 {
     vertical-align: middle;
-    width: 360px;
+    width: 365px;
 }
 
 @media (max-width: 996px) {
@@ -46,19 +46,15 @@
     }
 
     .root :global .col:last-child {
-        margin-top: 33px;
+        margin-top: 35px;
     }
 
-    .p1 {
-        margin-bottom: 38px;
-    }
-
-    .item + .item {
+    .item {
         margin-top: 38px;
     }
 
     .img1 {
-        max-width: 88%;
+        max-width: 90%;
     }
 }
 

@@ -66,9 +66,9 @@ export default function () {
                             <span className="material-icons" style={{ color: "#f5ce15" }}>
                                 savings
                             </span>
-                            收费合理
+                            价格实惠
                         </h3>
-                        <p>只针对活跃用户收费，不活跃不计费，同一用户多次登录不重复计费</p>
+                        <p>唯ID提供包年订阅服务，年费是200元，可以无限制使用所有功能</p>
                     </div>
                 </div>
             </div>

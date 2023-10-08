@@ -53,11 +53,7 @@
         max-width: 90%;
     }
 
-    .p1 {
-        margin-bottom: 38px;
-    }
-
-    .item + .item {
+    .item {
         margin-top: 38px;
     }
 }

@@ -2,12 +2,6 @@
     padding-top: 68px;
 }
 
-.title {
-    font-size: 30px;
-    margin-bottom: 52px;
-    text-align: center;
-}
-
 .col1 {
     display: flex;
     align-items: center;
@@ -72,7 +66,7 @@
     }
 
     .col2 {
-        margin-top: 42px;
+        margin-top: 45px;
     }
 
     .item + .item {

@@ -40,23 +40,23 @@
 }
 
 @media (max-width: 996px) {
-    .row1:nth-of-type(2) {
+    .rowCmb {
         margin-top: 32px;
     }
 
-    .paCol {
-        margin-top: 25px;
+    .rowPa :global .col:last-child {
+        margin-top: 23px;
     }
 
-    .cmbCol {
-        margin-top: 22px;
+    .rowCmb :global .col:last-child {
+        margin-top: 20px;
     }
 
-    .pa {
+    .rowPa img {
         width: 185px;
     }
 
-    .cmb {
+    .rowCmb img {
         width: 200px;
     }
 
@@ -74,11 +74,11 @@
         align-items: center;
     }
 
-    .row1:nth-of-type(2) {
+    .rowCmb {
         margin-top: 34px;
     }
 
-    .pa {
+    .rowPa img {
         width: 92%;
     }
 
@@ -96,7 +96,7 @@
         padding-right: 1.1rem;
     }
 
-    .row2 :global .col:nth-child(2) {
+    .row2 :global .col:last-child {
         padding-left: 1.1rem;
     }
 }
