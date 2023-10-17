@@ -115,4 +115,8 @@
     .root :global .col:last-child {
         justify-content: flex-end;
     }
+
+    .root :global .col:last-child > div {
+        padding-right: 1rem;
+    }
 }

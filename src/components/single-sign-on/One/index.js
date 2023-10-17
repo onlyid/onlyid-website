@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./One.module.css";
-import img1 from "@site/static/img/sso-one1.png";
-import img2 from "@site/static/img/sso-one2.png";
+import Figure from "./Figure";
+import styles from "./index.module.css";
 import cn from "classnames";
 
 export default function () {
@@ -12,17 +11,8 @@ export default function () {
                     SSO可以取代<span style={{ whiteSpace: "nowrap" }}>自有+社交登录</span>
                 </h2>
                 <div className="row">
-                    <div className={cn("col col--5", styles.col1)}>
-                        <div className={styles.imgBox1}>
-                            <img src={img1} alt="one1" />
-                            <p>不建议</p>
-                        </div>
-                        <div className={styles.imgBox2}>
-                            <img src={img2} alt="one2" />
-                            <p>
-                                <span className="material-icons">check</span> 推荐
-                            </p>
-                        </div>
+                    <div className={cn("col", styles.col1)}>
+                        <Figure />
                     </div>
                     <div className={cn("col", styles.col2)}>
                         <div>

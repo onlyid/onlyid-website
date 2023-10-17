@@ -28,7 +28,7 @@ export default function () {
                                 </span>
                                 无限发送
                             </h3>
-                            <p>除年费外，短信不额外计算费用，可以发送无限量的验证码</p>
+                            <p>除固定年费外，短信不额外计费，可以发送无限量的验证码</p>
                         </div>
                     </div>
                     <div className="col col--5">

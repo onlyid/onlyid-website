@@ -82,13 +82,7 @@
 @media (min-width: 997px) {
     .gridBox {
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 32px;
-        grid-row-gap: 36px;
-    }
-}
-
-@media (min-width: 1090px) {
-    .gridBox {
         grid-column-gap: 36px;
+        grid-row-gap: 36px;
     }
 }

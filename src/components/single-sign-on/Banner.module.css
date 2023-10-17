@@ -65,6 +65,10 @@
         align-items: center;
     }
 
+    .root .col1 {
+        margin-left: 1rem;
+    }
+
     .root :global .col:nth-child(2) {
         text-align: right;
     }
@@ -86,8 +90,8 @@
     }
 }
 
-@media (min-width: 1140px) {
-    .root .col1 {
-        margin-left: 1rem;
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .col:last-child {
+        margin-right: 10px;
     }
 }

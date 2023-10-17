@@ -89,25 +89,25 @@
 }
 
 @media (min-width: 997px) {
-    .root {
-        --col-padding: 2%;
-    }
-
     .p1 {
         text-indent: 2em;
     }
 
     .root :global .col:first-child {
-        padding-right: var(--col-padding);
+        margin-right: 24px;
     }
 
     .root :global .col:last-child {
-        padding-left: var(--col-padding);
+        margin-left: 24px;
     }
 }
 
-@media (min-width: 1140px) {
-    .root {
-        --col-padding: 40px;
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .col:first-child {
+        margin-left: 10px;
+    }
+
+    .root :global .col:last-child {
+        margin-right: 10px;
     }
 }

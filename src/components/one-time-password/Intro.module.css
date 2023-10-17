@@ -68,14 +68,14 @@
     }
 
     .root :global .col:first-child {
-        margin-left: 12px;
+        margin-left: 1.5rem;
     }
 
     .root :global .col:last-child {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-right: 12px;
+        margin-right: 1.5rem;
     }
 
     .p1 {
@@ -84,15 +84,5 @@
 
     .item + .item {
         margin-top: 42px;
-    }
-}
-
-@media (min-width: 1080px) {
-    .root :global .col:first-child {
-        margin-left: 1.5rem;
-    }
-
-    .root :global .col:last-child {
-        margin-right: 1.5rem;
     }
 }

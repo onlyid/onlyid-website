@@ -81,3 +81,13 @@
         margin-top: 42px;
     }
 }
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .col:first-child {
+        margin-left: 10px;
+    }
+
+    .root :global .col:last-child {
+        margin-right: 10px;
+    }
+}
