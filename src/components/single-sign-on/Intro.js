@@ -5,7 +5,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <p className={styles.p1}>现在应用一般使用的 自有+社交 登录方式存在不少弊端</p>
+                <p className={styles.p1}>现在应用一般使用的自有+社交登录存在一些缺点</p>
                 <div className="row">
                     <div className="col">
                         <div>

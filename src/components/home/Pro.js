@@ -1,9 +1,9 @@
 import styles from "./Pro.module.css";
 import React from "react";
-import pa from "@site/static/img/home-pingan.jpeg";
-import cmb from "@site/static/img/home-cmb.jpeg";
-import support from "@site/static/img/home-support.png";
-import arch from "@site/static/img/home-arch.png";
+import pa from "@site/static/img/home-pro-pingan.jpeg";
+import cmb from "@site/static/img/home-pro-cmb.jpeg";
+import support from "@site/static/img/home-pro-support.png";
+import arch from "@site/static/img/home-pro-arch.png";
 import cn from "classnames";
 
 export default function () {

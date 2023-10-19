@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Value.module.css";
-import Neutral from "@site/static/img/home-neutral.svg";
-import OAuth from "@site/static/img/home-oauth.svg";
+import Neutral from "@site/static/img/home-value-neutral.svg";
+import OAuth from "@site/static/img/home-value-oauth.svg";
 import classNames from "classnames";
 
 export default function () {
