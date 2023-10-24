@@ -46,7 +46,7 @@
     }
 
     .root :global .col:last-child {
-        margin-top: 35px;
+        margin-top: 33px;
     }
 
     .item {
@@ -68,18 +68,24 @@
     }
 
     .root :global .col:first-child {
-        margin-left: 1.5rem;
+        margin-left: 12px;
     }
 
     .root :global .col:last-child {
-        margin-right: 1.5rem;
+        margin-right: 12px;
     }
 
     .p1 {
-        margin-bottom: 50px;
+        margin-bottom: 48px;
     }
 
     .item + .item {
         margin-top: 42px;
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .container {
+        max-width: 1120px;
     }
 }

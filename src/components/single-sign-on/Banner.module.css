@@ -39,11 +39,11 @@
     }
 
     .root :global .col:last-child {
-        margin-top: 55px;
+        margin-top: 53px;
     }
 
     .col1 h1 {
-        font-size: 38px;
+        font-size: 39px;
     }
 
     .col1 p {
@@ -65,11 +65,7 @@
         align-items: center;
     }
 
-    .root .col1 {
-        margin-left: 1rem;
-    }
-
-    .root :global .col:nth-child(2) {
+    .root :global .col:last-child {
         text-align: right;
     }
 
@@ -91,7 +87,7 @@
 }
 
 @media (min-width: 997px) and (max-width: 1200px) {
-    .root :global .col:last-child {
-        margin-right: 10px;
+    .root :global .container {
+        max-width: 1120px;
     }
 }
