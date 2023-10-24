@@ -18,7 +18,7 @@ const productMenu = [
 module.exports = {
     title: "唯ID",
     url: "https://www.onlyid.net",
-    baseUrl: "/home/",
+    baseUrl: "/web/",
     favicon: "img/favicon.png",
     i18n: { defaultLocale: "zh", locales: ["zh"] },
     themeConfig: {
