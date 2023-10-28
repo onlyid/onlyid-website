@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Statistic.module.css";
-import classNames from "classnames";
+import styles from "./Numbers.module.css";
+import cn from "classnames";
 
 export default function () {
     return (
-        <div className={classNames("container", styles.root)}>
+        <div className={cn("container", styles.root)}>
             <div className="row">
                 <div className="col">
                     <h3>

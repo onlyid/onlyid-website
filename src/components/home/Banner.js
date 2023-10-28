@@ -7,11 +7,11 @@ export default function () {
         <section className={styles.root}>
             <div>
                 <h1 className={styles.title}>
-                    唯ID是面向{" "}
+                    唯ID是面向
                     <span style={{ whiteSpace: "nowrap" }}>
-                        公众应用
+                        互联网
                         <Tooltip
-                            title="区别于企业内部信息系统"
+                            title="区别于企业内部使用的 IAM 系统"
                             placement="top"
                             enterTouchDelay={0}
                             leaveTouchDelay={0}

@@ -19,7 +19,7 @@ export default function () {
                                 </span>
                                 价格实惠
                             </h3>
-                            <p>唯ID只有一档套餐，年费是200元，没有其他隐形收费项目</p>
+                            <p>唯ID只有一档套餐，年费仅200元，没有其他隐形收费项目</p>
                         </div>
                         <div className={styles.item}>
                             <h3>

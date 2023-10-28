@@ -5,7 +5,7 @@ import classNames from "classnames";
 import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
 import Link from "@docusaurus/Link";
 import { withRouter } from "react-router";
-import Statistic from "./Statistic";
+import Numbers from "./Numbers";
 
 class Footer extends PureComponent {
     state = {
@@ -26,11 +26,11 @@ class Footer extends PureComponent {
             location: { pathname }
         } = this.props;
 
-        const showStat = !pathname.startsWith("/home/blog") && !pathname.startsWith("/home/docs");
+        const showStat = !pathname.startsWith("/web/blog") && !pathname.startsWith("/web/docs");
 
         return (
             <footer className={styles.root}>
-                {showStat && <Statistic />}
+                {showStat && <Numbers />}
                 <div className={classNames("container", styles.container)}>
                     <div className="row">
                         <div className="col">
