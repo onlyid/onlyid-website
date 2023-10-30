@@ -4,10 +4,6 @@
     font-size: 17px;
 }
 
-.root :global .container {
-    position: relative;
-}
-
 .root :global .col:first-child {
     text-align: center;
 }
@@ -41,8 +37,8 @@
 }
 
 .img1 {
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     border: 1px solid var(--ifm-color-gray-300);
     border-bottom: none;
     width: 360px;
@@ -58,7 +54,7 @@
 }
 
 .p1 {
-    margin-top: 60px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
@@ -72,12 +68,11 @@
 }
 
 .button {
-    position: absolute;
-    right: 1rem;
-    bottom: 0;
+    display: inline-block;
     font-size: 14px;
     color: var(--ifm-color-gray-500);
     cursor: pointer;
+    padding: 5px;
 }
 
 .button:hover {
@@ -98,12 +93,20 @@
         margin-top: 30px;
     }
 
+    .img1 {
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        width: 95%;
+    }
+
     .p1 {
         margin-top: 30px;
     }
 
-    .button {
-        bottom: -70px;
+    .buttonBox {
+        position: absolute;
+        right: 10px;
+        bottom: -80px;
     }
 }
 
@@ -118,5 +121,10 @@
 
     .root :global .col:last-child > div {
         padding-right: 1rem;
+    }
+
+    .buttonBox {
+        margin-top: 40px;
+        margin-bottom: -40px;
     }
 }

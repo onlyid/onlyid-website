@@ -7,17 +7,12 @@
 }
 
 .root ul {
-    list-style-type: circle;
-    padding-left: 1em;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 @media (max-width: 996px) {
     .root {
         padding-right: 20px;
-    }
-
-    .root ul {
-        padding-left: 0;
-        list-style-type: none;
     }
 }

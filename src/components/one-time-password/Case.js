@@ -18,7 +18,7 @@ export default class extends PureComponent {
 
         return (
             <section className={styles.root}>
-                <div className="container">
+                <div className="container" style={{ position: "relative" }}>
                     <h2 className="main-title">体验案例</h2>
                     <div className="row">
                         <div className="col">
@@ -30,9 +30,14 @@ export default class extends PureComponent {
                                 <li>实时位置轨迹查看</li>
                                 <li>守护家人朋友安全</li>
                             </ul>
+                            <div className={styles.buttonBox}>
+                                <span className={styles.button} onClick={this.toggleDialog}>
+                                    展示我的应用
+                                </span>
+                            </div>
                         </div>
                         <div className="col col--5">
-                            <img src={screenshot} alt={screenshot} className={styles.img1} />
+                            <img src={screenshot} alt="screenshot" className={styles.img1} />
                         </div>
                         <div className="col">
                             <div>
@@ -52,10 +57,6 @@ export default class extends PureComponent {
                             </div>
                         </div>
                     </div>
-
-                    <span className={styles.button} onClick={this.toggleDialog}>
-                        展示我的应用
-                    </span>
                 </div>
 
                 <CaseDialog open={dialogOpen} onClose={this.toggleDialog} />

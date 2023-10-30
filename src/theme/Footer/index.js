@@ -64,7 +64,7 @@ class Footer extends PureComponent {
                         <div className="col">
                             <p className={styles.company}>
                                 <span>佛山市爱达斯科技有限公司</span>
-                                <span>Foshan IDaaS Tech. Co., Ltd.</span>
+                                <span>Foshan IDaaS Tech. Co.,Ltd.</span>
                             </p>
                             <ul className={styles.links}>
                                 <li>
