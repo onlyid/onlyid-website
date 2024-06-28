@@ -8,8 +8,8 @@
 }
 
 .title {
-    margin-bottom: 40px;
-    font-size: 50px;
+    margin-bottom: 45px;
+    font-size: 51px;
 }
 
 .title :global .material-icons {
@@ -19,7 +19,7 @@
 }
 
 .subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     font-size: 26px;
 }
 
@@ -27,12 +27,20 @@
     max-width: none;
 }
 
+.showSm {
+    display: none;
+}
+
 @media (max-width: 996px) {
     .title {
-        font-size: 42px;
+        font-size: 43px;
     }
 
     .subtitle {
         font-size: 22px;
+    }
+
+    .showSm {
+        display: unset;
     }
 }

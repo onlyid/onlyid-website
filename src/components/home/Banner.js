@@ -1,28 +1,16 @@
 import React from "react";
 import styles from "./Banner.module.css";
-import { Tooltip } from "@material-ui/core";
 
 export default function () {
     return (
         <section className={styles.root}>
             <div>
-                <h1 className={styles.title}>
-                    唯ID是面向
-                    <span style={{ whiteSpace: "nowrap" }}>
-                        互联网
-                        <Tooltip
-                            title="区别于企业内部使用的 IAM 系统"
-                            placement="top"
-                            enterTouchDelay={0}
-                            leaveTouchDelay={0}
-                            classes={{ tooltip: styles.tooltip1 }}
-                        >
-                            <span className="material-icons">help</span>
-                        </Tooltip>
-                    </span>
-                    的 IDaaS 解决方案
-                </h1>
-                <p className={styles.subtitle}>帮助网站和APP做好用户登录和用户管理两件事</p>
+                <h1 className={styles.title}>唯ID统一认证服务</h1>
+                <p className={styles.subtitle}>
+                    帮助网站和APP做好用户登录
+                    <br className={styles.showSm} />
+                    这一件事
+                </p>
                 <div>
                     <a
                         className="button button--primary button--lg"
