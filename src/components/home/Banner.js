@@ -14,7 +14,7 @@ export default function () {
                 <div>
                     <a
                         className="button button--primary button--lg"
-                        href="https://www.onlyid.net/console"
+                        href="https://onlyid.net/console"
                         target="_blank"
                     >
                         开始使用

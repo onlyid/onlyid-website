@@ -13,7 +13,7 @@ const productMenu = [
 
 module.exports = {
     title: "唯ID",
-    url: "https://www.onlyid.net",
+    url: "https://onlyid.net",
     baseUrl: "/web/",
     favicon: "img/favicon.png",
     i18n: { defaultLocale: "zh", locales: ["zh"] },
@@ -31,7 +31,7 @@ module.exports = {
                     html: '<span class="iconfont">&#xe6f6;</span>',
                     className: "nav-item-github"
                 },
-                { href: "https://www.onlyid.net/console", html: "控制台", position: "right" }
+                { href: "https://onlyid.net/console", html: "控制台", position: "right" }
             ]
         },
         colorMode: {

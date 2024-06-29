@@ -6,7 +6,7 @@ export default function () {
         <div className={styles.root}>
             <p className={styles.comment}># 发送验证码</p>
             <p className={styles.url}>
-                <span>POST</span> https://www.onlyid.net/api/open/send-otp
+                <span>POST</span> https://onlyid.net/api/open/send-otp
             </p>
             <p className={styles.method}>
                 <span>Content-Type</span>: application/json
