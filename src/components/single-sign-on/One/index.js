@@ -41,7 +41,7 @@ export default function () {
                                     </span>
                                     唯ID APP
                                 </h3>
-                                <p>APP支持扫码登录，还有修改用户资料、管理登录设备等功能</p>
+                                <p>APP支持扫码登录，还有修改用户资料、管理授权应用等功能</p>
                             </div>
                         </div>
                     </div>
