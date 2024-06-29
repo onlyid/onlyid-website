@@ -8,10 +8,6 @@ const productMenu = [
     {
         html: '<span class="material-icons">portrait</span>单点登录 SSO',
         to: "/single-sign-on"
-    },
-    {
-        html: '<span class="material-icons-outlined">groups</span>用户管理 UM',
-        to: "/user-management"
     }
 ];
 

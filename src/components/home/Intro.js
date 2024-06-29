@@ -8,7 +8,7 @@ export default function () {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <p className={styles.p1}>你的应用需要用户登录和用户管理功能，但...</p>
+                        <p className={styles.p1}>你的应用需要用户登录功能，但...</p>
                         <ul className={styles.ul1}>
                             <li>
                                 <span className="material-icons">sentiment_very_dissatisfied</span>

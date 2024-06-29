@@ -7,7 +7,7 @@ a.item {
     background-color: white;
     border: 1px solid #eee;
     border-radius: 5px;
-    padding: 30px 22px 30px 30px;
+    padding: 35px 30px 35px 38px;
     height: 100%;
     display: block;
     text-decoration: none;
@@ -39,18 +39,35 @@ a.item {
 
 .item h3 {
     color: var(--ifm-font-color-base);
-    margin-top: 25px;
-    margin-bottom: 22px;
-    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    font-size: 23px;
 }
 
 .item p {
     color: var(--ifm-color-gray-800);
     margin-bottom: 0;
+    font-size: 18px;
 }
 
 @media (max-width: 996px) {
     .root :global .col + .col {
         margin-top: 50px;
+    }
+}
+
+@media (min-width: 997px) {
+    .root :global .col:first-child {
+        margin-right: 24px;
+    }
+
+    .root :global .col:last-child {
+        margin-left: 24px;
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .container {
+        max-width: 1120px;
     }
 }
