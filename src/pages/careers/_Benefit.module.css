@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    align-items: center;
+}
+
+.iconBox {
+    width: 56px;
+    height: 56px;
+    background-color: #4b5056;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 28px;
+    flex-shrink: 0;
+}
+
+.iconBox svg {
+    transform: scale(1.2);
+}
+
+.title {
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+.detail {
+    font-size: 17px;
+    color: var(--ifm-color-gray-800);
+    margin: 6px 0 0;
+}

@@ -1,0 +1,73 @@
+.banner {
+    margin: 0;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    background-size: 1392px;
+    background-image: url(/img/home-banner-bg.jpg);
+    background-position: center top;
+}
+
+.section1 {
+    padding: 85px 0 68px;
+}
+
+.section2 {
+    background-color: #f8fafe;
+    padding: 60px 0 76px;
+}
+
+.section3 {
+    padding: 60px 0 60px;
+}
+
+.title1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.p1 {
+    font-size: 18px;
+    text-indent: 2em;
+    margin-bottom: 36px;
+}
+
+.gridBox {
+    display: grid;
+}
+
+.section2 :global .row {
+    margin-top: 45px;
+}
+
+@media (max-width: 996px) {
+    .title1 {
+        margin-top: 2px;
+        margin-bottom: 52px;
+    }
+
+    .gridBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+
+    .section2 :global .col + .col {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 997px) {
+    .gridBox {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .section1 :global .container,
+    .section2 :global .container,
+    .section3 :global .container {
+        max-width: 1120px;
+    }
+}
