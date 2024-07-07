@@ -76,11 +76,18 @@ class Footer extends PureComponent {
                                 </li>
                                 <li className={styles.divider} />
                                 <li>
-                                    <Link to="/terms">用户协议</Link>
+                                    <a href="https://onlyid.net/static/terms.html" target="_blank">
+                                        服务协议
+                                    </a>
                                 </li>
                                 <li className={styles.divider} />
                                 <li>
-                                    <Link to="/privacy">隐私政策</Link>
+                                    <a
+                                        href="https://onlyid.net/static/privacy.html"
+                                        target="_blank"
+                                    >
+                                        隐私政策
+                                    </a>
                                 </li>
                             </ul>
                             <p className={styles.copyright}>
