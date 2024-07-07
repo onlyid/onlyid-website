@@ -1,4 +1,4 @@
-const codeTheme = require("prism-react-renderer/themes/github");
+const codeTheme = require("./src/prismLight");
 
 const productMenu = [
     {
@@ -24,8 +24,8 @@ module.exports = {
             },
             items: [
                 { label: "产品", items: productMenu, className: "nav-item-product" },
-                { type: "doc", docId: "intro", label: "文档" },
-                { to: "/blog", label: "博客" },
+                { type: "doc", docId: "home", label: "文档" },
+                { to: "blog", label: "博客" },
                 {
                     href: "https://github.com/onlyid",
                     html: '<span class="iconfont">&#xe6f6;</span>',
@@ -38,13 +38,17 @@ module.exports = {
             disableSwitch: true
         },
         prism: {
-            theme: codeTheme
+            theme: codeTheme,
+            additionalLanguages: ["http", "java", "swift"]
+        },
+        tableOfContents: {
+            maxHeadingLevel: 2
         }
     },
     plugins: [
         "@docusaurus/plugin-content-blog",
         "@docusaurus/plugin-content-pages",
-        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js" }]
+        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js", breadcrumbs: false }]
     ],
-    themes: [["@docusaurus/theme-classic", { customCss: "./src/index.css" }]]
+    themes: [["@docusaurus/theme-classic", { customCss: ["./src/index.css", "./src/docs.css"] }]]
 };

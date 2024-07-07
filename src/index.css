@@ -75,13 +75,33 @@
     --ifm-color-primary-light: #5c6bc0;
     --ifm-color-primary-lighter: #7986cb;
     --ifm-color-primary-lightest: #9fa8da;
-    --ifm-code-font-size: 95%;
     --ifm-navbar-item-padding-horizontal: 1rem;
     --ifm-navbar-height: 3.5rem;
     --ifm-menu-link-padding-vertical: 8px;
     --ifm-font-color-base: rgba(0, 0, 0, 0.87);
     --ifm-menu-color: var(--ifm-color-emphasis-800);
     --ifm-container-width-xl: 1140px;
+}
+
+.markdown h1:first-child {
+    --ifm-h1-font-size: 36px;
+    margin-top: 32px;
+}
+
+.markdown > h2 {
+    --ifm-h2-font-size: 26px;
+}
+
+.markdown > h3 {
+    --ifm-h3-font-size: 21px;
+}
+
+.table-of-contents {
+    font-size: 13px;
+}
+
+table thead tr {
+    border-bottom-width: 1px;
 }
 /* reset docs end */
 
