@@ -1,0 +1,11 @@
+.blog-list-page h2[class^="title"] {
+    font-size: 32px;
+}
+
+.blog-post-page h1[class^="title"] {
+    font-size: 36px;
+}
+
+.blog-list-page article footer {
+    margin-top: 20px;
+}

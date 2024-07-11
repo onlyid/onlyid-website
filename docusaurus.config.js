@@ -25,7 +25,7 @@ module.exports = {
             items: [
                 { label: "产品", items: productMenu, className: "nav-item-product" },
                 { type: "doc", docId: "home", label: "文档" },
-                { to: "blog", label: "博客" },
+                { to: "blog", label: "公告" },
                 {
                     href: "https://github.com/onlyid",
                     html: '<span class="iconfont">&#xe6f6;</span>',
@@ -46,9 +46,17 @@ module.exports = {
         }
     },
     plugins: [
-        "@docusaurus/plugin-content-blog",
         "@docusaurus/plugin-content-pages",
-        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js", breadcrumbs: false }]
+        ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js", breadcrumbs: false }],
+        [
+            "@docusaurus/plugin-content-blog",
+            { blogTitle: "公告", blogSidebarCount: 0, showReadingTime: false }
+        ]
     ],
-    themes: [["@docusaurus/theme-classic", { customCss: ["./src/index.css", "./src/docs.css"] }]]
+    themes: [
+        [
+            "@docusaurus/theme-classic",
+            { customCss: ["./src/index.css", "./src/docs.css", "./src/blog.css"] }
+        ]
+    ]
 };
