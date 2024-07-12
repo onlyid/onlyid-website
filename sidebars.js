@@ -8,13 +8,23 @@ module.exports = {
         "background",
         {
             type: "category",
-            label: "使用唯ID OTP",
-            items: ["otp/intro", "otp/integrate"]
+            label: "轻认证 OTP",
+            items: [
+                "one-time-password/intro",
+                "one-time-password/send-otp",
+                "one-time-password/verify-otp"
+            ]
         },
         {
             type: "category",
-            label: "接入唯ID SSO",
-            items: ["sso/oauth", "sso/web", "sso/android", "sso/ios", "sso/other"]
+            label: "单点登录 SSO",
+            items: [
+                "single-sign-on/oauth",
+                "single-sign-on/web",
+                "single-sign-on/android",
+                "single-sign-on/ios",
+                "single-sign-on/other"
+            ]
         },
         {
             type: "category",

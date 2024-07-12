@@ -13,7 +13,7 @@ export default function () {
                         <span className="material-icons">portrait</span>
                         <h1>单点登录 SSO</h1>
                         <p>接入统一认证中心，跨应用共享账号，在别处注册的用户直接登录你的应用</p>
-                        <Link className="button button--primary" to="/docs/single-sign-on">
+                        <Link className="button button--primary" to="/docs/single-sign-on/oauth">
                             查看文档
                         </Link>
                     </div>
