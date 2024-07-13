@@ -1,10 +1,10 @@
-# 校验验证码
+# 核验验证码
 
 :::caution 注意
-尽管发送接口返回了验证码（code），让自行校验成为可能，我们仍建议你调用校验接口完成校验，以保证安全性。
+尽管发送接口返回了验证码（code），让自行核验成为可能，我们仍建议你调用核验接口完成核验，以保证安全性。
 :::
 
-* 接口描述：校验短信、邮箱验证码是否正确
+* 接口描述：核验短信、邮箱验证码是否正确
 * 接口地址：`https://www.onlyid.net/api/open/verify-otp`
 * 请求方式：`POST`
 * 内容类型：`application/json`
@@ -49,7 +49,7 @@
     <tr>
         <td>result</td>
         <td>字符串</td>
-        <td>校验结果，固定值：success</td>
+        <td>核验结果，固定值：success</td>
     </tr>
 </tbody></table>
 
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-验证码校验成功，响应报文示例：
+验证码核验成功，响应报文示例：
 
 ```http
 HTTP/1.1 200 OK
@@ -76,7 +76,7 @@ Content-Type: application/json
 }
 ```
 
-验证码校验失败，响应报文示例：
+验证码核验失败，响应报文示例：
 
 ```http
 HTTP/1.1 400 Bad Request
