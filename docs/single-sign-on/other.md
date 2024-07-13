@@ -15,7 +15,7 @@
 用户需要登录时，通过平台原生WebView打开授权页：
 
 ```
-https://www.onlyid.net/oauth?client-id=你的应用ID&redirect-uri=你的应用回调URI
+https://onlyid.net/oauth?client-id=你的应用ID&redirect-uri=你的应用回调URI
 ```
 
 :::info 提示
@@ -25,7 +25,7 @@ https://www.onlyid.net/oauth?client-id=你的应用ID&redirect-uri=你的应用�
 示例：
 
 ```
-https://www.onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri=http%3A%2F%2Flocalhost
+https://onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri=http%3A%2F%2Flocalhost
 ```
 
 授权页引导用户完成验证，然后带上Code GET方式重定向到你的应用回调URI，成功示例：

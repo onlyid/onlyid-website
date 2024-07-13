@@ -5,7 +5,7 @@
 :::
 
 * 接口描述：发送验证码到指定手机号、邮箱
-* 接口地址：`https://www.onlyid.net/api/open/send-otp`
+* 接口地址：`https://onlyid.net/api/open/send-otp`
 * 请求方式：`POST`
 * 内容类型：`application/json`
 
@@ -84,7 +84,7 @@
 请求示例：
 
 ```http
-POST https://www.onlyid.net/api/open/send-otp HTTP/1.1
+POST https://onlyid.net/api/open/send-otp HTTP/1.1
 Content-Type: application/json
 {
     "recipient": "13612345678",

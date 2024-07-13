@@ -5,7 +5,7 @@
 :::
 
 * 接口描述：核验短信、邮箱验证码是否正确
-* 接口地址：`https://www.onlyid.net/api/open/verify-otp`
+* 接口地址：`https://onlyid.net/api/open/verify-otp`
 * 请求方式：`POST`
 * 内容类型：`application/json`
 
@@ -56,7 +56,7 @@
 请求示例：
 
 ```http
-POST https://www.onlyid.net/api/open/verify-otp HTTP/1.1
+POST https://onlyid.net/api/open/verify-otp HTTP/1.1
 Content-Type: application/json
 {
     "recipient": "13612345678",

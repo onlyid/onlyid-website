@@ -13,7 +13,7 @@
 展示登录链接（如果你的应用把唯ID作为唯一登录方式，链接文案可写 "登录"，否则可以写 "用唯ID登录"），引导用户点击打开授权页：
 
 ```html
-<a href="https://www.onlyid.net/oauth?client-id=你的应用ID&redirect-uri=你的应用回调URI">登录</a>
+<a href="https://onlyid.net/oauth?client-id=你的应用ID&redirect-uri=你的应用回调URI">登录</a>
 ```
 
 :::info 提示
@@ -23,7 +23,7 @@
 示例：
 
 ```html
-<a href="https://www.onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri=https%3A%2F%2Fwww.example.com%2Fmy-app%2Foauth-callback">登录</a>
+<a href="https://onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri=https%3A%2F%2Fwww.example.com%2Fmy-app%2Foauth-callback">登录</a>
 ```
 
 授权页引导用户完成验证，然后带上Code GET方式重定向到你的应用回调URI，成功示例：
@@ -41,7 +41,7 @@ GET https://www.example.com/my-app/oauth-callback?code=596c441eced7220159a3c0616
 得到Authorization Code后，POST方式请求：
 
 ```http
-POST https://www.onlyid.net/api/open/access-token HTTP/1.1
+POST https://onlyid.net/api/open/access-token HTTP/1.1
 Content-Type: application/json
 {
     "clientSecret": 你的应用Secret,
@@ -52,7 +52,7 @@ Content-Type: application/json
 获取Access Token，示例：
 
 ```http
-POST https://www.onlyid.net/api/open/access-token HTTP/1.1
+POST https://onlyid.net/api/open/access-token HTTP/1.1
 Content-Type: application/json
 {
     "clientSecret": "8d08fbbd89a547df8bda56eba12fac2e",
@@ -91,13 +91,13 @@ Content-Type: application/json
 得到Access Token后，以GET方式请求：
 
 ```http
-GET https://www.onlyid.net/api/open/user-info?accessToken=获取到的Token HTTP/1.1
+GET https://onlyid.net/api/open/user-info?accessToken=获取到的Token HTTP/1.1
 ```
 
 获取用户信息，示例：
 
 ```http
-GET https://www.onlyid.net/api/open/user-info?accessToken=27fb7b817a4244a2a51ad7948d4a2d4e HTTP/1.1
+GET https://onlyid.net/api/open/user-info?accessToken=27fb7b817a4244a2a51ad7948d4a2d4e HTTP/1.1
 ```
 
 请求成功，响应报文示例：
@@ -107,7 +107,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 {
   "id": "96710e363b814ddf888fba57e1c4c5fe",
-  "avatarUrl": "https://www.onlyid.net/static/user-avatars/2f7004135c254db2832a43b1527b8e11.png",
+  "avatarUrl": "https://onlyid.net/static/user-avatars/2f7004135c254db2832a43b1527b8e11.png",
   "nickname": "王语嫣",
   "mobile": "18588000048",
   "email": null,
