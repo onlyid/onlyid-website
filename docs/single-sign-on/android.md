@@ -32,7 +32,7 @@ dependencies {
 
 集成SDK。
 
-## 获取Authorization Code
+## 获取Auth Code
 
 展示登录按钮（如果你的应用把唯ID作为唯一登录方式，按钮文案可写 "登录"，否则可以写 "用唯ID登录"）引导用户点击。
 
@@ -50,7 +50,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     if (requestCode != REQUEST_OAUTH) return;
 
     if (resultCode == RESULT_OK) {
-        // 获得Authorization Code
+        // 获得Auth Code
         String code = data.getStringExtra(OnlyID.EXTRA_CODE);
     } else if (resultCode == RESULT_CANCELED) {
         // 用户取消（拒绝）
@@ -67,7 +67,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ## 获取Access Token和用户信息
 
-之后的流程（通过Authorization Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+之后的流程（通过Auth Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
 
 ## 结语
 

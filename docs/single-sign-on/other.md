@@ -6,11 +6,11 @@
 
 ## 实现原理
 
-标准OAuth流程中，只有获取Authorization Code是在客户端进行，通过Authorization Code换取Access Token和通过Access Token换取用户信息，都是在服务端进行。
+标准OAuth流程中，只有获取Auth Code是在客户端进行，通过Auth Code换取Access Token和通过Access Token换取用户信息，都是在服务端进行。
 
-所以这里关键是获取Authorization Code，简单说，是通过平台原生的WebView打开授权页，待用户认证授权后，重定向到应用回调URI时，拦截这个请求，并从中取出Authorization Code。
+所以这里关键是获取Auth Code，简单说，是通过平台原生的WebView打开授权页，待用户认证授权后，重定向到应用回调URI时，拦截这个请求，并从中取出Auth Code。
 
-## 获取Authorization Code
+## 获取Auth Code
 
 用户需要登录时，通过平台原生WebView打开授权页：
 
@@ -34,9 +34,9 @@ https://onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri
 GET http://localhost/?code=596c441eced7220159a3c0616e4de248e9223c9d HTTP/1.1
 ```
 
-此时通过WebView提供的相关拦截方法拦截请求，并从中取出Authorization Code。
+此时通过WebView提供的相关拦截方法拦截请求，并从中取出Auth Code。
 
 ## 获取Access Token和用户信息
 
-之后的流程（通过Authorization Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+之后的流程（通过Auth Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
 

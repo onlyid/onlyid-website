@@ -24,7 +24,7 @@ pod 'OnlyID'
 如果使用源码集成方式，建议定期更新最新代码文件，以免错过新的产品功能和安全、错误方面的更新。
 :::
 
-## 获取Authorization Code
+## 获取Auth Code
 
 展示登录按钮（如果你的应用把唯ID作为唯一登录方式，按钮文案可写 "登录"，否则可以写 "用唯ID登录"）引导用户点击。
 
@@ -35,7 +35,7 @@ let config = OnlyIDOAuthConfig(clientId: "你的应用ID")
 OnlyID.oauth(config: config, fromController: self, delegate: self)
 ...
 extension ViewController: OnlyIDOAuthDelegate {
-    func onComplete(code: String, state: String?) { // 获得Authorization Code }
+    func onComplete(code: String, state: String?) { // 获得Auth Code }
 
     func onError(error: NSError) { // 发生错误 }
 
@@ -53,7 +53,7 @@ extension ViewController: OnlyIDOAuthDelegate {
 
 ## 获取Access Token和用户信息
 
-之后的流程（通过Authorization Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+之后的流程（通过Auth Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
 
 ## 结语
 

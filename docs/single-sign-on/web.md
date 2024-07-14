@@ -8,7 +8,7 @@
 如果你还没配置应用回调URI，请先到控制台 -> 应用管理 -> OAuth设置 配置好再继续。
 :::
 
-## 获取Authorization Code
+## 获取Auth Code
 
 展示登录链接（如果你的应用把唯ID作为唯一登录方式，链接文案可写 "登录"，否则可以写 "用唯ID登录"），引导用户点击打开授权页：
 
@@ -38,7 +38,7 @@ GET https://www.example.com/my-app/oauth-callback?code=596c441eced7220159a3c0616
 获取Access Token应在服务端进行，以防泄露你的应用Secret。
 :::
 
-得到Authorization Code后，POST方式请求：
+得到Auth Code后，POST方式请求：
 
 ```http
 POST https://onlyid.net/api/open/access-token HTTP/1.1
