@@ -35,7 +35,7 @@ let config = OnlyIDOAuthConfig(clientId: "你的应用ID")
 OnlyID.oauth(config: config, fromController: self, delegate: self)
 ...
 extension ViewController: OnlyIDOAuthDelegate {
-    func onComplete(code: String, state: String?) { // 获得Auth Code }
+    func onComplete(code: String, state: String?) { // 获得auth code }
 
     func onError(error: NSError) { // 发生错误 }
 
@@ -53,7 +53,7 @@ extension ViewController: OnlyIDOAuthDelegate {
 
 ## 获取Access Token和用户信息
 
-之后的流程（通过Auth Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+之后的流程（通过auth code换取access token和通过access token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
 
 ## 结语
 

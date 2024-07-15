@@ -26,7 +26,7 @@
 <a href="https://onlyid.net/oauth?client-id=07c9770f22b1460398d44b4a3543db79&redirect-uri=https%3A%2F%2Fwww.example.com%2Fmy-app%2Foauth-callback">登录</a>
 ```
 
-授权页引导用户完成验证，然后带上Code GET方式重定向到你的应用回调URI，成功示例：
+授权页引导用户完成验证，然后带上code GET方式重定向到你的应用回调URI，成功示例：
 
 ```http
 GET https://www.example.com/my-app/oauth-callback?code=596c441eced7220159a3c0616e4de248e9223c9d HTTP/1.1
@@ -35,21 +35,21 @@ GET https://www.example.com/my-app/oauth-callback?code=596c441eced7220159a3c0616
 ## 获取Access Token
 
 :::caution 警告
-获取Access Token应在服务端进行，以防泄露你的应用Secret。
+获取access token应在服务端进行，以防泄露你的应用Secret。
 :::
 
-得到Auth Code后，POST方式请求：
+得到auth code后，POST方式请求：
 
 ```http
 POST https://onlyid.net/api/open/access-token HTTP/1.1
 Content-Type: application/json
 {
     "clientSecret": 你的应用Secret,
-    "authorizationCode": 获取到的Code
+    "authorizationCode": 获取到的code
 }
 ```
 
-获取Access Token，示例：
+获取access token，示例：
 
 ```http
 POST https://onlyid.net/api/open/access-token HTTP/1.1
@@ -85,10 +85,10 @@ Content-Type: application/json
 ## 获取用户信息
 
 :::caution 警告
-获取用户信息也应在服务端进行，以防泄露你的Access Token。
+获取用户信息也应在服务端进行，以防泄露你的access token。
 :::
 
-得到Access Token后，以GET方式请求：
+得到access token后，以GET方式请求：
 
 ```http
 GET https://onlyid.net/api/open/user-info?accessToken=获取到的Token HTTP/1.1

@@ -50,7 +50,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     if (requestCode != REQUEST_OAUTH) return;
 
     if (resultCode == RESULT_OK) {
-        // 获得Auth Code
+        // 获得auth code
         String code = data.getStringExtra(OnlyID.EXTRA_CODE);
     } else if (resultCode == RESULT_CANCELED) {
         // 用户取消（拒绝）
@@ -67,7 +67,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ## 获取Access Token和用户信息
 
-之后的流程（通过Auth Code换取Access Token和通过Access Token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+之后的流程（通过auth code换取access token和通过access token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
 
 ## 结语
 

@@ -16,9 +16,9 @@ import authSequence from "@site/static/img/docs-auth-sequence.png";
 
 支持Authorization Code（简称Auth Code）授权方式，适用于拥有服务端的应用授权。整体流程：
 
-* 第三方发起验证请求，用户在授权页完成账号验证，唯ID带上Auth Code返回第三方应用；
-* 使用Auth Code、Client ID和Client Secret进行RESTful API调用，获取Access Token；
-* 使用Access Token进行RESTful API调用，获取用户信息。
+* 第三方发起验证请求，用户在授权页完成账号验证，唯ID带上auth code返回第三方应用；
+* 使用auth code、client id和client secret进行RESTful API调用，获取access token；
+* 使用access token进行RESTful API调用，获取用户信息。
 
 授权时序图：
 
@@ -30,7 +30,7 @@ import authSequence from "@site/static/img/docs-auth-sequence.png";
     <dt>Client ID和Client Secret</dt>
     <dd>应用ID和应用Secret，分别相当于你的应用在唯ID的帐号和密码，是调用OpenAPI所必需的标识。</dd>
     <dt>Auth Code / Authorization Code</dt>
-    <dd>第三方使用Auth Code获取Access Token，Code的超时时间为5分钟，一个Code获取一次Access Token即失效。</dd>
+    <dd>第三方使用auth code获取access token，code的超时时间为5分钟，一个code获取一次access token即失效。</dd>
     <dt>Access Token</dt>
-    <dd>第三方使用Access Token获取用户信息，Token的超时时间为1小时，一个Token可多次获取用户信息。</dd>
+    <dd>第三方使用access token获取用户信息，token的超时时间为1小时，一个token可多次获取用户信息。</dd>
 </dl>

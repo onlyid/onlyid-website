@@ -9,7 +9,7 @@ export default function () {
         <section className={styles.root}>
             <div className="container">
                 <h2 className="main-title">坚持两个原则</h2>
-                <p className={styles.p1}>唯ID的使命是建立全球统一的账号认证体系，我们坚持：</p>
+                <p className={styles.p1}>唯ID的使命是建立全球统一的账号和认证体系，我们坚持：</p>
                 <div className="row">
                     <div className="col">
                         <div className={classNames(styles.item, styles.neutral)}>
