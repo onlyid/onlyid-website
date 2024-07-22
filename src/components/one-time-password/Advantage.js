@@ -10,8 +10,8 @@ export default function () {
                     <div className="col">
                         <div className={styles.item}>
                             <span className="material-icons">verified_user</span>
-                            <h3>提供校验接口</h3>
-                            <p>调用现成接口快速完成验证码校验，节省开发成本和避免潜在的安全风险</p>
+                            <h3>提供核验接口</h3>
+                            <p>调用现成接口快速完成验证码核验，节省开发成本和避免潜在的安全风险</p>
                         </div>
                     </div>
                     <div className="col">

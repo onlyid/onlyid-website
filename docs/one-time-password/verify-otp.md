@@ -4,7 +4,9 @@
 尽管发送接口返回了验证码（code），让自行核验成为可能，我们仍建议你调用核验接口完成核验，以保证安全性。
 :::
 
-* 接口描述：核验短信、邮箱验证码是否正确
+## 核验验证码接口
+
+* 接口描述：核验验证码是否正确
 * 接口地址：`https://onlyid.net/api/open/verify-otp`
 * 请求方式：`POST`
 * 内容类型：`application/json`
@@ -60,7 +62,7 @@ POST https://onlyid.net/api/open/verify-otp HTTP/1.1
 Content-Type: application/json
 {
     "recipient": "13612345678",
-    "clientId": "07c9770f22b1460398d44b4a3543db79",
+    "clientId": "98d44b4a3543db79",
     "clientSecret": "8d08fbbd89a547df8bda56eba12fac2e",
     "code": "581305"
 }
@@ -91,4 +93,4 @@ Content-Type: application/json
 * 成功验证过一次后立即失效。
 * 验证失败次数达到限制立即失效。
 * 验证码超时未完成验证自然过期。
-* 生成了新验证码后，旧验证码（即使未过期）自动失效。
+* 生成了新验证码后，旧验证码自动失效。
