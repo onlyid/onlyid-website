@@ -5,7 +5,6 @@ module.exports = {
             id: "home",
             label: "文档首页"
         },
-        "background",
         {
             type: "category",
             label: "轻认证 OTP",
