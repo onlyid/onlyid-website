@@ -25,6 +25,7 @@ module.exports = {
                 "single-sign-on/android",
                 "single-sign-on/ios",
                 "single-sign-on/other",
+                "single-sign-on/migrate-to",
                 "single-sign-on/faq"
             ]
         }

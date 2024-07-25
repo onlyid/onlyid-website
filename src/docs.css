@@ -30,12 +30,19 @@
     min-width: 128px;
 }
 
-.docs__img1 {
-    width: calc(768px + 2px);
-    border: 1px solid #e8e8e8;
-}
+/*.docs__img1 {*/
+/*    width: calc(768px + 2px);*/
+/*    border: 1px solid #e8e8e8;*/
+/*}*/
 
 .docs__img2 {
     vertical-align: middle;
     width: 110px;
+}
+
+.docs__img3 {
+    width: calc(236px + 2px);
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    display: block; /* 外边距合并需要 */
 }
