@@ -1,36 +1,31 @@
-import authSequence from "@site/static/img/docs-auth-sequence.png";
-
 # OAuth 2.0入门
 
 :::info 提示
-如果你已经使用过类似的基于OAuth的登录认证方案（如微信、微博等），可跳过本节。
+如果你已经使用过基于OAuth的社交登录方案（如微信、微博等），可跳过本节。
 :::
 
-## 前言
-
-[OAuth 2.0](http://oauth.net/2)是一个开放标准，允许第三方访问用户在某一网站上存储的私密资源，而无需将用户名和密码提供给第三方。唯ID的账号和认证解决方案基于OAuth 2.0构建，可以让用户安全地在第三方应用验证身份信息。
-
-本节不论述OAuth 2.0的协议细节，只介绍开发者接入时涉及到的概念和流程。
+本节不论述OAuth 2.0的协议细节，只介绍应用接入SSO时涉及到的概念和流程。
 
 ## 授权流程
 
-支持Authorization Code（简称Auth Code）授权方式，适用于拥有服务端的应用授权。整体流程：
+SSO支持OAuth 2.0的Authorization Code登录授权方式，整体流程：
 
-* 第三方发起验证请求，用户在授权页完成账号验证，唯ID带上auth code返回第三方应用；
-* 使用auth code、client id和client secret进行RESTful API调用，获取access token；
-* 使用access token进行RESTful API调用，获取用户信息。
+1. 在用户需要登录时，应用跳转至唯ID提供的登录授权页；
+2. 用户在登录页完成认证和授权，唯ID生成auth code返回应用；
+3. 应用使用auth code搭配应用Secret换取access token；
+4. 应用使用access token最终换取用户账号信息，流程结束。
 
-授权时序图：
-
-<img className="docs__img1" src={authSequence} alt="authSequence" />
+:::caution 警告
+在第2步得到auth code后，应用前端应该把code中转至应用服务端，由服务端完成第3、4步，以防泄露你的应用Secret和access token。
+:::
 
 ## 名词解释
 
 <dl>
     <dt>Client ID和Client Secret</dt>
-    <dd>应用ID和应用Secret，分别相当于你的应用在唯ID的帐号和密码，是调用OpenAPI所必需的标识。</dd>
+    <dd>应用ID和应用Secret，相当于你的应用在唯ID的帐号和密码，是调用OpenAPI所必需的标识。</dd>
     <dt>Auth Code / Authorization Code</dt>
-    <dd>第三方使用auth code获取access token，code的超时时间为5分钟，一个code获取一次access token即失效。</dd>
+    <dd>应用使用auth code换取access token，code的有效期为10分钟，一个code换取一次access token即失效。</dd>
     <dt>Access Token</dt>
-    <dd>第三方使用access token获取用户信息，token的超时时间为1小时，一个token可多次获取用户信息。</dd>
+    <dd>应用使用access token换取用户信息，token的有效期为24小时，一个token可多次换取用户信息而不会失效。</dd>
 </dl>

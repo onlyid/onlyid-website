@@ -12,15 +12,12 @@
 
 .theme-doc-markdown dt {
     font-weight: bold;
-    margin-bottom: 0.4em;
-}
-
-.theme-doc-markdown dt:not(:first-of-type) {
-    margin-top: 0.8em;
+    margin-top: 16px;
+    margin-bottom: 6px;
 }
 
 .theme-doc-markdown dd {
-    margin-left: 0;
+    margin-left: 30px;
 }
 
 .docs__left-hand {
