@@ -17,7 +17,7 @@ export default function () {
                     "recipient": <span>"13612345678"</span>,
                 </p>
                 <p>
-                    "clientId": <span>"07c9770f22b1460398d44b4a3543db79"</span>,
+                    "clientId": <span>"98d44b4a3543db79"</span>,
                 </p>
                 <p>
                     "clientSecret": <span>"8d08fbbd89a547df8bda56eba12fac2e"</span>

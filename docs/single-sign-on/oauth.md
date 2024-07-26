@@ -1,4 +1,4 @@
-# OAuth 2.0入门
+# OAuth入门
 
 :::info 提示
 如果你已经使用过基于OAuth的社交登录方案（如微信、微博等），可跳过本节。
@@ -17,7 +17,7 @@ SSO支持OAuth 2.0的Authorization Code登录授权方式，整体流程：
 3. 应用使用auth code搭配应用Secret换取access token；
 4. 应用使用access token最终换取用户账号信息，流程结束。
 
-:::caution 警告
+:::caution 注意
 在第2步得到auth code后，应用前端应该把code中转至应用服务端，由服务端完成第3、4步，以防泄露你的应用Secret和access token。
 :::
 
