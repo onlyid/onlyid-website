@@ -46,3 +46,16 @@
     margin-bottom: 20px;
     display: block; /* 外边距合并需要 */
 }
+
+.docs_button1 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.docs_button1 + .docs_button1 {
+    margin-left: 40px;
+}
+
+.docs_button1 img {
+    width: 24px;
+}
