@@ -1,11 +1,12 @@
+import { Button } from "@material-ui/core";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # iOS应用接入
 
 :::info 提示
-如果你还没创建应用，请先到控制台 -> 应用管理 新建一个得到应用ID和应用Secret再继续。
-:::
+如果你还没创建应用，请先到控制台 -> 应用管理 新建得到应用ID和应用Secret再继续。
 
-:::info 提示
-如果你还没配置应用Bundle ID，请先到控制台 -> 应用管理 -> OAuth设置 配置好再继续。
+如果你还没配置Bundle ID，请先到控制台 -> 应用管理 -> OAuth设置 配置好再继续。
 :::
 
 ## 集成SDK
@@ -26,9 +27,25 @@ pod 'OnlyID'
 
 ## 获取Auth Code
 
-展示登录按钮（如果你的应用把唯ID作为唯一登录方式，按钮文案可写 "登录"，否则可以写 "用唯ID登录"）引导用户点击。
+### 登录按钮
 
-使用OnlyID.oauth方法打开授权页。代码示例：
+应用界面展示登录按钮，文案为："用唯ID登录"，左侧添加唯ID logo，主题色为 `#3F51B5`。
+
+两种参考样式（推荐左侧，更正式更清晰）：
+
+<Button variant="contained" color="primary" startIcon={<img src={useBaseUrl("/img/logo_72_white.png")} />} size="large" className="docs_button1">
+    用唯ID登录
+</Button>
+
+<Button color="primary" startIcon={<img src={useBaseUrl("/img/logo_72.png")} />} size="large" className="docs_button1">
+    用唯ID登录
+</Button>
+
+提示：logo素材请从上面两个按钮右键另存为获取。
+
+### 跳转OAuth页
+
+用户点击登录按钮后，打开登录授权页，代码示例：
 
 ```swift
 let config = OnlyIDOAuthConfig(clientId: "你的应用ID")
@@ -44,17 +61,13 @@ extension ViewController: OnlyIDOAuthDelegate {
 ```
 
 :::info 提示
-使用Objective-C的开发者，请参考 示例Demo（iOS）的OnlyID_Demo_Objc项目。
+如果用户安装了唯ID APP，会唤起APP完成认证，否则通过WebView打开登录页完成认证。
 :::
 
-:::info 提示
-如果用户安装了唯ID APP，会唤起APP完成授权，否则通过WebView打开授权页完成授权。
-:::
+## 获取用户信息
 
-## 获取Access Token和用户信息
+得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/single-sign-on/user-info)。
 
-之后的流程（通过auth code换取access token和通过access token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+## 示例Demo
 
-## 结语
-
-你已完成接入，接下来还可以到GitHub查阅 [示例Demo（iOS）](https://github.com/onlyid/onlyid-sdk-ios/tree/master/Example)，以加深理解。
+请访问GitHub参考 [示例Demo（iOS）](https://github.com/onlyid/onlyid-sdk-ios/tree/master/Example)。

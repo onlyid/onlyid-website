@@ -1,21 +1,23 @@
+import { Button } from "@material-ui/core";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Android应用接入
 
 :::info 提示
-如果你还没创建应用，请先到控制台 -> 应用管理 新建一个得到应用ID和应用Secret再继续。
-:::
+如果你还没创建应用，请先到控制台 -> 应用管理 新建得到应用ID和应用Secret再继续。
 
-:::info 提示
 如果你还没配置应用包名，请先到控制台 -> 应用管理 -> OAuth设置 配置好再继续。
 :::
 
 ## 集成SDK
 
-已改用Gradle形式，发布到 <a href="https://jitpack.io/#onlyid/onlyid-sdk-android"><img src="https://jitpack.io/v/onlyid/onlyid-sdk-android.svg" alt="jitpack" className="docs__img2"/></a>（绿色数字是当前最新版本），请开发者使用Gradle来编译、更新SDK。在项目全局的build.gradle添加：
+SDK发布到JitPack <a href="https://jitpack.io/#onlyid/onlyid-sdk-android"><img src="https://jitpack.io/v/onlyid/onlyid-sdk-android.svg" alt="jitpack" className="docs__img2"/></a>。
+
+在项目全局的build.gradle添加：
 
 ```
 allprojects {
     repositories {
-        ...
         maven { url 'https://jitpack.io' }
     }
 }
@@ -25,50 +27,67 @@ allprojects {
 
 ```
 dependencies {
-    ...
     implementation 'com.github.onlyid:onlyid-sdk-android:最新版本'
 }
 ```
 
-集成SDK。
-
 ## 获取Auth Code
 
-展示登录按钮（如果你的应用把唯ID作为唯一登录方式，按钮文案可写 "登录"，否则可以写 "用唯ID登录"）引导用户点击。
+### 登录按钮
 
-使用OnlyID.oauth方法打开授权页。代码示例：
+应用界面展示登录按钮，文案为："用唯ID登录"，左侧添加唯ID logo，主题色为 `#3F51B5`。
+
+两种参考样式（推荐左侧，更正式更清晰）：
+
+<Button variant="contained" color="primary" startIcon={<img src={useBaseUrl("/img/logo_72_white.png")} />} size="large" className="docs_button1">
+    用唯ID登录
+</Button>
+
+<Button color="primary" startIcon={<img src={useBaseUrl("/img/logo_72.png")} />} size="large" className="docs_button1">
+    用唯ID登录
+</Button>
+
+提示：logo素材请从上面两个按钮右键另存为获取。
+
+### 跳转OAuth页
+
+用户点击登录按钮后，打开登录授权页，代码示例：
 
 ```java
 static final int REQUEST_OAUTH = 1;
-...
-OAuthConfig config = new OAuthConfig("你的应用ID");
-OnlyID.oauth(this, config, REQUEST_OAUTH);
-...
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    loginButton.setOnClickListener((View v) -> {
+        OnlyID.startOAuth(MainActivity.this, REQUEST_OAUTH, "你的应用ID");
+    });
+}
+
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
+    
     if (requestCode != REQUEST_OAUTH) return;
 
     if (resultCode == RESULT_OK) {
         // 获得auth code
         String code = data.getStringExtra(OnlyID.EXTRA_CODE);
-    } else if (resultCode == RESULT_CANCELED) {
-        // 用户取消（拒绝）
-    } else if (resultCode == OnlyID.RESULT_ERROR) {
-        // 发生错误
-        Exception exception = (Exception) data.getSerializableExtra(OnlyID.EXTRA_EXCEPTION);
+    } else {
+        // 用户取消
     }
 }
 ```
 
 :::info 提示
-如果用户安装了唯ID APP，会唤起APP完成授权，否则通过WebView打开授权页完成授权。
+如果用户安装了唯ID APP，会唤起APP完成认证，否则通过WebView打开登录页完成认证。
 :::
 
-## 获取Access Token和用户信息
+## 获取用户信息
 
-之后的流程（通过auth code换取access token和通过access token换取用户信息）与网站接入时并无区别，请直接参阅 [相关小节](/docs/single-sign-on/web#获取access-token)。
+得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/single-sign-on/user-info)。
 
-## 结语
+## 示例Demo
 
-你已完成接入，接下来还可以到GitHub查阅 [示例Demo（Android）](https://github.com/onlyid/onlyid-demo-android)，以加深理解。
+请访问GitHub参考 [示例Demo（Android）](https://github.com/onlyid/onlyid-sdk-android/tree/master/app/src/main)。
