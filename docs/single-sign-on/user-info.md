@@ -82,7 +82,7 @@ Content-Type: application/json
 请求失败，响应报文示例：
 
 ```http
-HTTP/1.1 400 Bad Request
+HTTP/1.1 403 Forbidden
 Content-Type: application/json
 {
     "error": "应用Secret错误，请检查"
