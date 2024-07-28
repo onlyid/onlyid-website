@@ -27,7 +27,7 @@
 }
 
 .docs__param-c1 {
-    min-width: 128px;
+    white-space: nowrap;
 }
 
 /*.docs__img1 {*/

@@ -16,25 +16,25 @@
 <table><thead>
     <tr>
         <th>参数</th>
-        <th className="docs__param-c1">必填，类型</th>
+        <th className="docs__param-c1">是否必需</th>
         <th>含义</th>
     </tr>
 </thead><tbody>
     <tr>
         <td>recipient</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>接收人，手机号或电子邮箱</td>
     </tr><tr>
         <td>clientId</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>你的应用ID</td>
     </tr><tr>
         <td>clientSecret</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>你的应用Secret</td>
     </tr><tr>
         <td>code</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>尝试比对的验证码</td>    
     </tr>
 </tbody></table>
@@ -44,13 +44,11 @@
 <table><thead>
     <tr>
         <th>字段</th>
-        <th>类型</th>
         <th>含义</th>
     </tr>
 </thead><tbody>
     <tr>
         <td>result</td>
-        <td>字符串</td>
         <td>核验结果，固定值：success</td>
     </tr>
 </tbody></table>

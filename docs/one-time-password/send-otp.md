@@ -18,38 +18,34 @@ OTP的短信支持中国大陆手机号，邮箱支持国内外主流邮箱品�
 <table><thead>
     <tr>
         <th>参数</th>
-        <th className="docs__param-c1">必填，类型</th>
+        <th className="docs__param-c1">是否必需</th>
         <th>含义</th>
     </tr>
 </thead><tbody>
     <tr>
         <td>recipient</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>接收人，手机号或电子邮箱</td>
     </tr><tr>
         <td>clientId</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>你的应用ID</td>
     </tr><tr>
         <td>clientSecret</td>
-        <td>必填，字符串</td>
+        <td>是</td>
         <td>你的应用Secret</td>
     </tr><tr>
         <td>code</td>
-        <td>可选，字符串</td>
-        <td>使用你生成的验证码，而不是由唯ID生成，4~8个英文字母、数字</td>
+        <td>否</td>
+        <td>字符串，使用你的验证码，而不是由唯ID生成，4~8位数字</td>
     </tr><tr>
         <td>expireMin</td>
-        <td>可选，整数</td>
+        <td>否</td>
         <td>验证码有效期（分钟），要 >= 1 且 &lt;= 20</td>
     </tr><tr>
         <td>maxFailCount</td>
-        <td>可选，整数</td>
+        <td>否</td>
         <td>最多失败次数，要 >= 1 且 &lt;= 20。达到该值后，标记验证码失效，后续核验都直接返回失败，不再尝试核验</td>
-    </tr><tr>
-        <td>reuse</td>
-        <td>可选，布尔值</td>
-        <td>是否重用。当发送给某用户的一条验证码未过期时再发送一条，会重用前一条验证码，并更新有效期，可以避免用户在短时间收到多条不一样的验证码</td>
     </tr>
 </tbody></table>
 
@@ -58,29 +54,23 @@ OTP的短信支持中国大陆手机号，邮箱支持国内外主流邮箱品�
 <table><thead>
     <tr>
         <th>字段</th>
-        <th>类型</th>
         <th>含义</th>
     </tr>
 </thead><tbody>
     <tr>
         <td>recipient</td>
-        <td>字符串</td>
         <td>接收人回显，可忽略</td>
     </tr><tr>
         <td>code</td>
-        <td>字符串</td>
         <td>验证码</td>
     </tr><tr>
         <td>createDate</td>
-        <td>时间字符串</td>
         <td>创建时间</td>
     </tr><tr>
         <td>expireDate</td>
-        <td>时间字符串</td>
         <td>过期时间</td>
     </tr><tr>
         <td>maxFailCount</td>
-        <td>整数</td>
         <td>最多失败次数</td>
     </tr>
 </tbody></table>
@@ -130,10 +120,7 @@ Content-Type: application/json
 1. 通过API传参的方式自定义，请见上文的请求参数表格。
 2. 登录控制台 -> 应用管理 -> OTP 验证码设置 自定义。
 
-注意：
-
-* 通过API传参的方式自定义的优先级比控制台更高。
-* 当请求参数code有值时，会认为是一条新的验证码，即使reuse为true，也不再尝试重用未过期验证码。
+注意：通过API传参的方式自定义的优先级比控制台更高。
 
 ## 注意事项
 
