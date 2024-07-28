@@ -101,7 +101,7 @@ Content-Type: application/json
 <table><thead>
     <tr>
         <th>参数</th>
-        <th>是否必需</th>
+        <th className="docs__param-c1">是否必需</th>
         <th>含义</th>
     </tr>
 </thead><tbody>

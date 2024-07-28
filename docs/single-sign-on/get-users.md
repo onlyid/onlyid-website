@@ -8,7 +8,7 @@
 
 通过 `user-info` 接口获取用户信息受access token有效期的限制，当token过期后再次调用会返回错误。
 
-access token的有效期是24小时，可以满足网站类应用的使用需求。但APP一般会保持登录数月之久，对于这种情况，请使用本页两个接口获取最新的用户信息。
+access token的有效期是24小时，可以满足网站类应用的使用需求。但APP类应用一般会保持登录数月之久，对于这种情况，请使用本页两个接口获取最新的用户信息。
 
 这两个接口使用OAuth 2.0的Client Credentials授权方式，以应用Secret作为调用凭证，长期有效不会像access token一样过期。
 
@@ -19,7 +19,7 @@ access token的有效期是24小时，可以满足网站类应用的使用需求
 ## 单个查询接口
 
 :::info 提示
-本接口只能查询授权用户的账号信息，用户登录过一次你的应用就视为授权，授权关系长期有效不会超时自动解除。
+本接口只能查询授权用户的账号信息，用户登录过一次你的应用即视为授权，授权关系长期有效不会超时自动解除。
 :::
 
 :::caution 注意
@@ -139,7 +139,7 @@ Content-Type: application/json
 <table><thead>
     <tr>
         <th>参数</th>
-        <th>是否必需</th>
+        <th className="docs__param-c1">是否必需</th>
         <th>含义</th>
     </tr>
 </thead><tbody>
@@ -190,7 +190,7 @@ Content-Type: application/json
 请求示例：
 
 ```http
-GET https://www.onlyid.net/api/open/users?clientId=98d44b4a3543db79&clientSecret=8d08fbbd89a547df8bda56eba12fac2e&current=1&pageSize=10&orderBy=new HTTP/1.1
+GET https://onlyid.net/api/open/users?clientId=98d44b4a3543db79&clientSecret=8d08fbbd89a547df8bda56eba12fac2e&current=1&pageSize=10&orderBy=new HTTP/1.1
 ```
 
 请求成功，响应报文示例：

@@ -51,7 +51,7 @@ import one2 from "@site/static/img/sso-one2.png";
 
 ## 移除其它登录
 
-待大部分老用户都已经绑定了唯ID账号，就可以移除其它的登录方式：
+待大部分老用户都绑定了唯ID账号，就可以移除其它的登录方式：
 
 <img src={one2} alt="one2" className="docs__img3" />
 
