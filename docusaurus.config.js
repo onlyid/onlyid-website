@@ -20,7 +20,8 @@ module.exports = {
     themeConfig: {
         navbar: {
             logo: {
-                src: "img/logo.svg"
+                src: "img/logo.svg",
+                href: "/web/home"
             },
             items: [
                 { label: "产品", items: productMenu, className: "nav-item-product" },
