@@ -1,0 +1,84 @@
+.root {
+    padding: 68px 0 80px;
+}
+
+.tip {
+    margin-top: -40px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+.gridBox {
+    display: grid;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.guide1,
+img.guide3,
+img.guide4,
+img.guide5,
+img.guide6 {
+    border: 2px solid var(--ifm-color-gray-200);
+    border-top: none;
+    border-bottom: none;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+img.guide1 {
+    object-position: center 40%;
+}
+
+img.guide2 {
+    width: 320px;
+    height: 300px;
+    object-fit: contain;
+}
+
+img.guide3 {
+    object-position: center 8%;
+}
+
+img.guide6 {
+    object-position: center 40%;
+}
+
+.item p {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.item span {
+    font-size: 16px;
+    color: var(--ifm-color-gray-700);
+}
+
+@media (max-width: 996px) {
+    .gridBox {
+        grid-template-columns: 1fr;
+        grid-row-gap: 54px;
+    }
+}
+
+@media (min-width: 997px) {
+    .gridBox {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 72px;
+        grid-row-gap: 54px;
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .gridBox {
+        grid-column-gap: 32px;
+    }
+}

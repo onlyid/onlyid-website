@@ -37,12 +37,10 @@
 
 .phoneBox {
     width: 256px;
-    height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url("/img/user-phone-figure.png");
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -67,6 +65,11 @@
     .root :global .col:last-child {
         margin-top: 50px;
     }
+
+    .phoneBox {
+        height: 280px;
+        background-size: 80%;
+    }
 }
 
 @media (min-width: 997px) {
@@ -76,6 +79,11 @@
 
     .root :global h1 {
         margin-top: -15px;
+    }
+
+    .phoneBox {
+        height: 360px;
+        background-size: contain;
     }
 
     .phoneBox img {
