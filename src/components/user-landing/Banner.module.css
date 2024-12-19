@@ -24,6 +24,11 @@
     padding: 4px 8px;
 }
 
+.root :global .button--lg {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .root :global .col {
     display: flex;
     justify-content: center;
@@ -81,12 +86,22 @@
         margin-top: -15px;
     }
 
+    .root :global .col:last-child {
+        margin-right: 10px;
+    }
+
     .phoneBox {
-        height: 360px;
-        background-size: contain;
+        height: 350px;
+        background-size: 90%;
     }
 
     .phoneBox img {
         margin-top: -10px;
+    }
+}
+
+@media (min-width: 997px) and (max-width: 1200px) {
+    .root :global .container {
+        max-width: 1120px;
     }
 }

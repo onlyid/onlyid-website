@@ -15,18 +15,18 @@ export default function () {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col">
+                    <div className="col col--7">
                         <div>
                             <h1>
                                 用唯ID登录网站APP<br />
                                 安全、快捷、更省心
                             </h1>
                             <Link to="/user-landing#download" className="button button--primary button--lg">
-                                下载APP
+                                下载 唯ID APP
                             </Link>
                         </div>
                     </div>
-                    <div className="col col--5">
+                    <div className="col">
                         <div className={styles.phoneBox}>
                             <Link to="/user-landing#download">
                                 <img src={icon} alt="icon" />
