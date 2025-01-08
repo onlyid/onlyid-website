@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./Subscription.module.css";
-import classNames from "classnames";
-import img1 from "@site/static/img/otp-subscription.png";
+import React from "react"
+import styles from "./Subscription.module.css"
+import img1 from "@site/static/img/otp-subscription.png"
 
 export default function () {
     return (
@@ -10,25 +9,25 @@ export default function () {
                 <div className="row">
                     <div className="col">
                         <p className={styles.p1}>
-                            对比友商竞品，唯ID提供包年订阅服务，更实惠更省心
+                            唯ID提供极具竞争力的价格方案，满足各种规模应用的认证需求
                         </p>
                         <div className={styles.item}>
                             <h3>
-                                <span className={classNames("material-icons", styles.savings)}>
+                                <span className="material-icons" style={{ color: "#f5ce15" }}>
                                     savings
                                 </span>
-                                价格实惠
+                                按年订阅
                             </h3>
-                            <p>唯ID只有一档套餐，年费仅200元，没有其他隐形收费项目</p>
+                            <p>唯ID的订阅年费仅300元，赠送9000条短信，满足小微应用的认证需求</p>
                         </div>
                         <div className={styles.item}>
                             <h3>
-                                <span className={classNames("material-icons", styles.infinity)}>
-                                    all_inclusive
+                                <span className="material-icons" style={{ color: "#2299dd" }}>
+                                    sms
                                 </span>
-                                无限发送
+                                短信计费
                             </h3>
-                            <p>除固定年费外，短信不额外计费，可以发送无限量的验证码</p>
+                            <p>超出9000条短信部分，仅按 3 分钱每条计费，满足大型应用的认证需求</p>
                         </div>
                     </div>
                     <div className="col col--5">

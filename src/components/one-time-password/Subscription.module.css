@@ -16,19 +16,10 @@
     margin-bottom: 0;
 }
 
-.infinity,
-.savings {
+.item :global .material-icons {
     margin-right: 25px;
     font-size: 35px;
     vertical-align: -22%;
-}
-
-.infinity {
-    color: #3f51b5;
-}
-
-.savings {
-    color: #f5ce15;
 }
 
 .img1 {
@@ -46,7 +37,7 @@
     }
 
     .root :global .col:last-child {
-        margin-top: 33px;
+        margin-top: 35px;
     }
 
     .item {
@@ -67,19 +58,11 @@
         align-items: center;
     }
 
-    .root :global .col:first-child {
-        margin-left: 12px;
-    }
-
-    .root :global .col:last-child {
-        margin-right: 12px;
-    }
-
     .p1 {
         margin-bottom: 48px;
     }
 
-    .item + .item {
+    .item+.item {
         margin-top: 42px;
     }
 }

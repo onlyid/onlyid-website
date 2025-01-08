@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./Intro.module.css";
-import classNames from "classnames";
-import intro from "@site/static/img/otp-intro.png";
+import React from "react"
+import styles from "./Intro.module.css"
+import guide1 from "@site/static/img/user-guide-1.png"
 
 export default function () {
     return (
@@ -9,30 +8,28 @@ export default function () {
             <div className="container">
                 <div className="row">
                     <div className="col col--5">
-                        <img src={intro} alt="intro" className={styles.img1} />
+                        <img src={guide1} alt="intro" className={styles.img1} />
                     </div>
                     <div className="col">
-                        <p className={styles.p1}>如今验证码逐渐替代密码，广泛应用在登录/认证场景</p>
+                        <p className={styles.p1}>唯ID综合多种方式推送验证码，降低企业成本同时提升用户体验</p>
                         <div>
                             <div className={styles.item}>
                                 <h3>
-                                    <span
-                                        className={classNames("material-icons", styles.satisfied)}
-                                    >
-                                        sentiment_very_satisfied
+                                    <span className="material-icons" style={{ color: "#3f51b5" }}>
+                                        category
                                     </span>
-                                    用户轻松
+                                    推送APP
                                 </h3>
-                                <p>在每次需要时生成，不像密码需要记忆，用户体验简单友好</p>
+                                <p>用户安装了唯ID APP，推送验证码到APP，速度快、体验好、更加安全</p>
                             </div>
                             <div className={styles.item}>
                                 <h3>
-                                    <span className={classNames("material-icons", styles.security)}>
-                                        security
+                                    <span className="material-icons" style={{ color: "#4caf50" }}>
+                                        sms
                                     </span>
-                                    更加安全
+                                    自动回退
                                 </h3>
-                                <p>动态的验证码仅一次性使用，杜绝密码长期不变的安全风险</p>
+                                <p>用户未安装唯ID APP，自动回退到短信/邮箱，确保用户体验连续不中断</p>
                             </div>
                         </div>
                     </div>

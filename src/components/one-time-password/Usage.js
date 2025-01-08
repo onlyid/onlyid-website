@@ -13,7 +13,7 @@ export default function () {
                             <span className={cn("material-icons", styles.pin)}>password</span>
                             <h3>完全替代密码</h3>
                             <p>
-                                得益于无限发送的特点，应用可以一直使用验证码登录，不需要再引导用户设置密码
+                                OTP功能使用成本很低，应用可以一直使用验证码登录，不需要再引导用户设置密码
                             </p>
                         </div>
                     </div>

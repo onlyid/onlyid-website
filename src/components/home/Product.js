@@ -13,7 +13,7 @@ export default function () {
                         <Link className={styles.item} to="/one-time-password">
                             <span className={classNames("material-icons", styles.pin)}>pin</span>
                             <h3>轻认证 OTP</h3>
-                            <p>用短信/邮件验证码替代传统密码，即使新用户也可以快捷访问你的应用</p>
+                            <p>用动态验证码替代传统的固定密码，即使新用户也可以快捷访问你的应用</p>
                         </Link>
                     </div>
                     <div className="col">
