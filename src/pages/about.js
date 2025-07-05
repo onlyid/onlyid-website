@@ -22,7 +22,7 @@ export default function () {
                         </div>
                         <div className="col">
                             <div className={styles.card1}>
-                                <p className={styles.title}>唯ID由 梁庭宾 于2017年6月12日创立</p>
+                                <p className={styles.title}>唯ID由 梁庭宾 于2021年6月12日创立</p>
                                 <ul>
                                     <li>2012年毕业于中山大学软件工程专业</li>
                                     <li>前招商银行信用卡团队高级大数据风控工程师</li>

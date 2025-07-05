@@ -91,7 +91,7 @@ class Footer extends PureComponent {
                                 </li>
                             </ul>
                             <p className={styles.copyright}>
-                                <span>&copy; &nbsp;2017 ~ {new Date().getFullYear()}</span>
+                                <span>&copy; &nbsp;2021 ~ {new Date().getFullYear()}</span>
                                 <span>爱达斯科技</span>
                                 <a
                                     href="https://beian.miit.gov.cn"

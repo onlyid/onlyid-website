@@ -18,7 +18,7 @@ export default function () {
                                 </span>
                                 按年订阅
                             </h3>
-                            <p>唯ID的订阅年费仅300元，赠送9000条短信，满足小微应用的认证需求</p>
+                            <p>唯ID的订阅年费仅300元，赠送6000条短信，满足小微应用的认证需求</p>
                         </div>
                         <div className={styles.item}>
                             <h3>
@@ -27,7 +27,7 @@ export default function () {
                                 </span>
                                 短信计费
                             </h3>
-                            <p>超出9000条短信部分，仅按 3 分钱每条计费，满足大型应用的认证需求</p>
+                            <p>超出6000条短信部分，按 3.5 分钱每条计费，满足大型应用的认证需求</p>
                         </div>
                     </div>
                     <div className="col col--5">
