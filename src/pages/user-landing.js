@@ -6,11 +6,11 @@ import Footer from "@theme/Footer"
 
 export default function () {
     return (
-        <div>
+        <>
             <Banner />
             <Guide />
             <Download />
             <Footer />
-        </div>
+        </>
     )
 }

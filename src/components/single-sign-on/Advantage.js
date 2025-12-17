@@ -1,8 +1,8 @@
-import React from "react";
-import { Tooltip } from "@material-ui/core";
-import styles from "./Advantage.module.css";
-import oauth from "@site/static/img/sso-advantage-oauth.png";
-import cn from "classnames";
+import React from "react"
+import { Tooltip } from "@material-ui/core"
+import styles from "./Advantage.module.css"
+import oauth from "@site/static/img/sso-advantage-oauth.png"
+import cn from "classnames"
 
 export default function () {
     return (
@@ -68,10 +68,10 @@ export default function () {
                             </span>
                             价格实惠
                         </h3>
-                        <p>唯ID提供包年订阅服务，每年仅需300元，即可满足大部分应用需求</p>
+                        <p>唯ID提供包年订阅服务，每年仅需300元，可以无限制使用所有功能</p>
                     </div>
                 </div>
             </div>
         </section>
-    );
+    )
 }

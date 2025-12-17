@@ -1,4 +1,4 @@
-# 其它平台接入
+# 其他
 
 ## 简介
 
@@ -26,8 +26,8 @@ SSO目前官方支持网站、Android、iOS三个常用平台，对于Windows、
 此时回调URI并无实际意义，建议设置成 `http://localhost`。
 :::
 
-对于本页没有展开描述的细节，如登录按钮样式、登录授权页网址，请参考 [网站应用接入](/docs/single-sign-on/web)。
+对于本页没有展开描述的细节，如登录按钮样式、登录授权页网址，请参考 [网站应用接入](/docs/integrate/web)。
 
 ## 获取用户信息
 
-得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/single-sign-on/user-info)。
+得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/user-info)。

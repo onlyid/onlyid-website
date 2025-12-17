@@ -1,29 +1,32 @@
-import React from "react";
-import styles from "./Figure.module.css";
+import React from "react"
+import styles from "./Figure.module.css"
 
 export default function () {
     return (
         <div className={styles.root}>
-            <p className={styles.comment}># 发送验证码</p>
-            <p className={styles.url}>
-                <span>POST</span> https://onlyid.net/api/open/send-otp
-            </p>
-            <p className={styles.method}>
-                <span>Content-Type</span>: application/json
-            </p>
-            <div className={styles.params}>
-                <p style={{ marginLeft: 0 }}>{"{"}</p>
-                <p>
-                    "recipient": <span>"13612345678"</span>,
+            <div>
+                <p className={styles.comment}># 跳转登录页获取code</p>
+                <p className={styles.url}>
+                    https://onlyid.net/oauth?client-id=应用ID&redirect-uri=应用回调URI
                 </p>
-                <p>
-                    "clientId": <span>"98d44b4a3543db79"</span>,
+            </div>
+            <div>
+                <p className={styles.comment}># 使用code换取token</p>
+                <p className={styles.url}>
+                    <span>POST</span> https://onlyid.net/api/open/access-token
                 </p>
-                <p>
-                    "clientSecret": <span>"8d08fbbd89a547df8bda56eba12fac2e"</span>
+                <p className={styles.params}>
+                    {"{ "}
+                    "authCode": <span>"获取到的code"</span>, ...
+                    {" }"}
                 </p>
-                <p style={{ marginLeft: 0, marginBottom: 0 }}>}</p>
+            </div>
+            <div style={{ width: "fit-content" }}>
+                <p className={styles.comment}># 使用token换取用户信息</p>
+                <p className={styles.url}>
+                    <span>GET</span> https://onlyid.net/api/open/user-info?accessToken=获取到的token
+                </p>
             </div>
         </div>
-    );
+    )
 }

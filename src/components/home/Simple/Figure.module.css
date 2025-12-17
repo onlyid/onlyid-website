@@ -1,5 +1,6 @@
 .root {
-    padding: 2rem 1rem 1.8rem 2rem;
+    /* 底部有滚动条，所以padding bottom少一点 */
+    padding: 2rem 1.5rem 1.4rem 2rem;
     font-family: var(--ifm-font-family-monospace);
     font-size: 14px;
     background-color: var(--ifm-pre-background);
@@ -8,8 +9,12 @@
     border-radius: 15px;
 }
 
+.root > div + div {
+    margin-top: 20px;
+}
+
 .root p {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     white-space: nowrap;
 }
 
@@ -17,34 +22,19 @@
     color: #7f7f7f;
 }
 
-.url {
-    margin-top: 10px;
-}
-
 .url > span {
     color: navy;
 }
 
-.method > span {
-    color: #660e7a;
-}
-
-.params {
-    margin-top: 10px;
-}
-
-.params p {
-    margin-left: 1em;
-}
-
-.params p > span {
+.params > span {
     color: #026b07;
 }
 
 @media (max-width: 996px) {
     .root {
         font-size: 13px;
-        padding: 1.8rem 0 1.6rem 1.5rem;
+        /* 滚动条在容器内，所以padding bottom多一点 */
+        padding: 1.8rem 1.2rem 1.6rem 1.6rem;
         border-radius: 14px;
     }
 }

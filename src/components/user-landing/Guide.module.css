@@ -71,9 +71,9 @@ img.guide6 {
 
 @media (min-width: 997px) {
     .gridBox {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 72px;
-        grid-row-gap: 54px;
+        grid-row-gap: 64px;
     }
 }
 

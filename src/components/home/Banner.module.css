@@ -4,27 +4,13 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding: 95px 1rem;
+    padding: 100px 1rem;
 }
 
 .title {
-    margin-bottom: 45px;
+    margin-top: 20px;
+    margin-bottom: 70px;
     font-size: 51px;
-}
-
-.title :global .material-icons {
-    font-size: 22px;
-    vertical-align: text-top;
-    cursor: default;
-}
-
-.subtitle {
-    margin-bottom: 50px;
-    font-size: 26px;
-}
-
-.tooltip1 {
-    max-width: none;
 }
 
 .showSm {
@@ -33,11 +19,7 @@
 
 @media (max-width: 996px) {
     .title {
-        font-size: 43px;
-    }
-
-    .subtitle {
-        font-size: 22px;
+        font-size: 45px;
     }
 
     .showSm {

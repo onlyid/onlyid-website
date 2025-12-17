@@ -1,11 +1,11 @@
-import React from "react";
-import Figure from "./Figure";
-import styles from "./index.module.css";
-import Java from "@site/static/img/home-simple-java.svg";
-import Php from "@site/static/img/home-simple-php.svg";
-import Python from "@site/static/img/home-simple-python.svg";
-import Js from "@site/static/img/home-simple-js.svg";
-import Net from "@site/static/img/home-simple-net.svg";
+import React from "react"
+import Figure from "./Figure"
+import styles from "./index.module.css"
+import Java from "@site/static/img/home-simple-java.svg"
+import Php from "@site/static/img/home-simple-php.svg"
+import Python from "@site/static/img/home-simple-python.svg"
+import Js from "@site/static/img/home-simple-js.svg"
+import Net from "@site/static/img/home-simple-net.svg"
 
 export default function () {
     return (
@@ -13,7 +13,7 @@ export default function () {
             <div className="container">
                 <h2 className="main-title">写代码好轻松</h2>
                 <div className="row">
-                    <div className="col">
+                    <div className="col col--6">
                         <Figure />
                     </div>
                     <div className="col">
@@ -26,7 +26,7 @@ export default function () {
                                     </span>
                                     上手简单
                                 </h3>
-                                <p>通过5个精心提炼的API，快速调用OTP和接入SSO功能</p>
+                                <p>通过3个精心设计的API，快速接入SSO，实现登录功能</p>
                             </div>
                             <div className={styles.item}>
                                 <h3>
@@ -49,5 +49,5 @@ export default function () {
                 </div>
             </div>
         </section>
-    );
+    )
 }

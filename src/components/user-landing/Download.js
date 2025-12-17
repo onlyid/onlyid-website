@@ -7,7 +7,7 @@ export default function () {
     return (
         <section className={styles.root}>
             <div className="container">
-                <h2 className="main-title" id="download">下载 唯ID APP</h2>
+                <h2 className="main-title" id="download">下载 APP</h2>
                 <div className="row">
                     <div className="col col--2">
                         <img src={icon} alt="icon" className={styles.icon} />

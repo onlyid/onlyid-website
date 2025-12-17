@@ -1,7 +1,7 @@
-import { Button } from "@material-ui/core";
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Button } from "@material-ui/core"
+import useBaseUrl from "@docusaurus/useBaseUrl"
 
-# Android应用接入
+# Android
 
 :::info 提示
 如果你还没创建应用，请先到控制台 -> 应用管理 新建得到应用ID和应用Secret再继续。
@@ -68,7 +68,7 @@ protected void onCreate(Bundle savedInstanceState) {
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
-    
+
     if (requestCode != REQUEST_OAUTH) return;
 
     if (resultCode == RESULT_OK) {
@@ -86,7 +86,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 ## 获取用户信息
 
-得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/single-sign-on/user-info)。
+得到auth code后，通过code换取用户信息的逻辑三端一致（Web、Android、iOS），详见 [获取用户信息](/docs/user-info)。
 
 ## 示例Demo
 

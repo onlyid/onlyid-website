@@ -24,7 +24,8 @@ module.exports = {
                 href: "/web/home"
             },
             items: [
-                { label: "产品", items: productMenu, className: "nav-item-product" },
+                // { label: "产品", items: productMenu, className: "nav-item-product" },
+                { label: "产品", to: "single-sign-on" },
                 { type: "doc", docId: "home", label: "文档" },
                 { to: "blog", label: "公告" },
                 {

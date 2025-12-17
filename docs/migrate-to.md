@@ -1,7 +1,7 @@
-import migrate1 from "@site/static/img/docs-migrate1.png";
-import migrate2 from "@site/static/img/docs-migrate2.png";
-import migrate3 from "@site/static/img/docs-migrate3.png";
-import one2 from "@site/static/img/sso-one2.png";
+import migrate1 from "@site/static/img/docs-migrate1.png"
+import migrate2 from "@site/static/img/docs-migrate2.png"
+import migrate3 from "@site/static/img/docs-migrate3.png"
+import one2 from "@site/static/img/sso-one2.png"
 
 # 迁移到SSO
 
