@@ -1,4 +1,4 @@
-import { Button } from "@material-ui/core"
+import { Button } from "@mui/material"
 import useBaseUrl from "@docusaurus/useBaseUrl"
 
 # 网站
@@ -17,13 +17,9 @@ import useBaseUrl from "@docusaurus/useBaseUrl"
 
 两种参考样式（推荐左侧，更正式更清晰）：
 
-<Button variant="contained" color="primary" startIcon={<img src={useBaseUrl("/img/logo_72_white.png")} />} size="large" className="docs_button1">
-    用唯ID登录
-</Button>
+<Button variant="contained" color="primary" startIcon={<img src={useBaseUrl("/img/logo_72_white.png")} />} size="large" className="docs_button1">用唯ID登录</Button>
 
-<Button color="primary" startIcon={<img src={useBaseUrl("/img/logo_72.png")} />} size="large" className="docs_button1">
-    用唯ID登录
-</Button>
+<Button color="primary" startIcon={<img src={useBaseUrl("/img/logo_72.png")} />} size="large" className="docs_button1">用唯ID登录</Button>
 
 提示：logo素材请从上面两个按钮右键另存为获取。
 

@@ -1,32 +1,32 @@
-import React, { PureComponent } from "react";
-import styles from "./index.module.css";
-import { Popper, Paper } from "@material-ui/core";
-import classNames from "classnames";
-import weChat155 from "@site/static/img/footer-wechat-155.jpeg";
-import Link from "@docusaurus/Link";
-import { withRouter } from "react-router";
-import Numbers from "./Numbers";
+import React, { PureComponent } from "react"
+import styles from "./index.module.css"
+import { Popper, Paper } from "@mui/material"
+import classNames from "classnames"
+import weChat155 from "@site/static/img/footer-wechat-155.jpeg"
+import Link from "@docusaurus/Link"
+import { withRouter } from "react-router"
+import Numbers from "./Numbers"
 
 class Footer extends PureComponent {
     state = {
         anchorEl: null
-    };
+    }
 
     showWeChat = (e) => {
-        this.setState({ anchorEl: e.currentTarget });
-    };
+        this.setState({ anchorEl: e.currentTarget })
+    }
 
     closeWeChat = () => {
-        this.setState({ anchorEl: null });
-    };
+        this.setState({ anchorEl: null })
+    }
 
     render() {
-        const { anchorEl } = this.state;
+        const { anchorEl } = this.state
         const {
             location: { pathname }
-        } = this.props;
+        } = this.props
 
-        const showStat = !pathname.startsWith("/web/blog") && !pathname.startsWith("/web/docs");
+        const showStat = !pathname.startsWith("/web/blog") && !pathname.startsWith("/web/docs")
 
         return (
             <footer className={styles.root}>
@@ -116,8 +116,8 @@ class Footer extends PureComponent {
                     </Paper>
                 </Popper>
             </footer>
-        );
+        )
     }
 }
 
-export default withRouter(Footer);
+export default withRouter(Footer)

@@ -1,10 +1,10 @@
-import React from "react";
-import Layout from "@theme/Layout";
-import Banner from "../components/home/Banner";
-import Intro from "../components/home/Intro";
-import Simple from "../components/home/Simple";
-import Pro from "../components/home/Pro";
-import Value from "../components/home/Value";
+import React from "react"
+import Layout from "@theme/Layout"
+import Banner from "../components/home/Banner"
+import Intro from "../components/home/Intro"
+import Simple from "../components/home/Simple"
+import Pro from "../components/home/Pro"
+import Value from "../components/home/Value"
 
 export default function Home() {
     return (
@@ -15,5 +15,5 @@ export default function Home() {
             <Pro />
             <Value />
         </Layout>
-    );
+    )
 }

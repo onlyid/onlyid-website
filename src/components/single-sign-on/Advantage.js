@@ -1,5 +1,5 @@
 import React from "react"
-import { Tooltip } from "@material-ui/core"
+import { Tooltip } from "@mui/material"
 import styles from "./Advantage.module.css"
 import oauth from "@site/static/img/sso-advantage-oauth.png"
 import cn from "classnames"

@@ -1,4 +1,4 @@
-const codeTheme = require("./src/prismLight");
+const codeTheme = require("./src/prismLight")
 
 const productMenu = [
     {
@@ -9,9 +9,9 @@ const productMenu = [
         html: '<span class="material-icons">portrait</span>单点登录 SSO',
         to: "/single-sign-on"
     }
-];
+]
 
-module.exports = {
+const config = {
     title: "唯ID",
     url: "https://onlyid.net",
     baseUrl: "/web/",
@@ -25,9 +25,9 @@ module.exports = {
             },
             items: [
                 // { label: "产品", items: productMenu, className: "nav-item-product" },
-                { label: "产品", to: "single-sign-on" },
+                { to: "/single-sign-on", label: "产品" },
                 { type: "doc", docId: "home", label: "文档" },
-                { to: "blog", label: "公告" },
+                { to: "/blog", label: "公告" },
                 {
                     href: "https://github.com/onlyid",
                     html: '<span class="iconfont">&#xe6f6;</span>',
@@ -52,8 +52,14 @@ module.exports = {
         ["@docusaurus/plugin-content-docs", { sidebarPath: "./sidebars.js", breadcrumbs: false }],
         [
             "@docusaurus/plugin-content-blog",
-            { blogTitle: "公告", blogSidebarCount: 0, showReadingTime: false }
-        ]
+            {
+                blogTitle: "公告",
+                blogSidebarCount: 0,
+                showReadingTime: false,
+                onUntruncatedBlogPosts: "ignore"
+            }
+        ],
+        "@docusaurus/plugin-svgr"
     ],
     themes: [
         [
@@ -61,4 +67,6 @@ module.exports = {
             { customCss: ["./src/index.css", "./src/docs.css", "./src/blog.css"] }
         ]
     ]
-};
+}
+
+export default config

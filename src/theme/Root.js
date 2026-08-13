@@ -1,8 +1,19 @@
-import React from "react";
-import { StylesProvider } from "@material-ui/core/styles";
+import { StyledEngineProvider, createTheme, ThemeProvider } from "@mui/material/styles"
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: "#3F51B5"
+        }
+    }
+})
 
 function Root({ children }) {
-    return <StylesProvider injectFirst>{children}</StylesProvider>;
+    return (
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        </StyledEngineProvider>
+    )
 }
 
-export default Root;
+export default Root

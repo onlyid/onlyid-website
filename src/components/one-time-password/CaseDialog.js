@@ -1,6 +1,5 @@
-import { Dialog, DialogContent } from "@material-ui/core";
-import styles from "./CaseDialog.module.css";
-import React from "react";
+import { Dialog, DialogContent } from "@mui/material"
+import styles from "./CaseDialog.module.css"
 
 export default function ({ open, onClose }) {
     return (
@@ -22,5 +21,5 @@ export default function ({ open, onClose }) {
                 </ul>
             </DialogContent>
         </Dialog>
-    );
+    )
 }

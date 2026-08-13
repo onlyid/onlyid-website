@@ -1,4 +1,4 @@
-module.exports = {
+const sidebars = {
     mySideBar: [
         {
             type: "doc",
@@ -18,3 +18,5 @@ module.exports = {
         "faq"
     ]
 }
+
+export default sidebars
